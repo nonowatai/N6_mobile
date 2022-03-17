@@ -885,6 +885,18 @@ html body .memberArea .registerBtn {
           justify-content: center;
   width: 60px;
   height: 70%;
+  width: 9vw;
+  height: 9vw;
+  line-height: 0;
+  text-align: center;
+  background: linear-gradient(-45deg, #222, #3b3b3b);
+  -webkit-box-shadow: 2px 2px 2px 0 #5d4827;
+          box-shadow: 2px 2px 2px 0 #5d4827;
+  border: 1px solid #e1c396;
+  position: relative;
+  font-weight: bold;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border-radius: 30px;
   padding: 0 0 1px 3px;
   margin-right: 3vw;
@@ -1021,6 +1033,18 @@ html body .memberArea .operate .btnBox button {
   height: 40px;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
+  width: 9vw;
+  height: 9vw;
+  line-height: 0;
+  text-align: center;
+  background: linear-gradient(-45deg, #222, #3b3b3b);
+  -webkit-box-shadow: 2px 2px 2px 0 #5d4827;
+          box-shadow: 2px 2px 2px 0 #5d4827;
+  border: 1px solid #e1c396;
+  position: relative;
+  font-weight: bold;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 html body .memberArea .operate .btnBox button span {
   position: absolute;

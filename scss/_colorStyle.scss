@@ -119,16 +119,16 @@ $operate_Money: #000000;
     white-space: nowrap;
 }
 @mixin operateBtn {
-    // width: 9vw;
-    // height: 9vw;
-    // line-height: 0;
-    // text-align: center;
-    // background: linear-gradient(-45deg,#222,#3b3b3b);
-    // box-shadow: 2px 2px 2px 0 #5d4827;
-    // border: 1px solid #e1c396;
-    // position: relative;
-    // font-weight: bold;
-    // box-sizing: border-box;
+    width: 9vw;
+    height: 9vw;
+    line-height: 0;
+    text-align: center;
+    background: linear-gradient(-45deg,#222,#3b3b3b);
+    box-shadow: 2px 2px 2px 0 #5d4827;
+    border: 1px solid #e1c396;
+    position: relative;
+    font-weight: bold;
+    box-sizing: border-box;
 
     span {
         position: absolute;
