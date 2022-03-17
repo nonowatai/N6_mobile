@@ -7,7 +7,7 @@ $mainBG_3: #222;
 $mainWord_1: #ffc266;
 
 //主要邊框色
-$mainBorder_1: #f3d3a4;
+$mainBorder_1: #ffffff;
 $mainBorder_2: #b18e56;
 
 //金額色
@@ -26,7 +26,7 @@ $optionColor: #f2bd7c;
 
 //標題字
 $title_1: #c0933e;
-$title_2: #f3d3a4;
+$title_2: #713100;
 $title_3: #f2bd7c;
 $title_Time: #0fc854;
 $title_Header: #f3d3a4;
@@ -43,20 +43,22 @@ $boxshadow_1: #dedede;
 $boxshadow_2: #c8c8c880;
 
 //跑馬燈字色
-$marqueeColor: #f3d3a4;
-$marqueeBorder:  #f1d1a2;
+$marqueeColor: #672d00;
+$marqueeBorder:  #aa683b;
 //跑馬燈背景
-$marqueeIcon: linear-gradient(0deg,#343434 0,#1d1d1d);
+$marqueeIcon: #fbe2b7;
 //跑馬燈陰影色
 $marqueeBoxshadow: #ede5d7;
+//登入版面.before
+$beforeLiner:linear-gradient(180deg,#ebd3a8 70%,transparent);
 
 //彈窗背景透明底
 $filter: #00000066;
 
 //header背景色
-$header-bg:linear-gradient(90deg,#26412c 0,#1e2c21);
+$header-bg:linear-gradient(90deg,#753200 0,#753200 43%,#281600);
 //member背景
-$memberArea: linear-gradient(0deg,#f0c26b 0,#c09f60 40%,#fae0af);
+$memberArea: linear-gradient(180deg,#efd9ad 1%,#fff9e3 35%,#fff6d4 61%,#ebd3a8 86%,#f6e4b7);
 
 //提示框
 @mixin remindBox {
@@ -117,16 +119,16 @@ $operate_Money: #000000;
     white-space: nowrap;
 }
 @mixin operateBtn {
-    width: 9vw;
-    height: 9vw;
-    line-height: 0;
-    text-align: center;
-    background: linear-gradient(-45deg,#222,#3b3b3b);
-    box-shadow: 2px 2px 2px 0 #5d4827;
-    border: 1px solid #e1c396;
-    position: relative;
-    font-weight: bold;
-    box-sizing: border-box;
+    // width: 9vw;
+    // height: 9vw;
+    // line-height: 0;
+    // text-align: center;
+    // background: linear-gradient(-45deg,#222,#3b3b3b);
+    // box-shadow: 2px 2px 2px 0 #5d4827;
+    // border: 1px solid #e1c396;
+    // position: relative;
+    // font-weight: bold;
+    // box-sizing: border-box;
 
     span {
         position: absolute;
@@ -134,7 +136,7 @@ $operate_Money: #000000;
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%) rotate(-45deg);
-        color: #f3d3a4;
+        color: #713100;
     }
 }
 
@@ -143,14 +145,19 @@ $saleTitle:#26643d;
 
 //主頁面按鈕
 $gameListBtn_Border: #dcab70;
-$gameListBtn_Word: #f3d3a4;
-$gameListBtn_ActiveWord: #1c1c1c;
-$gameListBtn_ActiveBG: linear-gradient(0deg,#f5dba9,#c8a45d);
+$gameListBtn_Word: #fff7d8;
+$gameListBtn_ActiveWord: #ead090;
+@mixin gameListBtn_ActiveBG {
+    background:linear-gradient(180deg,#753200 0,#753200 43%,#b16d3d);  
+    border:2px solid #fff;
+    box-shadow: 0 5px 5px -5px rgb(0 0 0 / 40%); 
+    color: #ead090;
+}
 @mixin gameListBG {
-    background: linear-gradient(0deg,#222 20%,#3b3b3b);
-    border: 1px solid #f5d9b1;
+    background: linear-gradient(90deg,#fdfcc4 2%,#9a6a42 39%,#c0a475 73%,#e9ce99);
+    border: 1px solid #89542f;
     box-shadow: inset 1px 1px 3px 0 rgb(245 217 177 / 47%), inset -2px -2px 3px 0 #111,
-    inset -2px -2px 3px 0 #5a5a5a80;
+    inset -2px -2px 3px 0 #fff7d8;
     border-radius: 5px;
 }
 @mixin gameBoxWord {
@@ -422,12 +429,13 @@ $slotGame_Word: #f3d3a4;
 
 //footer
 @mixin footerBG {
-    background: linear-gradient(0deg,#dcab70 0,#f3d3a4 76%);
+    background: linear-gradient(90deg,#281600 5%,#753200 50%,#281600 95%);
     display: flex;
     align-items: center;
+    box-shadow: 0 -2px 3px 0 hsl(0deg 0% 100% / 40%);
 }
 @mixin footerWord {
-    color: #111;
+    color: #fff7d8;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -435,8 +443,8 @@ $slotGame_Word: #f3d3a4;
     font-weight: bold;
 
     &.active {
-        color: #f3d3a4;
-        background: linear-gradient(0deg,#26412c 0,#1e2c21);
+        color: #b16d3d;
+        background: #fff7d8;
         height: 100%;
     }
 }

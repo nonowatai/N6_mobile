@@ -1,31 +1,20 @@
 //跑馬燈
 .marqueeBox {
-    width: 92%;
+    width: 100%;
     height: 30px;
     display: flex;
     align-items: center;
     box-sizing: border-box;
-    margin: 15px auto;
     background:  $marqueeIcon;
-    border-radius: 30px;
-    border: 1px solid $marqueeBorder;
+    border-bottom: 2px solid $marqueeBorder;
+    margin: 0 0 8px 0;
 
     .marquee_ic {
         position: absolute;
-        left: 20px;
-        width: 42px;
-        height: 42px;
+        left: 21px;
+        width: 20px;
+        height: 30px;
         z-index: 2;
-
-        &::before {
-            content: "";
-            position: absolute;
-            width: 30px;
-            height: 44px;
-            top: -1px;
-            z-index: 3;
-            left: -15px;
-        }
     }
 
     .marquee {
@@ -51,29 +40,18 @@
             }
         }
     }
-
-    &::after {
-        content: '';
-        position: absolute;
-        right: 2%;
-        margin-top: 40px;
-        width: 30px;
-        height: 44px;
-        z-index: 3;
-        background-size: 100%;
-        transform: translateY(-50%) scaleX(-1);
-    }
 }
 
 //登入區
 .memberArea {
     width: 95%;
-    height: 15vh;
+    height: 8vh;
     margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     background: $memberArea;
+    border: 2px solid $mainBorder_1;
     border-radius: 5px;
 
     .member_icon {
@@ -87,10 +65,10 @@
 
     .before {
         position: absolute;
-        width: 1px;
+        width: 2px;
         height: 6.9%;
         right: 61%;
-        background: #2f2f2f;
+        background: $beforeLiner;
     }
 
     //大登入按鈕
@@ -116,6 +94,7 @@
         span {
             font-size: 15px;
             font-weight: bold;
+            color: $title_2;
         }
     }
     //註冊按鈕
@@ -228,7 +207,7 @@
         }
 
         .btnBox {
-            width: 98%;
+            width: 100%;
             height: 60px;
             display: flex;
             justify-content: space-between;
@@ -237,7 +216,7 @@
             box-sizing: border-box;
 
             button {
-                width: 40px;
+                width: 100%;
                 height: 40px;
                 transform: rotate(45deg);
                 @include operateBtn;
@@ -293,9 +272,9 @@
                 height: 20vw;
                 position: relative;
 
-                i {
-                    background-position-y: 100%;
-                }
+                // i {
+                //     background-position-y: 100%;
+                // }
     
                 &::before {
                     content: "";
@@ -311,14 +290,14 @@
                 &.active {
     
                     div {
-                        background: $gameListBtn_ActiveBG;
+                        @include gameListBtn_ActiveBG;
     
                         p {
                             color: $gameListBtn_ActiveWord;
                         }
     
                         i {
-                            background-position-y: 0%;
+                            background-position-y: 100%;
                         }
                     }
                 }
