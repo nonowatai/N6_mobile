@@ -42,6 +42,11 @@ header .inviteimg {
     background-size: cover;
 }
 
+.memberArea  .operate button i {
+    background: url('../images/icon/memberbtn.png') no-repeat;
+    background-size: 300%;
+}
+
 //gameList ic
 .gameList i {
     background: url('../images/icon/gamesListIC.png') no-repeat;

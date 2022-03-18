@@ -143,6 +143,10 @@
 
         .title {
             height: 18.67vw;
+            font-size: 4vw;
+            font-size: 4vw;
+            letter-spacing: 0px;
+            font-weight: 400;
 
             .icon {
                 width: 8.6vw;
@@ -247,11 +251,13 @@
             display: flex;
             justify-content: center;
             font-weight: bold;
+            display: block;
+            margin: 0 auto 10px;
+
 
             p {
-                margin-left: 10px;
+                margin: 10px 0 0;
                 color: $remind_Sp;
-                text-decoration: underline;
             }
         }
     }

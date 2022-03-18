@@ -45,7 +45,7 @@
 //登入區
 .memberArea {
     width: 95%;
-    height: 8vh;
+    height: 8.6vh;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -67,7 +67,7 @@
         position: absolute;
         width: 2px;
         height: 6.9%;
-        right: 61%;
+        right: 65%;
         background: $beforeLiner;
     }
 
@@ -92,7 +92,7 @@
         // }
 
         span {
-            font-size: 15px;
+            font-size: 3vw;
             font-weight: bold;
             color: $title_2;
         }
@@ -190,7 +190,7 @@
     //轉存提+vip
     .operate {
         border-radius: 0 1.5vw 1.5vw 0;
-        width: 54.6vw;
+        width: 58.6vw;
         height: 100%;
         display: flex;
         align-items: center;
@@ -212,14 +212,44 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 0 7%;
+            // padding: 0 7%;
             box-sizing: border-box;
 
             button {
                 width: 100%;
-                height: 40px;
-                transform: rotate(45deg);
-                @include operateBtn;
+                height: 60px;
+                background: none;
+                font-size: 3vw;
+                // transform: rotate(45deg);
+                // @include operateBtn;
+
+                &:nth-of-type(2) {
+                    i {                      
+                        background-position-x: 100%;
+
+                    }
+                }
+
+                &:nth-of-type(3) {
+                    i {              
+                        background-position-x: 50%;                       
+
+                    }
+                }
+
+                i {
+                    display: block;
+                    margin: 0 auto 1vw;
+                    width: 7.5vw;
+                    height: 7.5vw;
+                }
+                
+                span {
+                    position: relative;
+                    top: -2%;
+                    font-weight: bold;
+                    color: $title_2;
+                }
             }
 
             .vipBtn {

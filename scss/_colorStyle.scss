@@ -1,5 +1,5 @@
 //主色系
-$mainBG_1: #313131;
+$mainBG_1: #e5d9b7;
 $mainBG_2: #f8f8f8;
 $mainBG_3: #222;
 
@@ -19,7 +19,7 @@ $click: #f3d3a4;
 
 //小提示字色
 $remind: #ff1d1d;
-$remind_Sp: #1fb26c;
+$remind_Sp:#f30f0f;
 
 //大選項字色
 $optionColor: #f2bd7c;
@@ -29,7 +29,7 @@ $title_1: #c0933e;
 $title_2: #713100;
 $title_3: #f2bd7c;
 $title_Time: #0fc854;
-$title_Header: #f3d3a4;
+$title_Header: #fff;
 
 //選擇列字色+選擇列active
 $choose_Word: #f2bd7c;
@@ -223,9 +223,9 @@ $gameListBtn_ActiveWord: #ead090;
 }
 
 //彈窗
-$jumpWindow_header:linear-gradient(90deg,#277043 0,#144318);
-$jumpWindow_bg:#313131;
-$jumpWindow_text:#f3d3a4;
+$jumpWindow_header:linear-gradient(90deg,#af5d1c 0,#6b2f00);
+$jumpWindow_bg:#e5d9b7;
+$jumpWindow_text:#ffffff;
 $jumpWindow_border:#f3d3a4;
 @mixin jumpWindow_box {
     border: 1px solid #299150;
@@ -574,17 +574,16 @@ $slotGame_Word: #f3d3a4;
 
 //常用橘色漸層
 @mixin mainBtn {
-    background: linear-gradient(0deg,#f3d3a4 16%,#c29054 47%,#f3d3a4 84%);
+    background: linear-gradient(0deg,#1eb0a4 0,#26dbcc);
     font-size: 4vw;
     font-weight: bold;
-    color: #252525;
+    color: #fffefd;
     border-radius: 3px;
     letter-spacing: 1px;
+    border: 1px solid #39ebdd;
 
     &:active,&.active {
-        background: linear-gradient(0deg,#2f845c 0,#1d5832);
-        color: #f3d3a4;
-        border: 1px solid #dcab70;
+        background: linear-gradient(180deg,#159288 0,#1eb0a4);
     }
 }
 
@@ -710,17 +709,17 @@ button:disabled {
 //常用input
 @mixin mainInput {
     background: none;
-    border: solid 1px #957222;
+    border: 1px solid #bf9755;
     font-size: 15px;
-    color: #f2bd7c;
+    color: #281600;
     font-weight: bold;
     border-radius: 3px;
     padding-left: 15px;
     box-sizing: border-box;
-    background: #1c1c1c;
+    background: #fff;
 
     &::placeholder {
-        color: #f2bd7c;
+        color: #d8b57c;
     }
 }
 //member頁用input
