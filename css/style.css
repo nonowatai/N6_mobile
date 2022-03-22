@@ -1086,7 +1086,7 @@ html body .homeCenter {
   margin-top: 8px;
 }
 html body .homeCenter .gameList {
-  width: auto;
+  width: 20%;
   height: auto;
 }
 html body .homeCenter .gameList ol {
@@ -1110,7 +1110,7 @@ html body .homeCenter .gameList ol li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 24vw;
+  width: 100%;
   height: 20vw;
   position: relative;
 }
@@ -1140,7 +1140,7 @@ html body .homeCenter .gameList ol li.active div i {
   background-position-y: 100%;
 }
 html body .homeCenter .gameList ol li div {
-  width: 85%;
+  width: 83%;
   height: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1155,24 +1155,28 @@ html body .homeCenter .gameList ol li div {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border-radius: 3px;
+  border-radius: 7px;
 }
 html body .homeCenter .gameList ol li div p {
   margin-top: 2vw;
-  font-size: 3.4vw;
+  font-size: 3vw;
   font-weight: bold;
   color: #fff7d8;
+  text-align: center;
 }
 html body .homeCenter .gameList ol li div i {
   display: block;
   width: 8vw;
   height: 8vw;
 }
+html body .homeCenter .gameList ol li div i.sport_ic {
+  background-position-x: 40%;
+}
 html body .homeCenter .gameList ol li div i.live_ic {
   background-position-x: 20%;
 }
 html body .homeCenter .gameList ol li div i.slot_ic {
-  background-position-x: 40%;
+  background-position-x: 0%;
 }
 html body .homeCenter .gameList ol li div i.lottery_ic {
   background-position-x: calc(60% - 1px);
@@ -1320,7 +1324,7 @@ html body .filter .title {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 21px;
+  font-size: 14px;
   letter-spacing: 2px;
   font-weight: bold;
   color: #fff;
@@ -1585,6 +1589,7 @@ html body .filter .loginWindow .registerBtn {
   font-weight: bold;
   display: block;
   margin: 0 auto 10px;
+  text-align: center;
 }
 html body .filter .loginWindow .registerBtn p {
   margin: 10px 0 0;
@@ -1614,7 +1619,7 @@ html body .filter .forgetWindow form {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 15px;
+  padding: 0 10px 15px;
 }
 html body .filter .forgetWindow form input {
   width: 77.6vw;
