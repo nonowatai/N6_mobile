@@ -1,7 +1,11 @@
 //主色系
-$mainBG_1: #f6ebadbe;
+$mainBG_1: #e5d9b7;
 $mainBG_2: #f8f8f8;
-$mainBG_3: #222;
+$mainBG_3: #f8dda0;
+//透背景
+$maingoldBG: #f6ebacbf;
+//特殊背景
+$mainBG_4: #272727;
 
 //主要字色
 $mainWord_1: #281600;
@@ -34,8 +38,8 @@ $title_Header: #fff;
 //選擇列字色+選擇列active
 $choose_Word: #713100;
 $choose_ActiveWord: #713100;
-$choose_Border: #f3d3a4;
-$choose_Active:linear-gradient(0deg,#037440 0,#074528);
+$choose_Border: #713100;
+$choose_Active:linear-gradient(180deg,#efd9ad 1%,#fff9e3 35%,#fff6d4 61%,#ebd3a8 86%,#f6e4b7);
 $choose_bg:#1b1b1b;
 
 //陰影色
@@ -63,8 +67,8 @@ $liner-bg:linear-gradient(180deg,#af5d1c 0,rgba(246,235,173,.6));
 
 //提示框
 @mixin remindBox {
-    background: #313131;
-    border: 1px solid #f9d2a2;
+    background: #fbf3db;
+    border: 1px solid #bf9755;
     border-radius: 3px;
     padding: 14px 15px;
     box-sizing: border-box;
@@ -501,11 +505,11 @@ $slotGame_Word: #f3d3a4;
 
 //無背景按鈕常用類
 @mixin noBgBtn_Normal {
-    background: #242424;
-    border: 1px solid #1aa34c;
+    background: linear-gradient(0deg, #1eb0a4 0, #26dbcc);
+    border: 1px solid #39ebdd;
     font-size: 13px;
     font-weight: bold;
-    color: #13b165;
+    color: #fffefd;
     border-radius: 3px;
 }
 //無背景帶顏色按鈕
@@ -766,10 +770,10 @@ button:disabled {
     font-size: 14px;
     font-weight: bold;
     box-sizing: border-box;
-    color: #f2bd7c;
+    color: #281600;
 
     &::placeholder {
-        color: #229f50;
+        color: #a87828;
     }
 
     &.active {
@@ -785,13 +789,13 @@ button:disabled {
 
 
 @mixin mainSelect {
-    background-color:#1c1c1c;
+    background-color:#fff;
     border-radius: 3px;
     appearance: none;
     font-size: 15px;
     font-weight: bold;
-    color: #f2bd7c;
-    background-image: linear-gradient(45deg,transparent 50%,#229f50 0),linear-gradient(135deg,#229f50 50%,transparent 0);
+    color: #713100;
+    background-image: linear-gradient(45deg,transparent 50%,#b16d3d 0),linear-gradient(135deg,#b16d3d 50%,transparent 0);
     background-position: calc(100% - 20px) calc(1em + 2px),calc(100% - 15px) calc(1em + 2px);
     background-size: 5px 5px,5px 5px;
     background-repeat: no-repeat;

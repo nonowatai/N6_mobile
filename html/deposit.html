@@ -20,8 +20,8 @@
         <!--content-->
         <div class="content">
             <i class="back_arrow" onclick="window.location.href='./wallet.html'"></i>
-            <div class="title">存款專區</div>
-            <button class="detailBtn" onclick="window.location.href='./help_new_deposit.html'">教學</button>
+            <div class="title">Mục nạp tiền</div>
+            <button class="detailBtn" onclick="window.location.href='./help_new_deposit.html'">Hướng dẫn</button>
         </div>
     </header>
     <!--main-->
@@ -56,32 +56,32 @@
             <div class="depContent card display">
                 <p class="title">
                     <span>※ </span>
-                    選擇通道
-                    <span class="remind">僅接受綁定銀行轉入之款項</span>
+                    Chọn ngân hàng
+                    <span class="remind"> Chỉ chấp nhận tiền được chuyển từ ngân hàng đã liên kết</span>
                 </p>
                 <select>
-                    <option value="">上海銀行</option>
-                    <option value="">上海銀行</option>
-                    <option value="">上海銀行</option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
                 </select>
-                <select>
+                <!-- <select>
                     <option value="">永豐銀行Bank SinoPac</option>
                     <option value="">國泰銀行Cathay Bank</option>
                     <option value="">台新銀行Taishin Bank</option>
                     <option value="">中信銀行CTBC Bank</option>
-                </select>
+                </select> -->
                 <span class="remind">
-                    尾號:
+                    Vui lòng chọn ngân hàng thụ hưởng: 
                     <span class="num">41879</span>
                 </span>
                 <p class="title">
                     <span>※ </span>
-                    存款金額
+                    Số tiền nạp 
                     <!-- <span class="remind">僅接受綁定銀行轉入之款項</span> -->
                 </p>
-                <input type="text" placeholder="請輸入存款金額">
-                <span class="remind">單筆存款金額需介於 0 - 不限制</span>
-                <button class="check">立即存款</button>
+                <input type="text" placeholder="Vui lòng nhập số tiền gửi">
+                <span class="remind"> Số tiền nạp phải nằm trong khoảng {{min}}~$200,000 </span>
+                <button class="check">Xác nhận nạp tiền</button>
             </div>
             <div class="depContent atm">
                 <p class="title">
@@ -162,9 +162,9 @@
                 </ul>
             </div>
             <div class="remindBox">
-                <p class="title">重要提醒</p>
-                <p>1.存款帳戶需為本人的銀行帳戶，如為非本人的帳戶存款無法成功存款。</p>
-                <p><span class="sp"> 2.存款金額需與申請提交金額相同，如不相同會以實際入帳金額為主。 </span></p>
+                <p class="title"> Nhắc nhở quan trọng </p>
+                <p>1.Tài khoản nạp tiền phải là tài khoản ngân hàng của chính chủ, nếu không phải là tài khoản chính chủ sẽ không thể nạp tiền thành công.</p>
+                <p><span class="sp">  2.Số tiền nạp phải trùng khớp với số tiền đăng ký lệnh nạp, nếu không trùng khớp sẽ lấy số tiền thực tế nạp vào tài khoản làm chuẩn.  </span></p>
                 <!-- <p>3.為了加快上分速度，請至交易紀錄上傳交易成功的明細。</p> -->
             </div>
         </div>
@@ -174,23 +174,23 @@
         <ul>
             <li onclick="window.location.href='./index_inner.html'">
                 <i class="menu_ic"></i>
-                <p>首頁</p>
+                <p>TRANG CHỦ</p>
             </li>
             <li onclick="window.location.href='./event.html'">
                 <i class="event_ic"></i>
-                <p>優惠</p>
+                <p>Khuyến mãi</p>
             </li>
             <li onclick="window.location.href='./wallet.html'">
                 <i class="wallet_ic"></i>
-                <p>錢包</p>
+                <p>VÍ TIỀN</p>
             </li>
             <li onclick="window.location.href='./help_often_contact.html'">
                 <i class="service_ic"></i>
-                <p>客服</p>
+                <p></p>
             </li>
             <li onclick="window.location.href='./member.html'">
                 <i class="center_ic"></i>
-                <p>會員中心</p>
+                <p></p>
             </li>
         </ul>
     </footer>

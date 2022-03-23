@@ -3,7 +3,7 @@
     width: 100%;
     height: auto;
     min-height: calc(100% - 92px);
-    background: $mainBG_3;
+    background: $mainBG_4;
     padding-bottom: 10px;
 
     //玩家資訊
@@ -192,7 +192,7 @@
                 .bubble {
                     min-width: 20px;
                     min-height: 20px;
-                    top: -7px;
+                    top: -7px;  
                     right: 50px;
                     @include mailBubble;
                 }
@@ -236,14 +236,18 @@
             height: 7vw;
 
             &.point_ic {
-                width: 6vw;
+                width: 8vw;
                 height: 8vw;
-                background-position-x: 100%;
-                margin: 0 3vw 0 1vw;
+                background-position-x: 38%;
+                margin: 0 0vw 0 1vw;
+            }
+
+            &.eventApply_ic {
+                background-position-x: -7vw;
             }
 
             &.help_ic {
-                background-position-x: -7vw;
+                background-position-x: 0vw;
             }
 
             &.about_ic {
@@ -251,15 +255,15 @@
             }
 
             &.app_ic {
-                background-position-x: -20.5vw;
+                background-position-x: -28.5vw;
             }
 
             &.lang_ic {
-                background-position-x: -27.7vw;
+                background-position-x: -28.5vw;
             }
 
             &.logout_ic {
-                background-position-x: -35vw;
+                background-position-x: -41.5vw;
             }
         }
 
@@ -282,7 +286,7 @@
         width: 100%;
         height: auto;
         display: flex;
-        border-bottom: 1px solid $mainBorder_1;
+        background: $choose_Active;
 
         li {
             width: 50%;
@@ -291,7 +295,7 @@
             align-items: center;
             justify-content: center;
             box-sizing: border-box;
-            border-bottom: solid 2px transparent;
+            border-bottom: solid 4px transparent;
             font-size: 3.4vw;
             font-weight: bold;
             color: $choose_Word;
@@ -312,7 +316,6 @@
     height: calc(100vh - 136px);
     padding: 10px 0;
     box-sizing: border-box;
-    background: $mainBG_3;
 
     form {
         width: 100%;
@@ -333,8 +336,11 @@
                 justify-content: space-between;
                 box-sizing: border-box;
                 padding: 0 17px;
-                
                 border-top: solid 1px $mainBorder_2;
+
+                &:nth-of-type(10) {
+                    height: 115px;
+                }
 
                 &.active {
                     height: 103px;
@@ -350,14 +356,14 @@
 
                     &::before {
                         content: "※ ";
-                        color: $title_2;
+                        color: $remind_Sp;
                         padding: 0 5px 0 0;
                         font-size: 14px;
                     }
                 }
 
                 span {
-                    width: 20vw;
+                    width: 31vw;
                     font-weight: bold;
                     font-size: 14px;
                     color: $title_2;
@@ -378,14 +384,14 @@
                 }
 
                 .li_box {
-                    width: 69%;
+                    width: 100%;
                     display: flex;
                     box-sizing: border-box;
                     justify-content: flex-end;
                     align-items: center;
 
                     .smallbutton {
-                    width: 47px;
+                    width: 92px;
                     height: 29px;
                     font-size: 13px;
                     @include noBgBtn_Normal;
@@ -394,7 +400,7 @@
 
                    p {
                       padding: 0 5px;
-                      color: $title_3;
+                      color: $mainWord_1;
                    }
                 }
 
@@ -553,7 +559,7 @@
         width: 100%;
         height: auto;
         box-sizing: border-box;
-        border: solid 1px $mainBorder_2;
+        border: solid 1px $mainBorder_1;
         border-radius: 5px;
         background: $mainBG_1;
         margin-bottom: 10px;
@@ -595,7 +601,7 @@
                     }
 
                     button {
-                        width: 49px;
+                        width: 72px;
                         height: 28px;
                         margin-left: 10px;
                         @include noBgBtn_Normal;
