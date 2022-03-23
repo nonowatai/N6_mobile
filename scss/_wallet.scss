@@ -11,10 +11,9 @@
         height: auto;
         padding-bottom: 30px;
         margin-bottom: 10px;
-        background: $mainBG_1;
+        background: $liner-bg;
         padding-top: 25px;
         border-bottom: 1px solid $mainBorder_1;
-        border-top: 1px solid $mainBorder_1;
 
         //漸層
         .gradient {
@@ -25,15 +24,14 @@
                 width: 92vw;
                 height: auto;
                 margin: 0 auto 30px;
-                background: $mainBG_3;
-                border: solid 1px $mainBorder_1;
-                border-radius: 3px;
+                @include normalBtn;
+                display: block;
 
                 .amount {
                     width: 100%;
                     height: auto;
                     display: flex;
-                    border-bottom: solid 1px $mainBorder_1;
+                    border-bottom: solid 1px $mainBorder_2;
 
                     .half {
                         width: 50%;
@@ -62,7 +60,7 @@
                         }
 
                         .money {
-                            color: $title_3;
+                            color: $title_2;
                             font-size: 25px;
                             font-weight: bold;
                             display: flex;
@@ -95,7 +93,7 @@
                         p {
                             font-size: 15px;
                             font-weight: bold;
-                            color: $title_3;
+                            color: $title_2;
                             white-space: nowrap;
 
                             &:nth-of-type(1) {
@@ -314,7 +312,7 @@
             }
 
             .title {
-                display: flex;
+                // display: flex;
                 align-items: center;
                 justify-content: space-between;
                 width: 100%;
@@ -324,13 +322,14 @@
                 margin-bottom: 11px;
                 font-size: 13px;
                 letter-spacing: 1px;
-                color: $title_Time;
+                color: $title_2;
                 font-weight: bold;
                 border-top: 1px solid $mainBorder_1;
 
                 button {
-                    width: 18.93vw;
-                    height: 6.13vw;
+                    width: 88vw;
+                    height: 8vw;
+                    margin: 10px 0;
                     @include mainBtn;
                     font-size: 12px;
                 }
@@ -355,9 +354,8 @@
                     box-sizing: border-box;
                     padding: 10px 0 0 11px;
                     margin: 0 1.9vw 1.9vw 0;
-                    border: solid 1px $mainBorder_1;
-                    border-radius: 3px;
-                    background: $mainBG_3;
+                    @include normalBtn;
+                    display: block;
 
                     &:nth-of-type(3n) {
                         margin-right: 0;
@@ -366,7 +364,7 @@
                     div {
                         font-size: 12px;
                         letter-spacing: 1px;
-                        color: $title_3;
+                        color: $title_2;
                         font-weight: bold;
                         display: flex;
                         align-items: center;
@@ -408,7 +406,7 @@
                     p {
                         margin-top: 10px;
                         font-size: 17px;
-                        color: $money_Sp;
+                        color: $mainWord_1;
                         font-weight: bold;
                     }
                 }

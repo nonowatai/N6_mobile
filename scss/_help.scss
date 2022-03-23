@@ -172,7 +172,7 @@
 
             .textBox {
                 display: none;
-                width: 92.27vw;
+                width: 96.27vw;
                 height: auto;
                 box-sizing: border-box;
                 padding: 10px;
@@ -249,7 +249,7 @@
 
                     div {
                         width: 100%;
-                        height: 97px;
+                        height: 118px;
                         position: relative;
                         margin-bottom: 15px;
                         @include help_lineBtn1;
@@ -266,13 +266,18 @@
                         }
 
                         p {
-                            font-size: 3.4vw;
+                            font-size: 2vw;
                             font-weight: bold;
                             margin: 0;
 
                             &:nth-of-type(1) {
                                 font-size: 5vw;
                             }
+                        }
+
+                        h1 {
+                            font-size: 3.4vw;
+                            font-weight: bold;
                         }
                     }
                 }

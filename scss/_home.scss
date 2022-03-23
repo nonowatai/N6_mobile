@@ -153,6 +153,13 @@
                 &:last-child {
                     margin: 0;
                 }
+                i {
+                    display: inline-block;
+                    width: 4vw;
+                    height: 3vw;
+                    background-size: 100%;
+                    margin-left: 2vw;
+                }
 
                 &.amount {
                     width: auto;
@@ -165,24 +172,22 @@
                     text-overflow: ellipsis;
                 }
 
-                .name {
-                    width: auto;
-                    max-width: 22.7vw;
-                    height: auto;
-                    font-size: 0.8rem;
-                    font-weight: bold;
-                    color: $operate_Acc;
-                    white-space: nowrap;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                }
-
                 .lv {
                     width: auto;
                     height: 20px;
                     @include operateLV;
-                    margin-left: 15px;
                 }
+            }
+            .name {
+                width: auto;
+                max-width: 22.7vw;
+                height: auto;
+                font-size: 2.2vw;
+                font-weight: bold;
+                color: $operate_Acc;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
             }
         }
     }
