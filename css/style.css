@@ -326,6 +326,13 @@ header .editBtn {
   background-size: contain;
 }
 
+.vipWrap .cardBox i,
+.vipWrap .checkBtn .arrow_ic,
+.vipDetail .list i::before {
+  background: url("../images/icon/arrow_b.png") no-repeat;
+  background-size: 100%;
+}
+
 .vipWrap .cardBox .card li.vip0 {
   background: url("../images/vip_card.png") no-repeat;
   background-size: 100%;
@@ -573,15 +580,18 @@ html {
   width: 100%;
   height: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  font-family: Arial;
 }
 html body {
   width: 100%;
   height: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: Arial;
 }
 html body main {
   padding: 45px 0 48px;
+  font-family: Arial;
 }
 html body .bg {
   position: fixed;
@@ -665,13 +675,14 @@ html body header .content .detailBtn {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   right: 14px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(16%, #f3d3a4), color-stop(47%, #c29054), color-stop(84%, #f3d3a4));
-  background: linear-gradient(0deg, #f3d3a4 16%, #c29054 47%, #f3d3a4 84%);
+  background: #2d1800;
   font-size: 13px;
   font-weight: bold;
-  color: #252525;
+  color: #fad8aa;
+  border: 1px solid #fad8aa;
   border-radius: 3px;
   padding: 0 8px;
+  letter-spacing: 1px;
 }
 html body header .content .detailBtn.edit {
   display: none;
@@ -1370,7 +1381,7 @@ html body .filter .plsGo .content, html body .filter .plsGo2 .content {
   height: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 24px 80px 0;
+  padding: 24px 30px 0;
   text-align: center;
 }
 html body .filter .plsGo .content p, html body .filter .plsGo2 .content p {
@@ -1390,9 +1401,11 @@ html body .filter .plsGo .btnBox button, html body .filter .plsGo2 .btnBox butto
   font-size: 4vw;
   font-weight: bold;
   color: #fffefd;
-  border-radius: 3px;
+  border-radius: 1.3vw;
   letter-spacing: 1px;
   border: 1px solid #39ebdd;
+  -webkit-box-shadow: 0 5px 3px -3px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 3px -3px rgba(0, 0, 0, 0.4);
 }
 html body .filter .plsGo .btnBox button:active, html body .filter .plsGo .btnBox button.active, html body .filter .plsGo2 .btnBox button:active, html body .filter .plsGo2 .btnBox button.active {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #159288), to(#1eb0a4));
@@ -1578,9 +1591,11 @@ html body .filter .loginWindow form .realLogin {
   font-size: 4vw;
   font-weight: bold;
   color: #fffefd;
-  border-radius: 3px;
+  border-radius: 1.3vw;
   letter-spacing: 1px;
   border: 1px solid #39ebdd;
+  -webkit-box-shadow: 0 5px 3px -3px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 3px -3px rgba(0, 0, 0, 0.4);
 }
 html body .filter .loginWindow form .realLogin:active, html body .filter .loginWindow form .realLogin.active {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #159288), to(#1eb0a4));
@@ -1670,9 +1685,11 @@ html body .filter .forgetWindow form button {
   font-size: 4vw;
   font-weight: bold;
   color: #fffefd;
-  border-radius: 3px;
+  border-radius: 1.3vw;
   letter-spacing: 1px;
   border: 1px solid #39ebdd;
+  -webkit-box-shadow: 0 5px 3px -3px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 3px -3px rgba(0, 0, 0, 0.4);
 }
 html body .filter .forgetWindow form button:active, html body .filter .forgetWindow form button.active {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #159288), to(#1eb0a4));
@@ -1684,7 +1701,7 @@ html body .filter .forgetWindow form .remind {
   margin: 15px 0;
   font-size: 14px;
   font-weight: bold;
-  color: #ff1d1d;
+  color: #b16d3d;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1851,9 +1868,11 @@ html body .filter .registerWindow form .checkBtn {
   font-size: 4vw;
   font-weight: bold;
   color: #fffefd;
-  border-radius: 3px;
+  border-radius: 1.3vw;
   letter-spacing: 1px;
   border: 1px solid #39ebdd;
+  -webkit-box-shadow: 0 5px 3px -3px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 3px -3px rgba(0, 0, 0, 0.4);
 }
 html body .filter .registerWindow form .checkBtn:active, html body .filter .registerWindow form .checkBtn.active {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #159288), to(#1eb0a4));
@@ -1925,9 +1944,11 @@ html body .filter .ruleWindow button {
   font-size: 4vw;
   font-weight: bold;
   color: #fffefd;
-  border-radius: 3px;
+  border-radius: 1.3vw;
   letter-spacing: 1px;
   border: 1px solid #39ebdd;
+  -webkit-box-shadow: 0 5px 3px -3px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 3px -3px rgba(0, 0, 0, 0.4);
 }
 html body .filter .ruleWindow button:active, html body .filter .ruleWindow button.active {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #159288), to(#1eb0a4));
@@ -2097,9 +2118,11 @@ html body .filter .gameWindow form .row.checkBtn button {
   font-size: 4vw;
   font-weight: bold;
   color: #fffefd;
-  border-radius: 3px;
+  border-radius: 1.3vw;
   letter-spacing: 1px;
   border: 1px solid #39ebdd;
+  -webkit-box-shadow: 0 5px 3px -3px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 3px -3px rgba(0, 0, 0, 0.4);
 }
 html body .filter .gameWindow form .row.checkBtn button:active, html body .filter .gameWindow form .row.checkBtn button.active {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #159288), to(#1eb0a4));
@@ -2161,9 +2184,11 @@ html body .filter .gameWindow .enterBtn {
   font-size: 4vw;
   font-weight: bold;
   color: #fffefd;
-  border-radius: 3px;
+  border-radius: 1.3vw;
   letter-spacing: 1px;
   border: 1px solid #39ebdd;
+  -webkit-box-shadow: 0 5px 3px -3px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 3px -3px rgba(0, 0, 0, 0.4);
 }
 html body .filter .gameWindow .enterBtn:active, html body .filter .gameWindow .enterBtn.active {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #159288), to(#1eb0a4));
@@ -2274,9 +2299,11 @@ html body .filter .phoneWindow form .checkBtn {
   font-size: 4vw;
   font-weight: bold;
   color: #fffefd;
-  border-radius: 3px;
+  border-radius: 1.3vw;
   letter-spacing: 1px;
   border: 1px solid #39ebdd;
+  -webkit-box-shadow: 0 5px 3px -3px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 3px -3px rgba(0, 0, 0, 0.4);
 }
 html body .filter .phoneWindow form .checkBtn:active, html body .filter .phoneWindow form .checkBtn.active {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #159288), to(#1eb0a4));
@@ -2315,10 +2342,11 @@ html body .filter .langWindow ul li {
   width: 100%;
   height: 9.87vw;
   margin-bottom: 2.4vw;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #efbd82), to(#f8deb8));
-  background: linear-gradient(0deg, #efbd82 0, #f8deb8);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(8%, #fff1b0), color-stop(51%, #dcc16e), color-stop(89%, #fff1b0));
+  background: linear-gradient(180deg, #fff1b0 8%, #dcc16e 51%, #fff1b0 89%);
   font-size: 4vw;
-  color: #252525;
+  color: #753200;
+  border: 1px solid #753200;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2334,10 +2362,9 @@ html body .filter .langWindow ul li {
   border-radius: 5px;
 }
 html body .filter .langWindow ul li:active, html body .filter .langWindow ul li.active {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #2f845c), to(#1d5832));
-  background: linear-gradient(0deg, #2f845c 0, #1d5832);
-  color: #f3d3a4;
-  border: 1px solid #dcab70;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #b16d3d), to(#7b3806));
+  background: linear-gradient(0deg, #b16d3d 0, #7b3806);
+  color: #fff1c7;
 }
 html body .filter .langWindow ul li:last-child {
   margin: 0;
@@ -2387,9 +2414,11 @@ html body .filter .eventWindow .btnBox button {
   font-size: 4vw;
   font-weight: bold;
   color: #fffefd;
-  border-radius: 3px;
+  border-radius: 1.3vw;
   letter-spacing: 1px;
   border: 1px solid #39ebdd;
+  -webkit-box-shadow: 0 5px 3px -3px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 3px -3px rgba(0, 0, 0, 0.4);
 }
 html body .filter .eventWindow .btnBox button:active, html body .filter .eventWindow .btnBox button.active {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #159288), to(#1eb0a4));
@@ -2450,9 +2479,11 @@ html body .filter .passwordWindow .content button {
   font-size: 4vw;
   font-weight: bold;
   color: #fffefd;
-  border-radius: 3px;
+  border-radius: 1.3vw;
   letter-spacing: 1px;
   border: 1px solid #39ebdd;
+  -webkit-box-shadow: 0 5px 3px -3px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 3px -3px rgba(0, 0, 0, 0.4);
 }
 html body .filter .passwordWindow .content button:active, html body .filter .passwordWindow .content button.active {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #159288), to(#1eb0a4));
@@ -2604,9 +2635,11 @@ html body .filter .checkPoint ul li button {
   font-size: 4vw;
   font-weight: bold;
   color: #fffefd;
-  border-radius: 3px;
+  border-radius: 1.3vw;
   letter-spacing: 1px;
   border: 1px solid #39ebdd;
+  -webkit-box-shadow: 0 5px 3px -3px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 3px -3px rgba(0, 0, 0, 0.4);
   font-size: 12px;
 }
 html body .filter .checkPoint ul li button:active, html body .filter .checkPoint ul li button.active {
@@ -2638,10 +2671,11 @@ html body .filter .accWindow .content .bigBox, html body .filter .platWindow .co
 html body .filter .accWindow .content .bigBox button, html body .filter .platWindow .content .bigBox button {
   width: 100%;
   height: 38px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #efbd82), to(#f8deb8));
-  background: linear-gradient(0deg, #efbd82 0, #f8deb8);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(8%, #fff1b0), color-stop(51%, #dcc16e), color-stop(89%, #fff1b0));
+  background: linear-gradient(180deg, #fff1b0 8%, #dcc16e 51%, #fff1b0 89%);
   font-size: 4vw;
-  color: #252525;
+  color: #753200;
+  border: 1px solid #753200;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2657,10 +2691,9 @@ html body .filter .accWindow .content .bigBox button, html body .filter .platWin
   border-radius: 3px;
 }
 html body .filter .accWindow .content .bigBox button:active, html body .filter .accWindow .content .bigBox button.active, html body .filter .platWindow .content .bigBox button:active, html body .filter .platWindow .content .bigBox button.active {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #2f845c), to(#1d5832));
-  background: linear-gradient(0deg, #2f845c 0, #1d5832);
-  color: #f3d3a4;
-  border: 1px solid #dcab70;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #b16d3d), to(#7b3806));
+  background: linear-gradient(0deg, #b16d3d 0, #7b3806);
+  color: #fff1c7;
 }
 html body .filter .accWindow .content .smallBox, html body .filter .platWindow .content .smallBox {
   width: 100%;
@@ -2677,10 +2710,11 @@ html body .filter .accWindow .content .smallBox button, html body .filter .platW
   width: 32%;
   height: 38px;
   margin: 0 2% 2% 0;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #efbd82), to(#f8deb8));
-  background: linear-gradient(0deg, #efbd82 0, #f8deb8);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(8%, #fff1b0), color-stop(51%, #dcc16e), color-stop(89%, #fff1b0));
+  background: linear-gradient(180deg, #fff1b0 8%, #dcc16e 51%, #fff1b0 89%);
   font-size: 4vw;
-  color: #252525;
+  color: #753200;
+  border: 1px solid #753200;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2696,10 +2730,9 @@ html body .filter .accWindow .content .smallBox button, html body .filter .platW
   border-radius: 3px;
 }
 html body .filter .accWindow .content .smallBox button:active, html body .filter .accWindow .content .smallBox button.active, html body .filter .platWindow .content .smallBox button:active, html body .filter .platWindow .content .smallBox button.active {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #2f845c), to(#1d5832));
-  background: linear-gradient(0deg, #2f845c 0, #1d5832);
-  color: #f3d3a4;
-  border: 1px solid #dcab70;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #b16d3d), to(#7b3806));
+  background: linear-gradient(0deg, #b16d3d 0, #7b3806);
+  color: #fff1c7;
 }
 html body .filter .accWindow .content .smallBox button:nth-of-type(3n), html body .filter .platWindow .content .smallBox button:nth-of-type(3n) {
   margin-right: 0;
@@ -2736,7 +2769,7 @@ html body .filter .pointWindow .content ul li {
   font-size: 14px;
   font-weight: bold;
   color: #281600;
-  background: #282828;
+  background: #f2c885;
   border-bottom: solid 1px #957222;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2757,7 +2790,7 @@ html body .filter .pointWindow .content ul li:last-child {
   border: none;
 }
 html body .filter .pointWindow .content ul li.title {
-  background: #2f2f2f;
+  background: #f8dda0;
   font-size: 16px;
 }
 html body .filter .pointWindow .content ul li p {
@@ -2863,7 +2896,7 @@ html body .slotWrap .slotHeader .listBox ul li {
 }
 html body .slotWrap .slotHeader .listBox ul li.active {
   color: #713100;
-  border-color: #713100;
+  border-color: #b34e02;
 }
 html body .slotWrap .slotHeader .listBox ul li i {
   display: block;
@@ -3006,7 +3039,7 @@ html body .eventType ul li {
   background: linear-gradient(180deg, #efd9ad 1%, #fff9e3 35%, #fff6d4 61%, #ebd3a8 86%, #f6e4b7);
 }
 html body .eventType ul li:active, html body .eventType ul li.active {
-  border-color: #713100;
+  border-color: #b34e02;
 }
 html body .eventType ul li:active span, html body .eventType ul li.active span {
   color: #713100;
@@ -3045,7 +3078,7 @@ html body .eventList ul li {
 html body .eventList ul li .eventBox {
   width: 100%;
   height: auto;
-  background: #f6ebacbf;
+  background: #f6ebad99;
   overflow: hidden;
   border-bottom: solid 1px #ffffff;
 }
@@ -3172,7 +3205,7 @@ html body .eventDetail .detailContent ul ul li ul p {
   font-weight: bold;
 }
 html body .eventDetail .detailContent ul ul li ul p.sp {
-  color: #ff1d1d;
+  color: #b16d3d;
 }
 html body .eventDetail .detailContent .contentFooter {
   width: 100%;
@@ -3255,7 +3288,7 @@ html body .walletWrap .walletBox .gradient .content .amount .half .title {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 10px;
-  color: #713100;
+  color: #bf9755;
   font-size: 15px;
   font-weight: bold;
   letter-spacing: 2px;
@@ -3353,7 +3386,7 @@ html body .walletWrap .walletBox ul li p {
 html body .walletWrap .walletList {
   width: 100%;
   height: auto;
-  background: #f6ebacbf;
+  background: #f6ebad99;
   margin-bottom: 17px;
 }
 html body .walletWrap .walletList .forPlatform {
@@ -3392,9 +3425,11 @@ html body .walletWrap .walletList .forPlatform .title button {
   font-size: 4vw;
   font-weight: bold;
   color: #fffefd;
-  border-radius: 3px;
+  border-radius: 1.3vw;
   letter-spacing: 1px;
   border: 1px solid #39ebdd;
+  -webkit-box-shadow: 0 5px 3px -3px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 3px -3px rgba(0, 0, 0, 0.4);
   font-size: 12px;
 }
 html body .walletWrap .walletList .forPlatform .title button:active, html body .walletWrap .walletList .forPlatform .title button.active {
@@ -3680,7 +3715,7 @@ html body .memberWrap .user .info div .date {
   font-size: 13px;
   letter-spacing: 1px;
   font-weight: bold;
-  color: #f3b485;
+  color: #bf9755;
 }
 html body .memberWrap .user .info .infoBtn {
   width: auto;
@@ -4030,7 +4065,7 @@ html body .memberList ul li {
 }
 html body .memberList ul li:active, html body .memberList ul li.active {
   color: #713100;
-  border-color: #713100;
+  border-color: #b34e02;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #efd9ad), color-stop(35%, #fff9e3), color-stop(61%, #fff6d4), color-stop(86%, #ebd3a8), to(#f6e4b7));
   background: linear-gradient(180deg, #efd9ad 1%, #fff9e3 35%, #fff6d4 61%, #ebd3a8 86%, #f6e4b7);
 }
@@ -4136,9 +4171,11 @@ html body .memberInfo form ul li button {
   font-size: 4vw;
   font-weight: bold;
   color: #fffefd;
-  border-radius: 3px;
+  border-radius: 1.3vw;
   letter-spacing: 1px;
   border: 1px solid #39ebdd;
+  -webkit-box-shadow: 0 5px 3px -3px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 3px -3px rgba(0, 0, 0, 0.4);
   width: 100%;
   height: 42px;
   margin-bottom: 2px;
@@ -4193,9 +4230,11 @@ html body .memberInfo form ul .saveBtn {
   font-size: 4vw;
   font-weight: bold;
   color: #fffefd;
-  border-radius: 3px;
+  border-radius: 1.3vw;
   letter-spacing: 1px;
   border: 1px solid #39ebdd;
+  -webkit-box-shadow: 0 5px 3px -3px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 3px -3px rgba(0, 0, 0, 0.4);
 }
 html body .memberInfo form ul .saveBtn:active, html body .memberInfo form ul .saveBtn.active {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #159288), to(#1eb0a4));
@@ -4259,7 +4298,7 @@ html body .memberInfo .info_1 ul li span, html body .memberInfo .info_2 ul li sp
   color: #713100;
 }
 html body .memberInfo .info_1 ul li span.empty, html body .memberInfo .info_2 ul li span.empty {
-  color: #ff1d1d;
+  color: #b16d3d;
 }
 html body .memberInfo .info_1 ul li span:nth-of-type(1), html body .memberInfo .info_2 ul li span:nth-of-type(1) {
   width: 20vw;
@@ -4312,9 +4351,9 @@ html body .memberInfo .info_1 ul li .qrCode, html body .memberInfo .info_2 ul li
 html body .memberInfo .info_1 ul li .security, html body .memberInfo .info_2 ul li .security {
   width: 100%;
   height: 40px;
-  background: #343434;
-  border: 1px solid #f9d2a2;
-  color: #f3d3a4;
+  background: #ffffff;
+  border: 1px solid #753200;
+  color: #bf9755;
   font-size: 14px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4772,9 +4811,11 @@ html body .helpInner ul li .textBox .downloadBtn {
   font-size: 4vw;
   font-weight: bold;
   color: #fffefd;
-  border-radius: 3px;
+  border-radius: 1.3vw;
   letter-spacing: 1px;
   border: 1px solid #39ebdd;
+  -webkit-box-shadow: 0 5px 3px -3px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 3px -3px rgba(0, 0, 0, 0.4);
 }
 html body .helpInner ul li .textBox .downloadBtn:active, html body .helpInner ul li .textBox .downloadBtn.active {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #159288), to(#1eb0a4));
@@ -4819,7 +4860,7 @@ html body .eventApplyType ul li {
   color: #713100;
 }
 html body .eventApplyType ul li:active, html body .eventApplyType ul li.active {
-  border-bottom: 2px solid #713100;
+  border-bottom: 2px solid #b34e02;
   color: #713100;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #efd9ad), color-stop(35%, #fff9e3), color-stop(61%, #fff6d4), color-stop(86%, #ebd3a8), to(#f6e4b7));
   background: linear-gradient(180deg, #efd9ad 1%, #fff9e3 35%, #fff6d4 61%, #ebd3a8 86%, #f6e4b7);
@@ -4941,7 +4982,7 @@ html body .applyList .listBox .list ul li p {
   line-height: 18px;
 }
 html body .applyList .listBox .list ul li p em {
-  color: #ff1d1d;
+  color: #b16d3d;
 }
 html body .applyList .listBox .list ul li p em.sp {
   color: #f30f0f;
@@ -4969,9 +5010,11 @@ html body .applyList .listBox .list .btnBox button.applyBtn {
   font-size: 4vw;
   font-weight: bold;
   color: #fffefd;
-  border-radius: 3px;
+  border-radius: 1.3vw;
   letter-spacing: 1px;
   border: 1px solid #39ebdd;
+  -webkit-box-shadow: 0 5px 3px -3px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 3px -3px rgba(0, 0, 0, 0.4);
   font-size: 16px;
   width: 48%;
 }
@@ -5086,10 +5129,11 @@ html body .applyRecord .searchContain form ul li .btnBox {
 html body .applyRecord .searchContain form ul li .btnBox button {
   width: 25%;
   height: 38px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #efbd82), to(#f8deb8));
-  background: linear-gradient(0deg, #efbd82 0, #f8deb8);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(8%, #fff1b0), color-stop(51%, #dcc16e), color-stop(89%, #fff1b0));
+  background: linear-gradient(180deg, #fff1b0 8%, #dcc16e 51%, #fff1b0 89%);
   font-size: 4vw;
-  color: #252525;
+  color: #753200;
+  border: 1px solid #753200;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5104,10 +5148,9 @@ html body .applyRecord .searchContain form ul li .btnBox button {
       flex-shrink: 0;
 }
 html body .applyRecord .searchContain form ul li .btnBox button:active, html body .applyRecord .searchContain form ul li .btnBox button.active {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #2f845c), to(#1d5832));
-  background: linear-gradient(0deg, #2f845c 0, #1d5832);
-  color: #f3d3a4;
-  border: 1px solid #dcab70;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #b16d3d), to(#7b3806));
+  background: linear-gradient(0deg, #b16d3d 0, #7b3806);
+  color: #fff1c7;
 }
 html body .applyRecord .searchContain form ul li .btnBox button:nth-of-type(1) {
   border-radius: 5px 0 0 5px;
@@ -5126,9 +5169,11 @@ html body .applyRecord .searchContain form ul li.bigBtn button {
   font-size: 4vw;
   font-weight: bold;
   color: #fffefd;
-  border-radius: 3px;
+  border-radius: 1.3vw;
   letter-spacing: 1px;
   border: 1px solid #39ebdd;
+  -webkit-box-shadow: 0 5px 3px -3px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 3px -3px rgba(0, 0, 0, 0.4);
 }
 html body .applyRecord .searchContain form ul li.bigBtn button:active, html body .applyRecord .searchContain form ul li.bigBtn button.active {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #159288), to(#1eb0a4));
@@ -5236,7 +5281,6 @@ html body .vipWrap {
   width: 100%;
   height: calc(100vh - 94px);
   overflow-y: auto;
-  background: #f8dda0;
 }
 html body .vipWrap .vip_info {
   height: calc(354vw);
@@ -5246,7 +5290,7 @@ html body .vipWrap .topBox {
   width: 100%;
   height: auto;
   padding-bottom: 20px;
-  background: #e5d9b7;
+  background: #f6ebad99;
   border-bottom: 1px solid #ffffff;
 }
 html body .vipWrap .topBox .board {
@@ -5256,8 +5300,12 @@ html body .vipWrap .topBox .board {
           box-sizing: border-box;
   padding: 0 4vw 7.46vw;
   border-bottom: 1px solid #ffffff;
-  background: #e5d9b7;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #af5d1c), to(rgba(246, 235, 173, 0.6)));
+  background: linear-gradient(180deg, #af5d1c 0, rgba(246, 235, 173, 0.6));
+  border-radius: 0 0 20px 20px;
   margin-bottom: 6.66vw;
+  -webkit-box-shadow: 0 5px 5px -3px #00000066;
+          box-shadow: 0 5px 5px -3px #00000066;
 }
 html body .vipWrap .topBox .board .content {
   position: relative;
@@ -5271,7 +5319,7 @@ html body .vipWrap .topBox .board .content .account {
   margin-bottom: 12px;
   letter-spacing: 2px;
   font-weight: bold;
-  color: #713100;
+  color: #ffffff;
 }
 html body .vipWrap .topBox .board .content .textBox {
   margin-bottom: 12px;
@@ -5310,24 +5358,24 @@ html body .vipWrap .topBox .board .exBar .level p {
   letter-spacing: 1px;
   font-weight: bold;
   font-size: 14px;
-  color: #f30f0f;
+  color: #713100;
 }
 html body .vipWrap .topBox .board .exBar .level p.cur {
-  color: #f30f0f;
+  color: #713100;
 }
 html body .vipWrap .topBox .board .exBar .bar {
   width: 100%;
   height: 8px;
   border-radius: 4px;
-  background: #212121;
+  background: #ffffff;
 }
 html body .vipWrap .topBox .board .exBar .bar .cur {
   position: relative;
   width: 20%;
   height: 100%;
   border-radius: 4px;
-  background: -webkit-gradient(linear, left top, right top, color-stop(0, #f8deb8), color-stop(41%, #d59344), color-stop(95%, #efbd82));
-  background: linear-gradient(90deg, #f8deb8 0, #d59344 41%, #efbd82 95%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #1eb0a4), to(#26dbcc));
+  background: linear-gradient(0deg, #1eb0a4 0, #26dbcc);
 }
 html body .vipWrap .topBox .levelBox {
   width: 92vw;
@@ -5350,7 +5398,7 @@ html body .vipWrap .topBox .levelBox div {
 }
 html body .vipWrap .topBox .levelBox div hr {
   width: 100%;
-  border: solid 1px #535050;
+  border: solid 1px #999;
 }
 html body .vipWrap .topBox .levelBox ul {
   position: absolute;
@@ -5379,7 +5427,7 @@ html body .vipWrap .topBox .levelBox ul li {
   width: 10.66vw;
   height: 100%;
   margin-right: 10.99vw;
-  background: #535050;
+  background: #999;
   border-radius: 3vw;
   font-size: 13px;
   color: #ffffff;
@@ -5388,8 +5436,8 @@ html body .vipWrap .topBox .levelBox ul li {
   padding-bottom: 2px;
 }
 html body .vipWrap .topBox .levelBox ul li.cur {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #0cb865), color-stop(50%, #07713e), to(#0cb865));
-  background: linear-gradient(0deg, #0cb865 0, #07713e 50%, #0cb865);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #753200), to(#c06a26));
+  background: linear-gradient(0deg, #753200 0, #c06a26);
 }
 html body .vipWrap .topBox .levelBox ul li:last-child {
   margin: 0;
@@ -5486,7 +5534,7 @@ html body .vipWrap .enjoyBox {
           box-sizing: border-box;
   padding: 15px 12px 12px;
   margin: 10px 0;
-  background: #e5d9b7;
+  background: #f6ebad99;
   border-top: 1px solid #ffffff;
   border-bottom: 1px solid #ffffff;
 }
@@ -5503,102 +5551,109 @@ html body .vipWrap .enjoyBox .title {
 html body .vipWrap .enjoyBox ul {
   width: 100%;
   height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  display: block;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 html body .vipWrap .enjoyBox ul li {
-  width: 45.4vw;
+  width: 92.4vw;
   min-height: 51px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(46%, #fffbef), to(#e7d2ac));
+  background: linear-gradient(180deg, #fffbef 46%, #e7d2ac);
+  border: 1px solid #bf9755;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+  color: #2e2e2e;
+  font-weight: bold;
+  -webkit-box-shadow: 0 5px 8px -5px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 8px -5px rgba(0, 0, 0, 0.4);
   height: auto;
   padding: 6px 12px;
   margin: 0 1.6vw 1.6vw 0;
-  border: solid 1px #713100;
   border-radius: 3px;
   font-size: 13px;
   font-weight: bold;
-  color: #ffffff;
+  color: #bf9755;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: #f8dda0;
+  display: block;
+}
+html body .vipWrap .enjoyBox ul li:active, html body .vipWrap .enjoyBox ul li.active {
+  color: #fff;
+  background: #af5d1c;
 }
 html body .vipWrap .enjoyBox ul li:nth-of-type(2n) {
   margin-right: 0;
 }
 html body .vipWrap .enjoyBox ul li p {
   font-size: 22px;
-  color: #f30f0f;
-  margin-top: 8px;
+  color: #713100;
+  margin-top: 3px;
 }
 html body .vipWrap .enjoyBox ul s {
   width: 45.33vw;
 }
 html body .vipWrap .checkBtn {
-  width: 92%;
+  width: 70%;
   height: 50px;
-  border: 1px solid #fff;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(1%, #efd9ad), color-stop(51%, #fff9e3), to(#f6e4b7));
-  background: linear-gradient(0deg, #efd9ad 1%, #fff9e3 51%, #f6e4b7);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(8%, #fff1b0), color-stop(51%, #dcc16e), color-stop(89%, #fff1b0));
+  background: linear-gradient(180deg, #fff1b0 8%, #dcc16e 51%, #fff1b0 89%);
+  border: 1px solid #fdfdfd;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 0 14px 0 23px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 1vw;
+  color: #753200;
+  font-weight: bold;
+  -webkit-box-shadow: 0 5px 8px -5px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 8px -5px rgba(0, 0, 0, 0.4);
+  letter-spacing: 2px;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  border-radius: 10vw;
+  border: 1px solid #713100;
   padding: 0 20px;
   margin: 0 auto 10px;
 }
-html body .vipWrap .checkBtn p {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 3.4vw;
-  font-weight: bold;
-  color: #713200;
-  letter-spacing: 2px;
-}
 html body .vipWrap .checkBtn:active, html body .vipWrap .checkBtn.active {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #e9c173), to(#b38133));
-  background: linear-gradient(0deg, #e9c173 0, #b38133);
-}
-html body .vipWrap .checkBtn:active p, html body .vipWrap .checkBtn.active p {
-  color: #fdfdfd;
+  color: #fff;
+  background: #af5d1c;
 }
 html body .vipWrap .checkBtn .arrow_ic {
   display: block;
   width: 2vw;
   height: 3.4vw;
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
+  margin-left: 155px;
 }
 html body .vipDetail {
   width: 100%;
   height: calc(100vh - 94px);
   overflow-y: auto;
-  padding: 5px 0;
 }
 html body .vipDetail .lvWrap {
   margin: 10px 0;
-  padding: 5px 18px;
+  padding: 10px 18px;
   width: 100%;
   height: auto;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #af5d1c), to(rgba(246, 235, 173, 0.6)));
+  background: linear-gradient(180deg, #af5d1c 0, rgba(246, 235, 173, 0.6));
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: relative;
+  border-bottom: 1px solid #ffffff;
 }
 html body .vipDetail .lvWrap:last-child {
   margin-bottom: 0;
@@ -5646,7 +5701,7 @@ html body .vipDetail .lvWrap .list i.prev::before {
   width: 0;
   height: 0;
   top: 50%;
-  left: 50%;
+  left: 23vw;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   border-color: transparent #fd1111;
@@ -5671,7 +5726,7 @@ html body .vipDetail .lvWrap .list i.next::before {
   border-width: 6px 8px 6px 0;
 }
 html body .vipDetail .lvWrap .list .left {
-  width: 20%;
+  width: 85%;
   height: auto;
 }
 html body .vipDetail .lvWrap .list .left li {
@@ -5682,36 +5737,35 @@ html body .vipDetail .lvWrap .list .left li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #2f2f2f;
-  border-bottom: 1px solid #ffffff;
+  background: #f8dda0;
 }
 html body .vipDetail .lvWrap .list .left li:nth-of-type(1) {
-  background: #02582f;
+  background: #1eb0a4;
 }
 html body .vipDetail .lvWrap .list .left li:nth-last-of-type(1) {
   border: none;
 }
 html body .vipDetail .lvWrap .list .left li:nth-of-type(2n) {
-  background: #282828;
+  background: #f2c885;
 }
 html body .vipDetail .lvWrap .list .left li.smallTitle {
   border-bottom: solid 1px #ffffff;
 }
 html body .vipDetail .lvWrap .list .left li.smallTitle p {
-  color: #281600;
+  color: #ffffff;
 }
 html body .vipDetail .lvWrap .list .left li p {
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border-right: solid 1px #ffffff;
+  border-right: solid 1px #b16d3d;
   font-weight: bold;
   text-align: center;
   font-size: 14px;
-  color: #281600;
+  color: #713100;
 }
 html body .vipDetail .lvWrap .list .right {
-  width: 80%;
+  width: 85%;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5720,7 +5774,7 @@ html body .vipDetail .lvWrap .list .right {
   position: relative;
 }
 html body .vipDetail .lvWrap .list .right ul {
-  width: auto;
+  width: 85%;
   height: auto;
   -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -5737,29 +5791,28 @@ html body .vipDetail .lvWrap .list .right ul li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom: 1px solid #ffffff;
-  background: #2f2f2f;
+  background: #f8dda0;
 }
 html body .vipDetail .lvWrap .list .right ul li:nth-of-type(1) {
-  background: #02582f;
+  background: #1eb0a4;
 }
 html body .vipDetail .lvWrap .list .right ul li:nth-last-of-type(1) {
   border: none;
 }
 html body .vipDetail .lvWrap .list .right ul li:nth-of-type(2n) {
-  background: #282828;
+  background: #f2c885;
 }
 html body .vipDetail .lvWrap .list .right ul li.smallTitle {
   border-bottom: solid 1px #ffffff;
 }
 html body .vipDetail .lvWrap .list .right ul li.smallTitle p {
-  color: #281600;
+  color: #ffffff;
 }
 html body .vipDetail .lvWrap .list .right ul li p {
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border-right: solid 1px #ffffff;
+  border-right: solid 1px #b16d3d;
   font-weight: bold;
   text-align: center;
   font-size: 14px;
@@ -5785,7 +5838,7 @@ html body .vipDetail .lvWrap .list .finger::before {
   width: 0;
   height: 0;
   border-style: solid;
-  border-color: transparent #ff1d1d;
+  border-color: transparent #f30f0f;
   border-width: 6px 8px 6px 0;
   -webkit-animation: moveL 2s ease 0s infinite;
           animation: moveL 2s ease 0s infinite;
@@ -5798,7 +5851,7 @@ html body .vipDetail .lvWrap .list .finger::after {
   width: 0;
   height: 0;
   border-style: solid;
-  border-color: transparent #ff1d1d;
+  border-color: transparent #f30f0f;
   border-width: 6px 0 6px 8px;
   -webkit-animation: moveR 2s ease 0s infinite;
           animation: moveR 2s ease 0s infinite;
@@ -5893,9 +5946,11 @@ html body .vipDetail .notice {
   padding: 10px 18px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  color: #ffffff;
+  color: #713100;
+  font-weight: bold;
   font-size: 3.6vw;
   line-height: 6vw;
+  background: #f6ebad99;
 }
 html body .vipDetail .notice h2 {
   color: #f30f0f;
@@ -5919,7 +5974,7 @@ html body .topList ul li {
   height: 40px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border-bottom: solid 1px #713100;
+  border-bottom: solid 1px #b34e02;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5932,10 +5987,12 @@ html body .topList ul li {
   font-size: 14px;
   font-weight: bold;
   color: #713100;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #efd9ad), color-stop(35%, #fff9e3), color-stop(61%, #fff6d4), color-stop(86%, #ebd3a8), to(#f6e4b7));
+  background: linear-gradient(180deg, #efd9ad 1%, #fff9e3 35%, #fff6d4 61%, #ebd3a8 86%, #f6e4b7);
 }
 html body .topList ul li.active {
   color: #713100;
-  border-bottom: 2px solid #713100;
+  border-bottom: 4px solid #b34e02;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #efd9ad), color-stop(35%, #fff9e3), color-stop(61%, #fff6d4), color-stop(86%, #ebd3a8), to(#f6e4b7));
   background: linear-gradient(180deg, #efd9ad 1%, #fff9e3 35%, #fff6d4 61%, #ebd3a8 86%, #f6e4b7);
 }
@@ -5950,7 +6007,10 @@ html body .mailBody.normal .subClass {
   height: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 10px 15px;
+  padding: 15px 15px;
+  border-bottom: 1px solid #ffffff;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #af5d1c), to(rgba(246, 235, 173, 0.6)));
+  background: linear-gradient(180deg, #af5d1c 0, rgba(246, 235, 173, 0.6));
 }
 html body .mailBody.normal .subClass ul {
   width: 100%;
@@ -5962,9 +6022,10 @@ html body .mailBody.normal .subClass ul {
 html body .mailBody.normal .subClass ul li {
   width: 50%;
   height: 10.67vw;
-  margin-right: 1px;
-  background: #505050;
-  color: #b8b8b8;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(8%, #fff1b0), color-stop(51%, #dcc16e), color-stop(89%, #fff1b0));
+  background: linear-gradient(0deg, #fff1b0 8%, #dcc16e 51%, #fff1b0 89%);
+  border: 1px solid #753200;
+  color: #753200;
   font-weight: bold;
   font-size: 3.7vw;
   display: -webkit-box;
@@ -5978,9 +6039,9 @@ html body .mailBody.normal .subClass ul li {
           justify-content: center;
 }
 html body .mailBody.normal .subClass ul li:active, html body .mailBody.normal .subClass ul li.active {
-  color: #252525;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #dcab70), to(#f3d3a4));
-  background: linear-gradient(0deg, #dcab70 0, #f3d3a4);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #b16d3d), to(#7b3806));
+  background: linear-gradient(0deg, #b16d3d 0, #7b3806);
+  color: #fff;
 }
 html body .mailBody.normal .subClass ul li:nth-of-type(1) {
   border-radius: 5px 0 0 5px;
@@ -6104,19 +6165,23 @@ html body .mailBody.normal .mailBox ul li {
   width: 100%;
   height: 108px;
   margin-bottom: 10px;
-  background: #313131;
-  border: 1px solid #f3d3a4;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(46%, #fffbef), to(#e7d2ac));
+  background: linear-gradient(180deg, #fffbef 46%, #e7d2ac);
+  border: 1px solid #bf9755;
+  -webkit-box-shadow: 0 5px 3px -3px #00000066;
+          box-shadow: 0 5px 3px -3px #00000066;
   border-radius: 5px;
   position: relative;
 }
 html body .mailBody.normal .mailBox ul li.read {
-  background: #1b1b1b;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(46%, #fffbef), to(#e7d2ac));
+  background: linear-gradient(180deg, #fffbef 46%, #e7d2ac);
 }
 html body .mailBody.normal .mailBox ul li.read .title {
-  color: #f2bd7c;
+  color: #713100;
 }
 html body .mailBody.normal .mailBox ul li.read .textBox p, html body .mailBody.normal .mailBox ul li.read .textBox .date {
-  color: #f2bd7c;
+  color: #281600;
 }
 html body .mailBody.normal .mailBox ul li .title {
   width: 100%;
@@ -6132,7 +6197,7 @@ html body .mailBody.normal .mailBox ul li .title {
           align-items: flex-end;
   font-size: 16px;
   font-weight: bold;
-  color: #ffffff;
+  color: #713100;
 }
 html body .mailBody.normal .mailBox ul li .textBox {
   width: 100%;
@@ -6154,7 +6219,7 @@ html body .mailBody.normal .mailBox ul li .textBox p {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  color: #f30f0f;
+  color: #281600;
   font-size: 14px;
   font-weight: bold;
 }
@@ -6164,7 +6229,7 @@ html body .mailBody.normal .mailBox ul li .textBox .date {
   right: 30px;
   font-size: 13px;
   font-weight: bold;
-  color: #ffffff;
+  color: #bf9755;
 }
 html body .mailBody.normal .mailBox ul li .inputBox {
   display: none;
@@ -6234,8 +6299,10 @@ html body .mailBody.post .subClass ul li {
   width: 34%;
   height: 10.67vw;
   margin-right: 1px;
-  background: #505050;
-  color: #b8b8b8;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(8%, #fff1b0), color-stop(51%, #dcc16e), color-stop(89%, #fff1b0));
+  background: linear-gradient(0deg, #fff1b0 8%, #dcc16e 51%, #fff1b0 89%);
+  border: 1px solid #753200;
+  color: #753200;
   font-weight: bold;
   font-size: 3.7vw;
   display: -webkit-box;
@@ -6249,9 +6316,9 @@ html body .mailBody.post .subClass ul li {
           justify-content: center;
 }
 html body .mailBody.post .subClass ul li:active, html body .mailBody.post .subClass ul li.active {
-  color: #252525;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #dcab70), to(#f3d3a4));
-  background: linear-gradient(0deg, #dcab70 0, #f3d3a4);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #b16d3d), to(#7b3806));
+  background: linear-gradient(0deg, #b16d3d 0, #7b3806);
+  color: #fff;
 }
 html body .mailBody.post .subClass ul li:nth-of-type(1) {
   border-radius: 5px 0 0 5px;
@@ -6281,19 +6348,23 @@ html body .mailBody.post .mailBox ul li {
   width: 100%;
   height: auto;
   margin-bottom: 10px;
-  background: #313131;
-  border: 1px solid #f3d3a4;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(46%, #fffbef), to(#e7d2ac));
+  background: linear-gradient(180deg, #fffbef 46%, #e7d2ac);
+  border: 1px solid #bf9755;
+  -webkit-box-shadow: 0 5px 3px -3px #00000066;
+          box-shadow: 0 5px 3px -3px #00000066;
   border-radius: 5px;
   position: relative;
 }
 html body .mailBody.post .mailBox ul li.read {
-  background: #1b1b1b;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(46%, #fffbef), to(#e7d2ac));
+  background: linear-gradient(180deg, #fffbef 46%, #e7d2ac);
 }
 html body .mailBody.post .mailBox ul li.read .title {
-  color: #f2bd7c;
+  color: #713100;
 }
 html body .mailBody.post .mailBox ul li.read .textBox p, html body .mailBody.post .mailBox ul li.read .textBox .date {
-  color: #f2bd7c;
+  color: #281600;
 }
 html body .mailBody.post .mailBox ul li p {
   width: 100%;
@@ -6516,7 +6587,7 @@ html body .cardContent ul li .remind {
 }
 html body .cardContent ul li span {
   font-size: 12px;
-  color: #ff1d1d;
+  color: #b16d3d;
   padding-left: 3px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6546,7 +6617,7 @@ html body .cardContent ul li .upload-btn {
 html body .cardContent ul li .err {
   font-size: 12px;
   line-height: 20px;
-  color: #ff1d1d;
+  color: #b16d3d;
   text-decoration: none;
   font-weight: bold;
 }
@@ -6563,9 +6634,11 @@ html body .cardContent ul button {
   font-size: 4vw;
   font-weight: bold;
   color: #fffefd;
-  border-radius: 3px;
+  border-radius: 1.3vw;
   letter-spacing: 1px;
   border: 1px solid #39ebdd;
+  -webkit-box-shadow: 0 5px 3px -3px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 3px -3px rgba(0, 0, 0, 0.4);
 }
 html body .cardContent ul button:active, html body .cardContent ul button.active {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #159288), to(#1eb0a4));
@@ -6583,11 +6656,11 @@ html body .bettingWrap .searchContent {
   height: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 13px 14px;
-  background: #e5d9b7;
-  margin: 15px 0 10px 0;
+  padding: 0px 14px 10px 14px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #af5d1c), to(rgba(246, 235, 173, 0.6)));
+  background: linear-gradient(180deg, #af5d1c 0, rgba(246, 235, 173, 0.6));
+  margin: 0px 0 10px 0;
   border-bottom: 1px solid #ffffff;
-  border-top: 1px solid #ffffff;
 }
 html body .bettingWrap .searchContent .top {
   width: 100%;
@@ -6606,15 +6679,15 @@ html body .bettingWrap .searchContent .top .helf p {
   font-size: 14px;
   font-weight: bold;
   letter-spacing: 1px;
-  color: #713100;
+  color: #ffffff;
 }
 html body .bettingWrap .searchContent .top .helf button {
-  width: 44vw;
+  width: 93vw;
   height: 42px;
-  background: #252525;
+  background: #fff;
   border-radius: 3px;
-  border: 1px solid #8f6f49;
-  color: #f2bd7c;
+  border: 1px solid #b16d3d;
+  color: #a65214;
   font-size: 16px;
   padding: 0 15px;
   position: relative;
@@ -6635,7 +6708,7 @@ html body .bettingWrap .searchContent .top .helf button i {
   height: 0;
   border-style: solid;
   border-width: 6px 4px 0 4px;
-  border-color: #56bd4f transparent;
+  border-color: #a65214 transparent;
 }
 html body .bettingWrap .searchContent .top .full {
   width: 100%;
@@ -6645,7 +6718,7 @@ html body .bettingWrap .searchContent .top .full p {
   font-size: 14px;
   font-weight: bold;
   letter-spacing: 1px;
-  color: #713100;
+  color: #ffffff;
 }
 html body .bettingWrap .searchContent .top .full .inputBox {
   height: 42px;
@@ -6659,10 +6732,10 @@ html body .bettingWrap .searchContent .top .full .inputBox {
       justify-content: space-around;
   font-size: 16px;
   font-weight: bold;
-  background: #252525;
+  background: #fff;
   border-radius: 3px;
-  border: 1px solid #8f6f49;
-  color: #f2bd7c;
+  border: 1px solid #b16d3d;
+  color: #a65214;
   font-size: 16px;
   padding: 0 15px;
   position: relative;
@@ -6680,7 +6753,7 @@ html body .bettingWrap .searchContent .top .full .inputBox i {
   height: 0;
   border-style: solid;
   border-width: 6px 4px 0 4px;
-  border-color: #56bd4f transparent;
+  border-color: #a65214 transparent;
 }
 html body .bettingWrap .searchContent .top .full .inputBox input {
   width: auto;
@@ -6724,11 +6797,11 @@ html body .bettingWrap .searchContent .date {
 html body .bettingWrap .searchContent .date button {
   width: 25%;
   height: 38px;
-  margin-right: 1px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #efbd82), to(#f8deb8));
-  background: linear-gradient(0deg, #efbd82 0, #f8deb8);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(8%, #fff1b0), color-stop(51%, #dcc16e), color-stop(89%, #fff1b0));
+  background: linear-gradient(180deg, #fff1b0 8%, #dcc16e 51%, #fff1b0 89%);
   font-size: 4vw;
-  color: #252525;
+  color: #753200;
+  border: 1px solid #753200;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6741,12 +6814,12 @@ html body .bettingWrap .searchContent .date button {
   font-weight: bold;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  font-size: 3.5vw;
 }
 html body .bettingWrap .searchContent .date button:active, html body .bettingWrap .searchContent .date button.active {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #2f845c), to(#1d5832));
-  background: linear-gradient(0deg, #2f845c 0, #1d5832);
-  color: #f3d3a4;
-  border: 1px solid #dcab70;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #b16d3d), to(#7b3806));
+  background: linear-gradient(0deg, #b16d3d 0, #7b3806);
+  color: #fff1c7;
 }
 html body .bettingWrap .searchContent .date button:nth-of-type(1) {
   border-radius: 5px 0 0 5px;
@@ -6762,9 +6835,11 @@ html body .bettingWrap .searchContent .check {
   font-size: 4vw;
   font-weight: bold;
   color: #fffefd;
-  border-radius: 3px;
+  border-radius: 1.3vw;
   letter-spacing: 1px;
   border: 1px solid #39ebdd;
+  -webkit-box-shadow: 0 5px 3px -3px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 3px -3px rgba(0, 0, 0, 0.4);
 }
 html body .bettingWrap .searchContent .check:active, html body .bettingWrap .searchContent .check.active {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #159288), to(#1eb0a4));
@@ -6798,7 +6873,7 @@ html body .bettingWrap .list .recordBox {
   height: auto;
   border-radius: 5px;
   border: solid 1px #713100;
-  background: #e5d9b7;
+  background: #f8dda0;
   margin-bottom: 10px;
 }
 html body .bettingWrap .list .recordBox.display {
@@ -6808,7 +6883,7 @@ html body .bettingWrap .list .recordBox .title {
   width: 100%;
   height: 38px;
   border-bottom: solid 1px #ffffff;
-  color: #713100;
+  color: #281600;
   font-size: 14px;
   font-weight: bold;
   display: -webkit-box;
@@ -6826,7 +6901,7 @@ html body .bettingWrap .list .recordBox .title {
 }
 html body .bettingWrap .list .recordBox .title .date {
   font-size: 13px;
-  color: #f2bd7c;
+  color: #713100;
 }
 html body .bettingWrap .list .recordBox .title button {
   width: 80px;
@@ -6870,13 +6945,13 @@ html body .bettingWrap .list .recordBox ul li p.num {
   color: #281600;
 }
 html body .bettingWrap .list .recordBox ul li p.num.win {
-  color: #ff1d1d;
+  color: #b16d3d;
 }
 html body .bettingWrap .list .recordBox ul li p.num.lose {
   color: #f30f0f;
 }
 html body .bettingWrap .list .recordBox ul li span {
-  color: #ff1d1d;
+  color: #b16d3d;
 }
 html body .bettingWrap.deal {
   padding: 0;
@@ -6885,7 +6960,6 @@ html body .recordTop {
   width: 100%;
   height: auto;
   background: #e5d9b7;
-  margin-bottom: 10px;
 }
 html body .recordTop ul {
   width: 100%;
@@ -6912,11 +6986,12 @@ html body .recordTop ul li {
   font-size: 14px;
   font-weight: bold;
   color: #713100;
-  background: #1b1b1b;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #efd9ad), color-stop(35%, #fff9e3), color-stop(61%, #fff6d4), color-stop(86%, #ebd3a8), to(#f6e4b7));
+  background: linear-gradient(180deg, #efd9ad 1%, #fff9e3 35%, #fff6d4 61%, #ebd3a8 86%, #f6e4b7);
 }
 html body .recordTop ul li.active {
   color: #713100;
-  border-bottom: solid 2px #713100;
+  border-bottom: solid 4px #b34e02;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #efd9ad), color-stop(35%, #fff9e3), color-stop(61%, #fff6d4), color-stop(86%, #ebd3a8), to(#f6e4b7));
   background: linear-gradient(180deg, #efd9ad 1%, #fff9e3 35%, #fff6d4 61%, #ebd3a8 86%, #f6e4b7);
 }
@@ -6973,7 +7048,7 @@ html body .waterBox ul li p {
   font-size: 14px;
 }
 html body .waterBox ul li p.title {
-  color: #ffffff;
+  color: #713100;
   border-bottom: solid 1px #713100;
 }
 html body .waterBox ul li p span {
@@ -6992,9 +7067,9 @@ html body .waterBox ul li p span.sp {
 html body .waterBox ul li .remindBox {
   width: calc(100% - 28px);
   height: 42px;
-  background: #343434;
-  border: 1px solid #f9d2a2;
-  color: #f3d3a4;
+  background: #ffffff;
+  border: 1px solid #753200;
+  color: #bf9755;
   font-size: 14px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7055,9 +7130,11 @@ html body .waterBox ul li .btnBox button:last-child {
   font-size: 4vw;
   font-weight: bold;
   color: #fffefd;
-  border-radius: 3px;
+  border-radius: 1.3vw;
   letter-spacing: 1px;
   border: 1px solid #39ebdd;
+  -webkit-box-shadow: 0 5px 3px -3px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 3px -3px rgba(0, 0, 0, 0.4);
   font-size: 14px;
 }
 html body .waterBox ul li .btnBox button:last-child:active, html body .waterBox ul li .btnBox button:last-child.active {
@@ -7071,7 +7148,6 @@ html body .depositWrap {
   overflow-y: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 10px 0;
 }
 html body .depositWrap .depList {
   width: 100%;
@@ -7105,38 +7181,36 @@ html body .depositWrap .depList .listWrap {
 html body .depositWrap .depList .listWrap ul {
   width: auto;
   height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
 }
 html body .depositWrap .depList .listWrap ul li {
-  width: 22.4vw;
-  height: 19.2vw;
+  width: 87.5vw;
+  height: 9.5vw;
+  margin-bottom: 7px;
   margin-right: 5px;
-  border: 1px solid #1fb26c;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(46%, #fffbef), to(#e7d2ac));
+  background: linear-gradient(180deg, #fffbef 46%, #e7d2ac);
+  border: 1px solid #fff7df;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   border-radius: 3px;
-  color: #1fb26c;
+  color: #281600;
   font-weight: bold;
   position: relative;
   overflow: hidden;
   font-size: 12px;
+  padding: 0 10px;
 }
 html body .depositWrap .depList .listWrap ul li.active {
-  border: 2px solid #c7a76d;
-  color: #c7a76d;
+  border: 1px solid #fff7df;
+  color: #281600;
 }
 html body .depositWrap .depList .listWrap ul li.active::before {
   content: "";
@@ -7145,7 +7219,7 @@ html body .depositWrap .depList .listWrap ul li.active::before {
   bottom: 0;
   -webkit-transform: translate(50%, 50%) rotate(45deg);
           transform: translate(50%, 50%) rotate(45deg);
-  background: #c7a76d;
+  background: #fff7df;
   width: 8vw;
   height: 8vw;
 }
@@ -7163,8 +7237,8 @@ html body .depositWrap .depList .listWrap ul li i {
   height: 8.27vw;
 }
 html body .depositWrap .depList .listWrap ul li p {
-  margin-top: 6px;
   text-align: center;
+  padding-left: 10px;
 }
 html body .depositWrap .depContent {
   display: none;
@@ -7174,7 +7248,8 @@ html body .depositWrap .depContent {
   margin-bottom: 10px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: #f6ebacbf;
+  background: #f6ebad99;
+  border-bottom: 1px solid #ffffff;
 }
 html body .depositWrap .depContent.display {
   display: block;
@@ -7259,9 +7334,11 @@ html body .depositWrap .depContent .check {
   font-size: 4vw;
   font-weight: bold;
   color: #fffefd;
-  border-radius: 3px;
+  border-radius: 1.3vw;
   letter-spacing: 1px;
   border: 1px solid #39ebdd;
+  -webkit-box-shadow: 0 5px 3px -3px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 3px -3px rgba(0, 0, 0, 0.4);
   margin-top: 20px;
 }
 html body .depositWrap .depContent .check:active, html body .depositWrap .depContent .check.active {
@@ -7293,14 +7370,14 @@ html body .depositWrap .depContent.already ul li {
 html body .depositWrap .depContent.already ul li p {
   font-size: 14px;
   font-weight: bold;
-  color: #0fc854;
+  color: #281600;
 }
 html body .depositWrap .depContent.already ul li p.smallTitle {
-  color: #281600;
+  color: #713100;
   margin-right: 30px;
 }
 html body .depositWrap .depContent.already ul li p button {
-  width: 12.27vw;
+  width: 18vw;
   height: 7.73vw;
   margin-left: 10px;
 }
@@ -7320,9 +7397,11 @@ html body .depositWrap .depContent.already ul li p button.change {
   font-size: 4vw;
   font-weight: bold;
   color: #fffefd;
-  border-radius: 3px;
+  border-radius: 1.3vw;
   letter-spacing: 1px;
   border: 1px solid #39ebdd;
+  -webkit-box-shadow: 0 5px 3px -3px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 3px -3px rgba(0, 0, 0, 0.4);
   font-size: 14px;
 }
 html body .depositWrap .depContent.already ul li p button.change:active, html body .depositWrap .depContent.already ul li p button.change.active {
@@ -7330,11 +7409,16 @@ html body .depositWrap .depContent.already ul li p button.change:active, html bo
   background: linear-gradient(180deg, #159288 0, #1eb0a4);
 }
 html body .depositWrap .depContent.already ul li .checkBox {
-  width: 95%;
+  width: 100%;
   height: auto;
-  background: #f8dda0;
-  border: 1px solid #ffffff;
-  color: #713100;
+  background: #fbf3db;
+  border: 1px solid #bf9755;
+  border-radius: 3px;
+  padding: 14px 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+  line-height: 5vw;
   font-size: 14px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7345,8 +7429,7 @@ html body .depositWrap .depContent.already ul li .checkBox {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0 20px;
   border-radius: 5px;
   font-weight: bold;
@@ -7365,11 +7448,12 @@ html body .depositWrap .depContent.already ul li .checkBox p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0 15px;
 }
 html body .depositWrap .depContent.already ul li .checkBox p:nth-of-type(1) {
   font-size: 38px;
   margin-bottom: 10px;
-  color: #713100;
+  color: #f30f0f;
 }
 html body .depositWrap .depContent.already ul li .check {
   margin: 0;
@@ -7386,17 +7470,18 @@ html body .depositWrap .remindBox {
           box-sizing: border-box;
 }
 html body .depositWrap .remindBox p {
-  font-size: 12px;
+  font-size: 13px;
   color: #281600;
   font-weight: bold;
   line-height: 18px;
   margin-bottom: 8px;
+  letter-spacing: 1px;
 }
 html body .depositWrap .remindBox p.title {
   margin-bottom: 10px;
   font-size: 14px;
   letter-spacing: 1px;
-  color: #f30f0f;
+  color: #b16d3d;
 }
 html body .depositWrap .remindBox p .sp {
   color: #281600;
@@ -7467,9 +7552,11 @@ html body .transWrap .wallet-bg .wallet .helf .title button {
   font-size: 4vw;
   font-weight: bold;
   color: #fffefd;
-  border-radius: 3px;
+  border-radius: 1.3vw;
   letter-spacing: 1px;
   border: 1px solid #39ebdd;
+  -webkit-box-shadow: 0 5px 3px -3px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 3px -3px rgba(0, 0, 0, 0.4);
   font-size: 12px;
   margin-left: 20px;
 }
@@ -7518,7 +7605,7 @@ html body .transWrap .transBox .selectBox select {
   font-size: 14px;
 }
 html body .transWrap .transBox .selectBox .smallWord {
-  color: #f3b485;
+  color: #bf9755;
   font-size: 12px;
   font-weight: bold;
   position: absolute;
@@ -7565,9 +7652,11 @@ html body .transWrap .transBox .check {
   font-size: 4vw;
   font-weight: bold;
   color: #fffefd;
-  border-radius: 3px;
+  border-radius: 1.3vw;
   letter-spacing: 1px;
   border: 1px solid #39ebdd;
+  -webkit-box-shadow: 0 5px 3px -3px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 3px -3px rgba(0, 0, 0, 0.4);
 }
 html body .transWrap .transBox .check:active, html body .transWrap .transBox .check.active {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #159288), to(#1eb0a4));
@@ -7869,9 +7958,11 @@ html body .withWrap .walletBox .walletDetail .check {
   font-size: 4vw;
   font-weight: bold;
   color: #fffefd;
-  border-radius: 3px;
+  border-radius: 1.3vw;
   letter-spacing: 1px;
   border: 1px solid #39ebdd;
+  -webkit-box-shadow: 0 5px 3px -3px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 3px -3px rgba(0, 0, 0, 0.4);
 }
 html body .withWrap .walletBox .walletDetail .check:active, html body .withWrap .walletBox .walletDetail .check.active {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #159288), to(#1eb0a4));
@@ -8032,9 +8123,9 @@ html body .withWrap .withContent .remind {
   width: 100%;
   height: auto;
   margin-bottom: 10px;
-  background: #343434;
-  border: 1px solid #f9d2a2;
-  color: #f3d3a4;
+  background: #ffffff;
+  border: 1px solid #753200;
+  color: #bf9755;
   font-size: 14px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8125,9 +8216,11 @@ html body .withWrap .withContent .check {
   font-size: 4vw;
   font-weight: bold;
   color: #fffefd;
-  border-radius: 3px;
+  border-radius: 1.3vw;
   letter-spacing: 1px;
   border: 1px solid #39ebdd;
+  -webkit-box-shadow: 0 5px 3px -3px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 3px -3px rgba(0, 0, 0, 0.4);
   margin-top: 10px;
 }
 html body .withWrap .withContent .check:active, html body .withWrap .withContent .check.active {
@@ -8204,7 +8297,7 @@ html body .inviteWrap .info_1 ul li span {
   color: #ffffff;
 }
 html body .inviteWrap .info_1 ul li span.empty {
-  color: #ff1d1d;
+  color: #b16d3d;
 }
 html body .inviteWrap .info_1 ul li span:nth-of-type(1) {
   width: 20vw;
@@ -8260,9 +8353,9 @@ html body .inviteWrap .info_1 ul li .qrCode {
 html body .inviteWrap .info_1 ul li .security {
   width: 100%;
   height: 40px;
-  background: #343434;
-  border: 1px solid #f9d2a2;
-  color: #f3d3a4;
+  background: #ffffff;
+  border: 1px solid #753200;
+  color: #bf9755;
   font-size: 14px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8302,7 +8395,7 @@ html body .inviteWrap .devidend_box {
   margin-bottom: 45px;
 }
 html body .inviteWrap .devidend_box .title {
-  color: #f3b485;
+  color: #bf9755;
   margin-bottom: 8px;
 }
 html body .inviteWrap .devidend_box p {

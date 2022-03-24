@@ -18,7 +18,7 @@
     background-size: 100%;
 }
 
-//查詢紅利按鈕
+//Tra cứu紅利按鈕
 header .inviteimg {
     background: url('../images/invite.gif');
     background-size: 100%;
@@ -321,12 +321,12 @@ header .editBtn {
 }
 
 //vip cardBox arrow
-// .vipWrap .cardBox i,
-// .vipWrap .checkBtn .arrow_ic,
-// .vipDetail .list i::before {
-//     background: url('../images/icon/arrow_b.png') no-repeat;
-//     background-size: 100%;
-// }
+.vipWrap .cardBox i,
+.vipWrap .checkBtn .arrow_ic,
+.vipDetail .list i::before {
+    background: url('../images/icon/arrow_b.png') no-repeat;
+    background-size: 100%;
+}
 //vip .card
 .vipWrap .cardBox .card li.vip0 {
     background: url('../images/vip_card.png') no-repeat;

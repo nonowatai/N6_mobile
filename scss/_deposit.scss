@@ -5,7 +5,7 @@
     background: transparent;
     overflow-y: auto;
     box-sizing: border-box;
-    padding: 10px 0;
+    // padding: 10px 0;
 
     .depList {
         width: 100%;
@@ -39,11 +39,12 @@
             ul {
                 width: auto;
                 height: auto;
-                display: flex;
+                display: block;
 
                 li {
-                    width: 22.4vw;
-                    height: 19.2vw;
+                    width: 87.5vw;
+                    height: 9.5vw;
+                    margin-bottom: 7px;
                     margin-right: 5px;
                     @include depositBtn;
 
@@ -54,8 +55,8 @@
                     }
 
                     p {
-                        margin-top: 6px;
                         text-align: center;
+                        padding-left: 10px;
                     }
                 }
             }
@@ -70,6 +71,7 @@
         margin-bottom: 10px;
         box-sizing: border-box;
         background: $maingoldBG;
+        border-bottom: 1px solid $mainBorder_1;
 
         &.display {
             display: block;
@@ -149,15 +151,15 @@
                     p {
                         font-size: 14px;
                         font-weight: bold;
-                        color: $title_Time;
+                        color: $mainWord_1;
 
                         &.smallTitle {
-                            color: $mainWord_1;
+                            color: $title_2;
                             margin-right: 30px;
                         }
 
                         button {
-                            width: 12.27vw;
+                            width: 18vw;
                             height: 7.73vw;
                             margin-left: 10px;
 
@@ -174,11 +176,11 @@
                     }
 
                     .checkBox {
-                        width: 95%;
+                        width: 100%;
                         height: auto;
-                        background: $mainBG_3;
-                        border: 1px solid $mainBorder_1;
-                        color: $title_2;
+                        @include remindBox;
+                        border: none;
+                        line-height: 5vw;
                         font-size: 14px;
                         display: flex;
                         align-items: center;
@@ -195,11 +197,12 @@
                             color: $mainWord_1;
                             display: flex;
                             align-items: center;
+                            padding: 0 15px;
 
                             &:nth-of-type(1) {
                                 font-size: 38px;
                                 margin-bottom: 10px;
-                                color:$title_2;
+                                color:$money_Sp;
                             }
                         }
                     }
@@ -219,17 +222,18 @@
         @include remindBox;
 
         p {
-            font-size: 12px;
+            font-size: 13px;
             color: $mainWord_1;
             font-weight: bold;
             line-height: 18px;
             margin-bottom: 8px;
+            letter-spacing: 1px;
 
             &.title {
                 margin-bottom: 10px;
                 font-size: 14px;
                 letter-spacing: 1px;
-                color: $remind_Sp;
+                color: $remind;
             }
 
             .sp {

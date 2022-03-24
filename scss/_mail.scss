@@ -20,10 +20,11 @@
             font-size: 14px;
             font-weight: bold;
             color: $choose_Word;
+            background: $choose_Active;
 
             &.active {
                 color: $choose_ActiveWord;
-                border-bottom:2px solid $choose_Border;
+                border-bottom:4px solid $choose_Border;
                 background: $choose_Active;
             }
         }
@@ -45,8 +46,9 @@
             width: 100%;
             height: auto;
             box-sizing: border-box;
-            padding: 10px 15px;
-            // background: $mainBG_2;
+            padding: 15px 15px;
+            border-bottom: 1px solid $mainBorder_1;
+            background: $liner-bg;
 
             ul {
                 width: 100%;
@@ -56,7 +58,6 @@
                 li {
                     width: 50%;
                     height: 10.67vw;
-                    margin-right: 1px;
                     @include bigGrayBtn;
 
                     &:nth-of-type(1){
@@ -160,7 +161,7 @@
                         align-items: flex-end;
                         font-size: 16px;
                         font-weight: bold;
-                        color: $title_3;
+                        color: $title_2;
                     }
 
                     .textBox {
@@ -178,7 +179,7 @@
                             white-space: nowrap;
                             overflow: hidden;
                             text-overflow: ellipsis;
-                            color: $remind_Sp;
+                            color: $mainWord_1;
                             font-size: 14px;
                             font-weight: bold;
                         }
@@ -189,7 +190,7 @@
                             right: 30px;
                             font-size: 13px;
                             font-weight: bold;
-                            color: $title_3;
+                            color: $title_1;
                         }
                     }
 

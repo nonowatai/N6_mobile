@@ -71,6 +71,7 @@ header {
             transform: translateY(-50%);
             right: 14px;
             @include headerBtn;
+            letter-spacing: 1px;
 
             &.edit {
                 display: none;
