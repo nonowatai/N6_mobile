@@ -2590,7 +2590,7 @@ html body .filter .checkPoint ul li .point .info {
           justify-content: center;
   font-size: 12px;
   letter-spacing: 1px;
-  background: #fbbe7c;
+  background: #fff7d8;
   padding: 6px 18px;
   color: #242424;
   border-radius: 3px;
@@ -2613,10 +2613,10 @@ html body .filter .checkPoint ul li .point .info::before {
   height: 0;
   border-style: solid;
   border-width: 0 4px 6px 4px;
-  border-color: #cca172 transparent;
+  border-color: #fff7d8 transparent;
 }
 html body .filter .checkPoint ul li .point .info em {
-  color: #243c29;
+  color: #713100;
 }
 html body .filter .checkPoint ul li .point .info.display {
   display: -webkit-box;
@@ -3514,7 +3514,7 @@ html body .walletWrap .walletList .forPlatform ul li div .smallInfo .inner {
   display: none;
   width: auto;
   height: auto;
-  background: #fbbe7c;
+  background: #fff7d8;
   padding: 6px 18px;
   color: #242424;
   border-radius: 3px;
@@ -3542,10 +3542,10 @@ html body .walletWrap .walletList .forPlatform ul li div .smallInfo .inner::befo
   height: 0;
   border-style: solid;
   border-width: 0 4px 6px 4px;
-  border-color: #cca172 transparent;
+  border-color: #fff7d8 transparent;
 }
 html body .walletWrap .walletList .forPlatform ul li div .smallInfo .inner em {
-  color: #243c29;
+  color: #713100;
 }
 html body .walletWrap .walletList .forPlatform ul li p {
   margin-top: 10px;
@@ -4854,13 +4854,14 @@ html body .eventApplyType ul li {
           align-items: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border-bottom: solid 1px #ffffff;
   font-size: 3.4vw;
   font-weight: bold;
   color: #713100;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #efd9ad), color-stop(35%, #fff9e3), color-stop(61%, #fff6d4), color-stop(86%, #ebd3a8), to(#f6e4b7));
+  background: linear-gradient(180deg, #efd9ad 1%, #fff9e3 35%, #fff6d4 61%, #ebd3a8 86%, #f6e4b7);
 }
 html body .eventApplyType ul li:active, html body .eventApplyType ul li.active {
-  border-bottom: 2px solid #b34e02;
+  border-bottom: 4px solid #b34e02;
   color: #713100;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #efd9ad), color-stop(35%, #fff9e3), color-stop(61%, #fff6d4), color-stop(86%, #ebd3a8), to(#f6e4b7));
   background: linear-gradient(180deg, #efd9ad 1%, #fff9e3 35%, #fff6d4 61%, #ebd3a8 86%, #f6e4b7);
@@ -4885,8 +4886,8 @@ html body .applyList .listBox {
 html body .applyList .listBox .list {
   margin-bottom: 15px;
   border-radius: 5px;
-  border: solid 1px #713100;
-  background: #e5d9b7;
+  border: solid 1px #ffffff;
+  background: #f6ebad99;
 }
 html body .applyList .listBox .list .title {
   width: 100%;
@@ -4904,13 +4905,12 @@ html body .applyList .listBox .list .title {
   color: #713100;
   font-size: 16px;
   font-weight: bold;
-  background: #26643d;
 }
 html body .applyList .listBox .list .tips {
   display: none;
   width: 56vw;
   margin: 6px auto 0;
-  background: #fbbe7c;
+  background: #fff7d8;
   padding: 6px 18px;
   color: #242424;
   border-radius: 3px;
@@ -4934,10 +4934,10 @@ html body .applyList .listBox .list .tips::before {
   height: 0;
   border-style: solid;
   border-width: 0 4px 6px 4px;
-  border-color: #cca172 transparent;
+  border-color: #fff7d8 transparent;
 }
 html body .applyList .listBox .list .tips em {
-  color: #243c29;
+  color: #713100;
 }
 html body .applyList .listBox .list .tips.display {
   display: block;
@@ -4969,12 +4969,13 @@ html body .applyList .listBox .list ul li {
           align-items: center;
 }
 html body .applyList .listBox .list ul li.cur {
-  background: #252525;
+  background: #fff7d8;
 }
 html body .applyList .listBox .list ul li label {
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  width: 35%;
+  width: 50%;
+  color: #713100;
 }
 html body .applyList .listBox .list ul li p {
   font-size: 13px;
@@ -4982,7 +4983,7 @@ html body .applyList .listBox .list ul li p {
   line-height: 18px;
 }
 html body .applyList .listBox .list ul li p em {
-  color: #b16d3d;
+  color: #f30f0f;
 }
 html body .applyList .listBox .list ul li p em.sp {
   color: #f30f0f;
@@ -5015,7 +5016,7 @@ html body .applyList .listBox .list .btnBox button.applyBtn {
   border: 1px solid #39ebdd;
   -webkit-box-shadow: 0 5px 3px -3px rgba(0, 0, 0, 0.4);
           box-shadow: 0 5px 3px -3px rgba(0, 0, 0, 0.4);
-  font-size: 16px;
+  font-size: 13px;
   width: 48%;
 }
 html body .applyList .listBox .list .btnBox button.applyBtn:active, html body .applyList .listBox .list .btnBox button.applyBtn.active {
@@ -6027,7 +6028,7 @@ html body .mailBody.normal .subClass ul li {
   border: 1px solid #753200;
   color: #753200;
   font-weight: bold;
-  font-size: 3.7vw;
+  font-size: 3.2vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6072,7 +6073,7 @@ html body .mailBody.normal .editBox .all {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #713100;
+  color: #ffffff;
   font-size: 16px;
   font-weight: bold;
 }
@@ -6085,8 +6086,8 @@ html body .mailBody.normal .editBox .all input::before {
   position: absolute;
   width: 19px;
   height: 19px;
-  border: solid 1px #ffffff;
-  background: #232323;
+  border: solid 1px #713100;
+  background: #ffffff;
   border-radius: 50%;
   top: 50%;
   left: 50%;
@@ -6110,22 +6111,24 @@ html body .mailBody.normal .editBox .all input:checked::after {
 html body .mailBody.normal .editBox .modify button {
   width: 82px;
   height: 28px;
-  background: #2e2e2e;
-  border: solid 1px #0db668;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #1eb0a4), to(#26dbcc));
+  background: linear-gradient(0deg, #1eb0a4 0, #26dbcc);
+  border: 1px solid #39ebdd;
   font-size: 14px;
   font-weight: bold;
-  color: #0db668;
+  color: #ffffff;
   border-radius: 3px;
   padding: 0 5px;
   letter-spacing: 1px;
   font-size: 12px;
 }
 html body .mailBody.normal .editBox .modify button.delete {
-  background: #2e2e2e;
-  border: solid 1px #fa2c2c;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(23%, #fe3f70), to(#cf0f57));
+  background: linear-gradient(180deg, #fe3f70 23%, #cf0f57);
+  border: 1px solid #ff5480;
   font-size: 14px;
   font-weight: bold;
-  color: #fa2c2c;
+  color: #ffffff;
   border-radius: 3px;
   padding: 0 5px;
   letter-spacing: 1px;
@@ -6253,8 +6256,8 @@ html body .mailBody.normal .mailBox ul li .inputBox input::before {
   position: absolute;
   width: 19px;
   height: 19px;
-  border: solid 1px #ffffff;
-  background: #232323;
+  border: solid 1px #713100;
+  background: #ffffff;
   border-radius: 50%;
   top: 50%;
   left: 50%;
@@ -6287,6 +6290,9 @@ html body .mailBody.post .subClass {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 10px 15px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #af5d1c), to(rgba(246, 235, 173, 0.6)));
+  background: linear-gradient(180deg, #af5d1c 0, rgba(246, 235, 173, 0.6));
+  border-bottom: 1px solid #ffffff;
 }
 html body .mailBody.post .subClass ul {
   width: 100%;
@@ -6298,13 +6304,12 @@ html body .mailBody.post .subClass ul {
 html body .mailBody.post .subClass ul li {
   width: 34%;
   height: 10.67vw;
-  margin-right: 1px;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(8%, #fff1b0), color-stop(51%, #dcc16e), color-stop(89%, #fff1b0));
   background: linear-gradient(0deg, #fff1b0 8%, #dcc16e 51%, #fff1b0 89%);
   border: 1px solid #753200;
   color: #753200;
   font-weight: bold;
-  font-size: 3.7vw;
+  font-size: 3.2vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6314,6 +6319,7 @@ html body .mailBody.post .subClass ul li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-weight: 3.2vw;
 }
 html body .mailBody.post .subClass ul li:active, html body .mailBody.post .subClass ul li.active {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #b16d3d), to(#7b3806));
@@ -6377,7 +6383,7 @@ html body .mailBody.post .mailBox ul li p {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  color: #ffffff;
+  color: #281600;
 }
 html body .mailContent {
   width: 90%;
@@ -6390,7 +6396,7 @@ html body .mailContent {
   margin: 15px auto;
   position: relative;
   background: #e5d9b7;
-  border: solid 1px #713100;
+  border: solid 1px #f3d3a4;
 }
 html body .mailContent::before {
   content: "";
@@ -6400,7 +6406,8 @@ html body .mailContent::before {
   width: 100%;
   height: 8vw;
   border-radius: 10px 10px 0 0;
-  background: #037440;
+  background: -webkit-gradient(linear, left top, right top, color-stop(0, #af5d1c), to(#6b2f00));
+  background: linear-gradient(90deg, #af5d1c 0, #6b2f00);
 }
 html body .mailContent .title {
   margin: 20px 0;
@@ -6419,7 +6426,7 @@ html body .cardList {
   height: 220px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 10px 0;
+  padding: 0px 0 10px 0;
 }
 html body .cardList .cardBox {
   width: 100%;
@@ -6427,7 +6434,8 @@ html body .cardList .cardBox {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0 10px 15px 10px;
-  background: #e5d9b7;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #af5d1c), to(rgba(246, 235, 173, 0.6)));
+  background: linear-gradient(180deg, #af5d1c 0, rgba(246, 235, 173, 0.6));
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6435,7 +6443,6 @@ html body .cardList .cardBox {
       -ms-flex-align: end;
           align-items: flex-end;
   position: relative;
-  border-top: 1px solid #ffffff;
   border-bottom: 1px solid #ffffff;
 }
 html body .cardList .cardBox .title {
@@ -6443,7 +6450,7 @@ html body .cardList .cardBox .title {
   top: 10px;
   left: 10px;
   position: absolute;
-  color: #713100;
+  color: #ffffff;
   font-weight: bold;
 }
 html body .cardList .cardBox ul {
@@ -6458,7 +6465,7 @@ html body .cardList .cardBox ul li {
   width: 250px;
   height: 150px;
   border-radius: 5px;
-  background: linear-gradient(120deg, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: #f8dda0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6472,10 +6479,11 @@ html body .cardList .cardBox ul li {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   margin-right: 15px;
+  border: 1px solid #ffffff;
 }
 html body .cardList .cardBox ul li.empty {
-  background: linear-gradient(347deg, #434343, #545454);
-  border: 1px solid #713100;
+  background: linear-gradient(120deg, #e8ebf2, #cbcdd3 30%);
+  border: 1px solid #ffffff;
 }
 html body .cardList .cardBox ul li.wait .ing {
   opacity: 1;
@@ -6487,7 +6495,7 @@ html body .cardList .cardBox ul li .add {
 html body .cardList .cardBox ul li .status {
   width: 100%;
   text-align: center;
-  color: #dcab70;
+  color: #ffffff;
   font-size: 12px;
   font-weight: bold;
   margin-bottom: 8px;
@@ -6516,8 +6524,8 @@ html body .cardList .cardBox ul li .ing {
   width: 96%;
   height: auto;
   margin: 10px auto 5px;
-  background: #1f2f23;
-  color: #dcab70;
+  background: #753200;
+  color: #ffffff;
   font-size: 12px;
   opacity: 0;
   padding: 4px 0;
@@ -6531,7 +6539,7 @@ html body .cardContent {
           box-sizing: border-box;
   padding: 0 4vw;
   border-top: 1px solid #ffffff;
-  background: #e5d9b7;
+  background: #f6ebad99;
 }
 html body .cardContent ul {
   width: 100%;
@@ -6544,7 +6552,7 @@ html body .cardContent ul li {
 html body .cardContent ul li .title {
   margin: 15px 0 6px;
   font-size: 14px;
-  color: #ffffff;
+  color: #713100;
   font-weight: bold;
 }
 html body .cardContent ul li input {
@@ -7757,7 +7765,7 @@ html body .transWrap .forPlatform ul li div .smallInfo .inner {
   display: none;
   width: auto;
   height: auto;
-  background: #fbbe7c;
+  background: #fff7d8;
   padding: 6px 18px;
   color: #242424;
   border-radius: 3px;
@@ -7786,10 +7794,10 @@ html body .transWrap .forPlatform ul li div .smallInfo .inner::before {
   height: 0;
   border-style: solid;
   border-width: 0 4px 6px 4px;
-  border-color: #cca172 transparent;
+  border-color: #fff7d8 transparent;
 }
 html body .transWrap .forPlatform ul li div .smallInfo .inner em {
-  color: #243c29;
+  color: #713100;
 }
 html body .transWrap .forPlatform ul li p {
   margin-top: 10px;
@@ -8034,7 +8042,7 @@ html body .withWrap .walletBox .walletDetail .detailBox ul li div .smallInfo .in
   display: none;
   width: auto;
   height: auto;
-  background: #fbbe7c;
+  background: #fff7d8;
   padding: 6px 18px;
   color: #242424;
   border-radius: 3px;
@@ -8063,10 +8071,10 @@ html body .withWrap .walletBox .walletDetail .detailBox ul li div .smallInfo .in
   height: 0;
   border-style: solid;
   border-width: 0 4px 6px 4px;
-  border-color: #cca172 transparent;
+  border-color: #fff7d8 transparent;
 }
 html body .withWrap .walletBox .walletDetail .detailBox ul li div .smallInfo .inner em {
-  color: #243c29;
+  color: #713100;
 }
 html body .withWrap .walletBox .walletDetail .detailBox ul li p {
   margin-top: 10px;

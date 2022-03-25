@@ -76,7 +76,7 @@ $liner-bg:linear-gradient(180deg,#af5d1c 0,rgba(246,235,173,.6));
 
 //箭頭小提示
 @mixin smallTip {
-    background: #fbbe7c;
+    background: #fff7d8;
     padding: 6px 18px;
     color: #242424;
     border-radius: 3px;
@@ -97,11 +97,11 @@ $liner-bg:linear-gradient(180deg,#af5d1c 0,rgba(246,235,173,.6));
         height: 0;
         border-style: solid;
         border-width: 0 4px 6px 4px;
-        border-color: #cca172 transparent;
+        border-color: #fff7d8 transparent;
     }
 
     em {
-        color: #243c29;
+        color: #713100;
     }
 }
 
@@ -254,19 +254,19 @@ $vipDetail_onceBG: #f2c885;
 $vipDetail_titleBG: #1eb0a4;
 
 //eventApply
-$currentBG: #252525;
+$currentBG: #fff7d8;
 
 //pointWindow
 $point_BG: #282828;
 $point_Border: #957222;
 
 //card
-$cardLinear: linear-gradient(120deg,#f1d7b7 0%,#cca172 50%,#f1c999 100%);
-$cardLinear_Empty: linear-gradient(347deg,#434343,#545454);
-$cardWord: #dcab70;
+$cardLinear: #f8dda0;
+$cardLinear_Empty: linear-gradient(120deg,#e8ebf2,#cbcdd3 30%);
+$cardWord: #ffffff;
 @mixin cardStatus {
-    background: #1f2f23;
-    color: #dcab70;
+    background: #753200;
+    color: #ffffff;
     font-size: 12px;
     opacity: 0;
     padding: 4px 0;
@@ -279,7 +279,7 @@ $card_upload:#3d4cce;
 $card_line:#3502ff;
 
 //mail
-$mailCnt_TopBG: #037440;
+$mailCnt_TopBG: linear-gradient(90deg,#af5d1c 0,#6b2f00);
 @mixin mailWrap {
     background: linear-gradient(180deg,#fffbef 46%,#e7d2ac);
     border: 1px solid #bf9755;
@@ -310,8 +310,8 @@ $mailCnt_TopBG: #037440;
         position: absolute;
         width: 19px;
         height: 19px;
-        border: solid 1px #ffffff;
-        background: #232323;
+        border: solid 1px #713100;
+        background: #ffffff;
         border-radius: 50%;
         top: 50%;
         left: 50%;
@@ -516,21 +516,21 @@ $slotGame_Word: #f3d3a4;
 }
 //無背景帶顏色按鈕
 @mixin noBgBtn_Color1 {
-    background: #2e2e2e;
-    border: solid 1px #0db668;
+    background: linear-gradient(0deg,#1eb0a4 0,#26dbcc);
+    border: 1px solid #39ebdd;
     font-size: 14px;
     font-weight: bold;
-    color: #0db668;
+    color: #ffffff;
     border-radius: 3px;
     padding: 0 5px;
     letter-spacing: 1px;
 }
 @mixin noBgBtn_Color2 {
-    background: #2e2e2e;
-    border: solid 1px #fa2c2c;
+    background: linear-gradient(180deg,#fe3f70 23%,#cf0f57);
+    border: 1px solid #ff5480;
     font-size: 14px;
     font-weight: bold;
-    color: #fa2c2c;
+    color: #ffffff;
     border-radius: 3px;
     padding: 0 5px;
     letter-spacing: 1px;
@@ -702,7 +702,7 @@ $slotGame_Word: #f3d3a4;
     border: 1px solid #753200;
     color: #753200;
     font-weight: bold;
-    font-size: 3.7vw;
+    font-size: 3.2vw;
     display: flex;
     align-items: center;
     justify-content: center;

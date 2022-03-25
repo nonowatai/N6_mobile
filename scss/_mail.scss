@@ -87,7 +87,7 @@
             .all {
                 display: flex;
                 align-items: center;
-                color: $title_2;
+                color: $title_3;
                 font-size: 16px;
                 font-weight: bold;
 
@@ -226,7 +226,8 @@
             height: auto;
             box-sizing: border-box;
             padding: 10px 15px;
-            // background: $mainBG_2;
+            background: $liner-bg;
+            border-bottom: 1px solid $mainBorder_1;
 
             ul {
                 width: 100%;
@@ -236,8 +237,8 @@
                 li {
                     width: 34%;
                     height: 10.67vw;
-                    margin-right: 1px;
                     @include bigGrayBtn;
+                    font-weight: 3.2vw;
                     
                     &:nth-of-type(1) {
                         border-radius: 5px 0 0 5px;
@@ -286,7 +287,7 @@
                         overflow: hidden;
                         text-overflow: ellipsis;
                         white-space: nowrap;
-                        color: $title_3;
+                        color:$mainWord_1;
                     }
                 }
             }
@@ -305,7 +306,7 @@
     margin: 15px auto;
     position: relative;
     background: $mainBG_1;
-    border: solid 1px $mainBorder_2;
+    border: solid 1px $click;
 
     &::before {
         content: "";

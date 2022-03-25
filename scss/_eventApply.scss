@@ -20,13 +20,13 @@
             justify-content: center;
             align-items: center;
             box-sizing: border-box;
-            border-bottom: solid 1px $mainBorder_1;
             font-size: 3.4vw;
             font-weight: bold;
             color: $choose_Word;
+            background: $choose_Active;
 
             &:active,&.active {
-                border-bottom:2px solid $choose_Border;
+                border-bottom:4px solid $choose_Border;
                 color: $choose_ActiveWord;
                 background: $choose_Active;
             }
@@ -57,8 +57,8 @@
             margin-bottom: 15px;
             border-radius: 5px;
             // box-shadow: 0 0 13px 2px $boxshadow_1;
-            border: solid 1px $mainBorder_2;
-            background: $mainBG_1;
+            border: solid 1px $mainBorder_1;
+            background:$maingoldBG;
 
             .title {
                 width: 100%;
@@ -70,7 +70,6 @@
                 color: $title_2;
                 font-size: 16px;
                 font-weight: bold;
-                background: $saleTitle;
             }
 
             .tips {
@@ -111,7 +110,8 @@
                     
                     label {
                         flex-shrink: 0;
-                        width: 35%;
+                        width: 50%;
+                        color: $title_2;
                     }
 
                     p {
@@ -120,7 +120,7 @@
                         line-height: 18px;
 
                         em {
-                            color: $remind;
+                            color: $remind_Sp;
 
                             &.sp {
                                 color: $remind_Sp;
@@ -145,7 +145,7 @@
 
                     &.applyBtn {
                         @include mainBtn;
-                        font-size: 16px;
+                        font-size: 13px;
                         width: 48%;
                     }
 
