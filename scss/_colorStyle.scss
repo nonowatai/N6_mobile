@@ -336,8 +336,8 @@ $mailCnt_TopBG: linear-gradient(90deg,#af5d1c 0,#6b2f00);
 }
 
 //help
-$help_Title: #f3d3a4;
-$help_Word: #f2bd7c;
+$help_Title: #713100;
+$help_Word: #281600;
 //客服按鈕
 @mixin help_lineBtn {
     background: #fff1cf;
@@ -682,7 +682,7 @@ $slotGame_Word: #f3d3a4;
     }
 }
 
-//event查看活動按鈕
+//eventXem hoạt động按鈕
 @mixin checkEvent {
     background: linear-gradient(to top,#f3dba7 0%,#a88754 50%,#f0d8a4 100%);
     border: solid 1px #957222;

@@ -810,13 +810,14 @@ html body .marqueeBox .marquee {
   width: 100%;
   height: auto;
   overflow: hidden;
+  margin-left: 45px;
 }
 html body .marqueeBox .marquee pre {
   display: inline-block;
   font-size: 13px;
   color: #672d00;
-  -webkit-animation: marquee 30s linear 0s infinite;
-          animation: marquee 30s linear 0s infinite;
+  -webkit-animation: marquee 10s linear 0s infinite;
+          animation: marquee 10s linear 0s infinite;
   padding-left: 100%;
 }
 @-webkit-keyframes marquee {
@@ -962,6 +963,7 @@ html body .memberArea .alLogin.display {
 html body .memberArea .alLogin ul {
   width: 100%;
   height: auto;
+  border-right: 2px solid #f3d3a4;
 }
 html body .memberArea .alLogin ul li {
   display: -webkit-box;
@@ -996,19 +998,10 @@ html body .memberArea .alLogin ul li.amount {
 html body .memberArea .alLogin ul li .lv {
   width: auto;
   height: 20px;
-  background: #1eb0a4;
-  color: #f8f8f8;
-  border-radius: 5px;
-  font-size: 12px;
-  padding: 0 5px;
+  color: #b16d3d;
+  font-size: 2vw;
+  line-height: 20px;
   font-weight: bold;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  white-space: nowrap;
 }
 html body .memberArea .alLogin ul .name {
   width: auto;
@@ -2387,13 +2380,13 @@ html body .filter .eventWindow .content {
   overflow-y: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 24px 63px 0;
+  padding: 24px 18px 0;
 }
 html body .filter .eventWindow .content p {
   font-size: 14px;
   letter-spacing: 1px;
   font-weight: bold;
-  color: #281600;
+  color: #713100;
   line-height: 18px;
   margin-bottom: 8px;
 }
@@ -3715,7 +3708,7 @@ html body .memberWrap .user .info div .date {
   font-size: 13px;
   letter-spacing: 1px;
   font-weight: bold;
-  color: #bf9755;
+  color: #f3d3a4;
 }
 html body .memberWrap .user .info .infoBtn {
   width: auto;
@@ -3867,6 +3860,7 @@ html body .memberWrap .user .btnBox button .text p {
   font-size: 12px;
   letter-spacing: 1px;
   text-align: left;
+  color: #b16d3d;
 }
 html body .memberWrap .user ul {
   display: -webkit-box;
@@ -4482,7 +4476,7 @@ html body .helpWrap .helpHeader {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-bottom: solid 1px #ffffff;
+  border-bottom: solid 2px #ffffff;
   background: #e5d9b7;
 }
 html body .helpWrap .helpHeader .selectBox {
@@ -4497,10 +4491,10 @@ html body .helpWrap .helpHeader .selectBox {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: #f8dda0;
+  background: #f8f8f8;
   position: relative;
   border-radius: 3px;
-  border: solid 1px #ffffff;
+  border: solid 1px #713100;
 }
 html body .helpWrap .helpHeader .selectBox p {
   color: #713100;
@@ -4536,6 +4530,7 @@ html body .helpWrap .helpBody {
   width: 100%;
   height: calc(100vh - 164px);
   overflow-y: auto;
+  background: #e5d9b7;
 }
 html body .helpWrap .helpBody ul {
   width: 100%;
@@ -4547,6 +4542,9 @@ html body .helpWrap .helpBody ul {
 html body .helpWrap .helpBody ul li {
   width: 100%;
   height: 52px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(8%, #fff1b0), color-stop(51%, #dcc16e), color-stop(89%, #fff1b0));
+  background: linear-gradient(180deg, #fff1b0 8%, #dcc16e 51%, #fff1b0 89%);
+  border: 1px solid #fdfdfd;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4556,18 +4554,30 @@ html body .helpWrap .helpBody ul li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: #e5d9b7;
+  border-radius: 1vw;
+  color: #753200;
+  font-weight: bold;
+  -webkit-box-shadow: 0 5px 8px -5px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 8px -5px rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 15px;
   font-size: 14px;
   font-weight: bold;
   color: #713100;
   border: solid 1px #713100;
 }
+html body .helpWrap .helpBody ul li:active, html body .helpWrap .helpBody ul li.active {
+  color: #fff;
+  background: #af5d1c;
+}
 html body .helpInner {
   display: none;
   width: 100%;
   height: calc(100vh - 94px);
   overflow-y: auto;
+  background: #e5d9b7;
 }
 html body .helpInner.display {
   display: block;
@@ -4640,34 +4650,37 @@ html body .helpInner ul li .textBox {
           box-sizing: border-box;
   padding: 10px;
   margin: 0 auto;
-  border: solid 1px #713100;
   border-top: none;
-  background: #f8dda0;
   border-radius: 0 0 5px 5px;
 }
 html body .helpInner ul li .textBox.app {
   background: none;
   border: none;
 }
+html body .helpInner ul li .textBox h1 {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 2vw;
+}
 html body .helpInner ul li .textBox p {
   line-height: 22px;
   font-size: 14px;
   font-weight: bold;
-  color: #f2bd7c;
+  color: #281600;
   margin-bottom: 8px;
 }
 html body .helpInner ul li .textBox p.smallTitle {
-  font-size: 16px;
+  font-size: 5vw;
   margin: 20px 0 10px;
-  color: #f3d3a4;
-  text-align: left;
+  color: #713100;
+  text-align: center;
 }
 html body .helpInner ul li .textBox p.smallTitle.first {
   margin-top: 0;
 }
 html body .helpInner ul li .textBox p.platform {
   font-size: 18px;
-  color: #f3d3a4;
+  color: #713100;
   margin: 15px 0;
   text-align: center;
 }
@@ -4676,7 +4689,7 @@ html body .helpInner ul li .textBox p.platform .downloadBtn {
   margin-left: 10px;
 }
 html body .helpInner ul li .textBox p a {
-  color: #f3d3a4;
+  color: #f30f0f;
   text-decoration: none;
 }
 html body .helpInner ul li .textBox .img {
@@ -5006,22 +5019,17 @@ html body .applyList .listBox .list .btnBox button {
   height: 32px;
 }
 html body .applyList .listBox .list .btnBox button.applyBtn {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #1eb0a4), to(#26dbcc));
-  background: linear-gradient(0deg, #1eb0a4 0, #26dbcc);
-  font-size: 4vw;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(23%, #fe3f70), to(#cf0f57));
+  background: linear-gradient(180deg, #fe3f70 23%, #cf0f57);
+  border: 1px solid #ff5480;
+  font-size: 14px;
   font-weight: bold;
-  color: #fffefd;
-  border-radius: 1.3vw;
+  color: #ffffff;
+  border-radius: 3px;
+  padding: 0 5px;
   letter-spacing: 1px;
-  border: 1px solid #39ebdd;
-  -webkit-box-shadow: 0 5px 3px -3px rgba(0, 0, 0, 0.4);
-          box-shadow: 0 5px 3px -3px rgba(0, 0, 0, 0.4);
   font-size: 13px;
   width: 48%;
-}
-html body .applyList .listBox .list .btnBox button.applyBtn:active, html body .applyList .listBox .list .btnBox button.applyBtn.active {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #159288), to(#1eb0a4));
-  background: linear-gradient(180deg, #159288 0, #1eb0a4);
 }
 html body .applyList .listBox .list .btnBox button.checkBtn {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #1eb0a4), to(#26dbcc));
@@ -5041,7 +5049,6 @@ html body .applyRecord {
   margin-top: 40px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding-top: 10px;
   display: none;
 }
 html body .applyRecord.display {
@@ -5050,7 +5057,8 @@ html body .applyRecord.display {
 html body .applyRecord .searchContain {
   width: 100%;
   height: auto;
-  background: #e5d9b7;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #af5d1c), to(rgba(246, 235, 173, 0.6)));
+  background: linear-gradient(180deg, #af5d1c 0, rgba(246, 235, 173, 0.6));
   padding: 15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -5071,7 +5079,7 @@ html body .applyRecord .searchContain form ul li {
 html body .applyRecord .searchContain form ul li p {
   font-size: 14px;
   font-weight: bold;
-  color: #713100;
+  color: #ffffff;
   margin-bottom: 10px;
 }
 html body .applyRecord .searchContain form ul li select {

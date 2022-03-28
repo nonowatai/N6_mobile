@@ -144,7 +144,7 @@
                     height: 32px;
 
                     &.applyBtn {
-                        @include mainBtn;
+                        @include noBgBtn_Color2;
                         font-size: 13px;
                         width: 48%;
                     }
@@ -168,7 +168,6 @@
     overflow-y: auto;
     margin-top: 40px;
     box-sizing: border-box;
-    padding-top: 10px;
     display: none;
 
     &.display {
@@ -178,8 +177,8 @@
     .searchContain {
         width: 100%;
         height: auto;
-        background: $mainBG_1;
-        padding: 15px;
+        background: $liner-bg;
+        padding:15px;
         box-sizing: border-box;
         
         form {
@@ -198,7 +197,7 @@
                     p {
                         font-size: 14px;
                         font-weight: bold;
-                        color: $title_2;
+                        color: $title_3;
                         margin-bottom: 10px;
                     }
 

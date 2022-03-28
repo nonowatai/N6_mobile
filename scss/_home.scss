@@ -21,12 +21,13 @@
         width: 100%;
         height: auto;
         overflow: hidden;
+        margin-left: 45px;
 
         pre {
             display: inline-block;
             font-size: 13px;
             color: $marqueeColor;
-            animation: marquee 30s linear 0s infinite;
+            animation: marquee 10s linear 0s infinite;
             padding-left: 100%;
         }
 
@@ -143,6 +144,7 @@
         ul {
             width: 100%;
             height: auto;
+            border-right: 2px solid $click;
 
             li {
                 display: flex;
@@ -175,7 +177,11 @@
                 .lv {
                     width: auto;
                     height: 20px;
-                    @include operateLV;
+                    color: $remind;
+                    font-size: 2vw;
+                    line-height: 20px;
+                    font-weight: bold;
+                    // @include operateLV;
                 }
             }
             .name {
