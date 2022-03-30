@@ -28,12 +28,6 @@ button:disabled {
   background-size: 100%;
 }
 
-header .inviteimg {
-  background: url("../images/invite.gif");
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-
 .memberArea .member_icon {
   background: url("../images/icon/membericon.png") no-repeat;
   background-size: 100%;
@@ -430,6 +424,23 @@ header .logo {
   margin: auto;
 }
 
+header .online_member {
+  width: 22%;
+  height: 62%;
+  max-width: 87px;
+  max-height: 29px;
+  position: absolute;
+  right: 7px;
+  top: 0;
+  background: url(../images/icon/onlineMember_icon.png) no-repeat;
+}
+header .online_member p {
+  color: #018317;
+  font-weight: bold;
+  padding: 7px;
+  text-align: end;
+}
+
 .single-item {
   width: 100%;
   height: 45vw;
@@ -442,7 +453,7 @@ header .logo {
 }
 
 .homeCenter .gameBox img {
-  width: 100%;
+  width: 55%;
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
@@ -1026,7 +1037,7 @@ html body .memberArea .operate {
           align-items: center;
 }
 html body .memberArea .operate.login .btnBox {
-  padding: 0 6%;
+  padding: 0 3%;
 }
 html body .memberArea .operate.login .btnBox .vipBtn {
   display: inline-block;
@@ -1091,9 +1102,6 @@ html body .homeCenter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0 15px 8px;
@@ -1109,10 +1117,9 @@ html body .homeCenter .gameList ol {
   background: -webkit-gradient(linear, left top, right top, color-stop(2%, #fdfcc4), color-stop(39%, #9a6a42), color-stop(73%, #c0a475), to(#e9ce99));
   background: linear-gradient(90deg, #fdfcc4 2%, #9a6a42 39%, #c0a475 73%, #e9ce99);
   border: 1px solid #89542f;
-  -webkit-box-shadow: inset 1px 1px 3px 0 rgba(245, 217, 177, 0.47), inset -2px -2px 3px 0 #111, inset -2px -2px 3px 0 #fff7d8;
-          box-shadow: inset 1px 1px 3px 0 rgba(245, 217, 177, 0.47), inset -2px -2px 3px 0 #111, inset -2px -2px 3px 0 #fff7d8;
+  -webkit-box-shadow: inset 0 0 0 2px #fff7d8;
+          box-shadow: inset 0 0 0 2px #fff7d8;
   border-radius: 5px;
-  overflow-y: auto;
 }
 html body .homeCenter .gameList ol li {
   display: -webkit-box;
@@ -1125,8 +1132,9 @@ html body .homeCenter .gameList ol li {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  height: 20vw;
+  height: auto;
   position: relative;
+  padding: 1vw 0;
 }
 html body .homeCenter .gameList ol li::before {
   content: "";
@@ -1170,6 +1178,7 @@ html body .homeCenter .gameList ol li div {
       -ms-flex-direction: column;
           flex-direction: column;
   border-radius: 7px;
+  padding: 1vw 0 2vw;
 }
 html body .homeCenter .gameList ol li div p {
   margin-top: 2vw;
@@ -1204,7 +1213,7 @@ html body .homeCenter .gameList ol li div i.board_ic {
 html body .homeCenter .gameBox {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 65vw;
+  width: 80%;
   height: auto;
   display: none;
   overflow-y: auto;
@@ -1216,7 +1225,11 @@ html body .homeCenter .gameBox.display {
 }
 html body .homeCenter .gameBox li {
   width: 100%;
-  height: 45vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   position: relative;
 }
 html body .homeCenter .gameBox li:nth-of-type(2n) {
@@ -1297,9 +1310,13 @@ html body footer ul li i.wallet_ic {
 }
 html body footer ul li i.service_ic {
   background-position-x: 75%;
+  width: 32px;
+  height: 32px;
 }
 html body footer ul li i.center_ic {
   background-position-x: 100%;
+  width: 30px;
+  height: 30px;
 }
 html body footer ul li p {
   font-size: 12px;
