@@ -129,7 +129,7 @@
             color: $title_3;
             font-weight: bold;
             text-align: center;
-            font-size: 14px;
+            font-size: 2vw;
 
             &.display {
                 display: block;
@@ -168,8 +168,9 @@
                 }
 
                 button {
-                    width: 80px;
-                    height: 26px;
+                    width: 42%;
+                    height: auto;
+                    padding: 0.5vw 2vw;
                     @include noBgBtn_Normal;
                 }
             }

@@ -40,7 +40,7 @@
                         width: auto;
                         height: 18px;
                         margin-right: 9px;
-                        @include operateLV
+                        @include operateLV;
                     }
                 }
 
@@ -204,7 +204,7 @@
     //選項條
     .options {
         width: 100%;
-        height: 50px;
+        height: 13vw;
         margin: 0 auto 17px;
         @include longBtn;
 
@@ -291,7 +291,7 @@
 
         li {
             width: 50%;
-            height: 40px;
+            height: 11vw;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -438,7 +438,7 @@
                 align-items: center;
 
                 &:nth-of-type(1) {
-                    width: 30vw;
+                    width: 43vw;
                 }
             }
 

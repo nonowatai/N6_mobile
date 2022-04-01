@@ -613,7 +613,7 @@
                 .date {
                     font-size: 12px;
                     letter-spacing: 1px;
-                    color: $title_Time;
+                    color: $title_2;
                     font-weight: bold;
                     margin-bottom: 6px;
                 }
@@ -1227,6 +1227,7 @@
                     p {
                         width: 50%;
                         text-align: center;
+                        font-size: 2vw;
                     }
                 }
             }
