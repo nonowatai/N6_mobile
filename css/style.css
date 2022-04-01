@@ -468,7 +468,7 @@ header .online_member p {
 
 .eventList .eventImg {
   width: calc(100% - 8px);
-  height: 85px;
+  height: 25vw;
 }
 .eventList .eventImg img {
   width: 100%;
@@ -6633,10 +6633,12 @@ html body .cardContent ul li p {
   margin: 10px 0 15px 0;
 }
 html body .cardContent ul li .upload-btn {
-  background: -webkit-gradient(linear, left top, left bottom, from(#037440), to(#074528));
-  background: linear-gradient(to bottom, #037440 0%, #074528 100%);
-  color: #f2bd7c;
-  border: 1px solid #f2bd7c;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(8%, #fff1b0), color-stop(51%, #dcc16e), color-stop(89%, #fff1b0));
+  background: linear-gradient(0deg, #fff1b0 8%, #dcc16e 51%, #fff1b0 89%);
+  color: #753200;
+  border: 1px solid #ffffff;
+  -webkit-box-shadow: 0 5px 3px -3px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 3px -3px rgba(0, 0, 0, 0.4);
   border-radius: 3px;
   padding: 4px 10px;
   font-size: 14px;
@@ -7525,7 +7527,8 @@ html body .transWrap {
 html body .transWrap .wallet-bg {
   width: 100%;
   height: 25vw;
-  background: #f8dda0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #af5d1c), to(rgba(246, 235, 173, 0.6)));
+  background: linear-gradient(180deg, #af5d1c 0, rgba(246, 235, 173, 0.6));
   padding-top: 10px;
 }
 html body .transWrap .wallet-bg .wallet {
@@ -7539,8 +7542,25 @@ html body .transWrap .wallet-bg .wallet {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: #f8dda0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(46%, #fffbef), to(#e7d2ac));
+  background: linear-gradient(180deg, #fffbef 46%, #e7d2ac);
+  border: 1px solid #bf9755;
+  -webkit-box-shadow: 0 5px 3px -3px #00000066;
+          box-shadow: 0 5px 3px -3px #00000066;
+  border-radius: 5px;
+  position: relative;
   border: solid 1px #ffffff;
+  border: none;
+}
+html body .transWrap .wallet-bg .wallet.read {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(46%, #fffbef), to(#e7d2ac));
+  background: linear-gradient(180deg, #fffbef 46%, #e7d2ac);
+}
+html body .transWrap .wallet-bg .wallet.read .title {
+  color: #713100;
+}
+html body .transWrap .wallet-bg .wallet.read .textBox p, html body .transWrap .wallet-bg .wallet.read .textBox .date {
+  color: #281600;
 }
 html body .transWrap .wallet-bg .wallet .helf {
   width: 100%;
@@ -7574,7 +7594,7 @@ html body .transWrap .wallet-bg .wallet .helf .title i {
   margin-left: 6px;
 }
 html body .transWrap .wallet-bg .wallet .helf .title button {
-  width: 18.93vw;
+  width: 46vw;
   height: 6.13vw;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #1eb0a4), to(#26dbcc));
   background: linear-gradient(0deg, #1eb0a4 0, #26dbcc);
@@ -7595,13 +7615,13 @@ html body .transWrap .wallet-bg .wallet .helf .title button:active, html body .t
 }
 html body .transWrap .wallet-bg .wallet .helf .amount {
   font-size: 29px;
-  color: #ffffff;
+  color: #713100;
   font-weight: bold;
 }
 html body .transWrap .transBox {
   width: 100%;
   height: auto;
-  background: #e5d9b7;
+  background: #f6ebad99;
   padding: 10px 14px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -7630,7 +7650,7 @@ html body .transWrap .transBox .selectBox select {
   background-repeat: no-repeat;
   border: 1px solid #a7854d;
   padding-left: 15px;
-  padding-left: 12vw;
+  padding-left: 18vw;
   font-size: 14px;
 }
 html body .transWrap .transBox .selectBox .smallWord {
@@ -7694,7 +7714,7 @@ html body .transWrap .transBox .check:active, html body .transWrap .transBox .ch
 html body .transWrap .forPlatform {
   padding-bottom: 15px;
   display: none;
-  background: #e5d9b7;
+  background: #f6ebad99;
   margin-top: 10px;
   border-top: 1px solid #ffffff;
   border-bottom: 1px solid #ffffff;
@@ -7720,7 +7740,7 @@ html body .transWrap .forPlatform .title {
   margin-bottom: 11px;
   font-size: 13px;
   letter-spacing: 1px;
-  color: #0fc854;
+  color: #713100;
   font-weight: bold;
 }
 html body .transWrap .forPlatform ul {
@@ -7749,7 +7769,23 @@ html body .transWrap .forPlatform ul li {
   border: solid 1px #ffffff;
   border-radius: 3px;
   margin: 0 1.9vw 12px 0;
-  background: #f8dda0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(46%, #fffbef), to(#e7d2ac));
+  background: linear-gradient(180deg, #fffbef 46%, #e7d2ac);
+  border: 1px solid #bf9755;
+  -webkit-box-shadow: 0 5px 3px -3px #00000066;
+          box-shadow: 0 5px 3px -3px #00000066;
+  border-radius: 5px;
+  position: relative;
+}
+html body .transWrap .forPlatform ul li.read {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(46%, #fffbef), to(#e7d2ac));
+  background: linear-gradient(180deg, #fffbef 46%, #e7d2ac);
+}
+html body .transWrap .forPlatform ul li.read .title {
+  color: #713100;
+}
+html body .transWrap .forPlatform ul li.read .textBox p, html body .transWrap .forPlatform ul li.read .textBox .date {
+  color: #281600;
 }
 html body .transWrap .forPlatform ul li:nth-of-type(3n) {
   margin-right: 0;
@@ -7757,7 +7793,7 @@ html body .transWrap .forPlatform ul li:nth-of-type(3n) {
 html body .transWrap .forPlatform ul li div {
   font-size: 12px;
   letter-spacing: 1px;
-  color: #ffffff;
+  color: #713100;
   font-weight: bold;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7823,7 +7859,7 @@ html body .transWrap .forPlatform ul li div .smallInfo .inner em {
 html body .transWrap .forPlatform ul li p {
   margin-top: 10px;
   font-size: 17px;
-  color: #f30f0f;
+  color: #281600;
   font-weight: bold;
 }
 html body .transWrap .forPlatform .openBtn {
@@ -7872,7 +7908,8 @@ html body .withWrap .walletBox {
   height: auto;
   padding-bottom: 15px;
   margin-bottom: 10px;
-  background: #e5d9b7;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #af5d1c), to(rgba(246, 235, 173, 0.6)));
+  background: linear-gradient(180deg, #af5d1c 0, rgba(246, 235, 173, 0.6));
   border-bottom: solid 1px #ffffff;
 }
 html body .withWrap .walletBox .gradient {
@@ -7883,7 +7920,13 @@ html body .withWrap .walletBox .gradient {
 html body .withWrap .walletBox .gradient .content {
   width: 92vw;
   margin: auto;
-  background: #f8dda0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(46%, #fffbef), to(#e7d2ac));
+  background: linear-gradient(180deg, #fffbef 46%, #e7d2ac);
+  border: 1px solid #bf9755;
+  -webkit-box-shadow: 0 5px 3px -3px #00000066;
+          box-shadow: 0 5px 3px -3px #00000066;
+  border-radius: 5px;
+  position: relative;
   border-radius: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7900,8 +7943,18 @@ html body .withWrap .walletBox .gradient .content {
   padding: 12px 0 10px 15px;
   border: solid 1px #713100;
 }
-html body .withWrap .walletBox .gradient .content .title {
+html body .withWrap .walletBox .gradient .content.read {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(46%, #fffbef), to(#e7d2ac));
+  background: linear-gradient(180deg, #fffbef 46%, #e7d2ac);
+}
+html body .withWrap .walletBox .gradient .content.read .title {
   color: #713100;
+}
+html body .withWrap .walletBox .gradient .content.read .textBox p, html body .withWrap .walletBox .gradient .content.read .textBox .date {
+  color: #281600;
+}
+html body .withWrap .walletBox .gradient .content .title {
+  color: #bf9755;
   font-size: 14px;
   font-weight: bold;
   display: -webkit-box;
@@ -7920,12 +7973,12 @@ html body .withWrap .walletBox .gradient .content .title i {
 }
 html body .withWrap .walletBox .gradient .content .amount {
   font-size: 29px;
-  color: #ffffff;
+  color: #713100;
   font-weight: bold;
 }
 html body .withWrap .walletBox .gradient .detail {
   width: 100%;
-  height: 70px;
+  height: 15vw;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0 25px;
@@ -7941,7 +7994,7 @@ html body .withWrap .walletBox .gradient .detail {
           justify-content: space-between;
 }
 html body .withWrap .walletBox .gradient .detail p {
-  color: #713100;
+  color: #ffffff;
   font-size: 14px;
   font-weight: bold;
   display: -webkit-box;
@@ -7953,19 +8006,21 @@ html body .withWrap .walletBox .gradient .detail p {
           flex-direction: column;
 }
 html body .withWrap .walletBox .gradient .detail p button {
-  width: 70px;
-  height: 23px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#037440), to(#074528));
-  background: linear-gradient(to bottom, #037440 0%, #074528 100%);
-  color: #f2bd7c;
-  border: 1px solid #f2bd7c;
+  width: 24vw;
+  height: 6vw;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(8%, #fff1b0), color-stop(51%, #dcc16e), color-stop(89%, #fff1b0));
+  background: linear-gradient(0deg, #fff1b0 8%, #dcc16e 51%, #fff1b0 89%);
+  color: #753200;
+  border: 1px solid #ffffff;
+  -webkit-box-shadow: 0 5px 3px -3px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 3px -3px rgba(0, 0, 0, 0.4);
   margin-top: 8px;
   font-size: 12px;
   line-height: 21px;
   border-radius: 3px;
 }
 html body .withWrap .walletBox .gradient .detail p.num {
-  color: #281600;
+  color: #ffffff;
   font-size: 17px;
 }
 html body .withWrap .walletBox .walletDetail {
@@ -8026,7 +8081,23 @@ html body .withWrap .walletBox .walletDetail .detailBox ul li {
   margin: 0 0.26vw 0.26vw 0;
   border: solid 1px #ffffff;
   border-radius: 1.5vw;
-  background: #f8dda0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(46%, #fffbef), to(#e7d2ac));
+  background: linear-gradient(180deg, #fffbef 46%, #e7d2ac);
+  border: 1px solid #bf9755;
+  -webkit-box-shadow: 0 5px 3px -3px #00000066;
+          box-shadow: 0 5px 3px -3px #00000066;
+  border-radius: 5px;
+  position: relative;
+}
+html body .withWrap .walletBox .walletDetail .detailBox ul li.read {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(46%, #fffbef), to(#e7d2ac));
+  background: linear-gradient(180deg, #fffbef 46%, #e7d2ac);
+}
+html body .withWrap .walletBox .walletDetail .detailBox ul li.read .title {
+  color: #713100;
+}
+html body .withWrap .walletBox .walletDetail .detailBox ul li.read .textBox p, html body .withWrap .walletBox .walletDetail .detailBox ul li.read .textBox .date {
+  color: #281600;
 }
 html body .withWrap .walletBox .walletDetail .detailBox ul li:nth-of-type(3n) {
   margin-right: 0;
@@ -8100,7 +8171,7 @@ html body .withWrap .walletBox .walletDetail .detailBox ul li div .smallInfo .in
 html body .withWrap .walletBox .walletDetail .detailBox ul li p {
   margin-top: 10px;
   font-size: 17px;
-  color: #f30f0f;
+  color: #281600;
   font-weight: bold;
 }
 html body .withWrap .walletBox .walletDetail .detailBox .openBtn {
@@ -8152,36 +8223,15 @@ html body .withWrap .withContent .remind {
   width: 100%;
   height: auto;
   margin-bottom: 10px;
-  background: #ffffff;
-  border: 1px solid #753200;
-  color: #bf9755;
-  font-size: 14px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  background: #fbf3db;
+  border: 1px solid #bf9755;
+  border-radius: 3px;
+  padding: 14px 15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 0 20px;
-  border-radius: 5px;
-  font-weight: bold;
   padding: 10px;
   font-size: 13px;
   line-height: 18px;
-}
-html body .withWrap .withContent .remind .low {
-  color: #ff0000;
-}
-html body .withWrap .withContent .remind .middle {
-  color: #ff8600;
-}
-html body .withWrap .withContent .remind .high {
-  color: #009245;
 }
 html body .withWrap .withContent select {
   width: 100%;

@@ -576,9 +576,10 @@ $slotGame_Word: #f3d3a4;
 
 //upload-btn上傳按鈕
 @mixin upload {
-    background: linear-gradient(to bottom, #037440 0%, #074528 100%);
-    color: #f2bd7c;
-    border:1px solid #f2bd7c;
+    background: linear-gradient(0deg,#fff1b0 8%,#dcc16e 51%,#fff1b0 89%);
+    color: #753200;
+    border:1px solid #ffffff;
+    box-shadow: 0 5px 3px -3px rgb(0 0 0 / 40%);
 }
 
 //常用綠色漸層
