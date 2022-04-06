@@ -432,7 +432,7 @@ header .online_member {
   position: absolute;
   right: 7px;
   top: 0;
-  background: url(../images/icon/onlineMember_icon.png) no-repeat;
+  background: url(../images/icon/onlineMember_icon.png) no-repeat center;
 }
 header .online_member p {
   color: #018317;
@@ -829,17 +829,17 @@ html body .marqueeBox {
       flex-shrink: 0;
 }
 html body .marqueeBox .marquee_ic {
-  position: absolute;
-  left: 21px;
-  width: 20px;
-  height: 30px;
+  position: relative;
+  left: 5vw;
+  width: 5.6vw;
+  height: 7vw;
   z-index: 2;
 }
 html body .marqueeBox .marquee {
   width: 100%;
   height: auto;
   overflow: hidden;
-  margin-left: 45px;
+  margin-left: 7vw;
 }
 html body .marqueeBox .marquee pre {
   display: inline-block;
@@ -1245,27 +1245,38 @@ html body .homeCenter .gameBox.display {
   display: flex;
 }
 html body .homeCenter .gameBox li {
-  width: 48%;
+  width: 46%;
+  height: 24vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   position: relative;
-  margin: 0 1.2vw 7vw 1.7vw;
+  margin: 0 1.2vw 0vw 1.7vw;
 }
 html body .homeCenter .gameBox li:nth-of-type(2n) {
   margin-right: 0;
 }
 html body .homeCenter .gameBox li p {
   position: absolute;
-  bottom: 5vw;
+  bottom: -5vw;
   left: 25px;
   color: #ebd495;
   font-size: 5vw;
   font-weight: bold;
   text-align: center;
   text-shadow: 2px 3px 3px #332116, 2px -2px 3px #332116;
+  font-size: 4vw;
+  width: 70%;
+}
+html body .homeCenter .gameBox .sportsize {
+  width: 100%;
+  height: 48vw;
+}
+html body .homeCenter .gameBox .lotterysize {
+  width: 100%;
+  height: 48vw;
 }
 html body footer {
   width: 100%;
@@ -1367,7 +1378,7 @@ html body .filter.display {
 }
 html body .filter .title {
   width: 100%;
-  height: 50px;
+  height: 12vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1377,7 +1388,7 @@ html body .filter .title {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 14px;
+  font-size: 5vw;
   letter-spacing: 2px;
   font-weight: bold;
   color: #fff;
@@ -2119,23 +2130,41 @@ html body .filter .gameWindow form .row {
           align-items: center;
   margin-bottom: 8.53vw;
 }
+html body .filter .gameWindow form .row:nth-of-type(2) {
+  display: block;
+}
 html body .filter .gameWindow form .row.btnBox {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0 0 1vw 20vw;
+  margin: 0 0 1vw 0vw;
 }
 html body .filter .gameWindow form .row.btnBox button {
-  width: 19vw;
-  height: 35px;
+  width: 26.5vw;
+  height: 9vw;
   margin-bottom: 5px;
-  border: 1px solid #299150;
-  background: transparent;
-  color: #3dbf6e;
-  border-radius: 3px;
-  font-size: 3.4vw;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(46%, #fffbef), to(#e7d2ac));
+  background: linear-gradient(180deg, #fffbef 46%, #e7d2ac);
+  border: 1px solid #bf9755;
+  -webkit-box-shadow: 0 5px 3px -3px #00000066;
+          box-shadow: 0 5px 3px -3px #00000066;
+  border-radius: 5px;
+  position: relative;
+  color: #713100;
+  font-weight: bold;
+  font-size: 3.9vw;
+}
+html body .filter .gameWindow form .row.btnBox button.read {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(46%, #fffbef), to(#e7d2ac));
+  background: linear-gradient(180deg, #fffbef 46%, #e7d2ac);
+}
+html body .filter .gameWindow form .row.btnBox button.read .title {
+  color: #713100;
+}
+html body .filter .gameWindow form .row.btnBox button.read .textBox p, html body .filter .gameWindow form .row.btnBox button.read .textBox .date {
+  color: #281600;
 }
 html body .filter .gameWindow form .row.checkBtn {
   -webkit-box-pack: end;
@@ -2175,8 +2204,9 @@ html body .filter .gameWindow form .row .moneyText {
   color: #713100;
 }
 html body .filter .gameWindow form .row input {
-  width: 59.2vw;
+  width: 81vw;
   height: 9.86vw;
+  margin-top: 2vw;
   background: none;
   border: 1px solid #bf9755;
   font-size: 15px;
@@ -2261,13 +2291,14 @@ html body .filter .phoneWindow form {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 5.06vw;
+  padding-top: 2.06vw;
   max-height: 140vw;
   overflow: auto;
 }
 html body .filter .phoneWindow form label {
   position: relative;
-  margin-bottom: 5.06vw;
+  margin-bottom: 11.5vw;
+  display: block;
 }
 html body .filter .phoneWindow form label input {
   width: 77.33vw;
@@ -2299,10 +2330,11 @@ html body .filter .phoneWindow form label input::placeholder {
   color: #d8b57c;
 }
 html body .filter .phoneWindow form label .cellphoneCheck {
-  width: 23.2vw;
+  width: 33vw;
   height: 8vw;
   position: absolute;
-  top: 50%;
+  top: 15vw;
+  left: 0;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   right: 10px;
@@ -2325,7 +2357,7 @@ html body .filter .phoneWindow form .remind {
 html body .filter .phoneWindow form .checkBtn {
   width: 77.33vw;
   height: 9.6vw;
-  margin-bottom: 10px;
+  margin-bottom: 1vw;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #1eb0a4), to(#26dbcc));
   background: linear-gradient(0deg, #1eb0a4 0, #26dbcc);
   font-size: 4vw;
@@ -2336,6 +2368,7 @@ html body .filter .phoneWindow form .checkBtn {
   border: 1px solid #39ebdd;
   -webkit-box-shadow: 0 5px 3px -3px rgba(0, 0, 0, 0.4);
           box-shadow: 0 5px 3px -3px rgba(0, 0, 0, 0.4);
+  margin-top: -7vw;
 }
 html body .filter .phoneWindow form .checkBtn:active, html body .filter .phoneWindow form .checkBtn.active {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #159288), to(#1eb0a4));
@@ -2853,17 +2886,14 @@ html body .slotWrap .slotHeader {
   height: 80px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 0 4%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-bottom: 3vw;
 }
 html body .slotWrap .slotHeader .listBox {
   width: 100%;
@@ -2877,9 +2907,12 @@ html body .slotWrap .slotHeader .listBox ul {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 8px;
-  padding: 0 2%;
+  padding: 0 4%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #efd9ad), color-stop(35%, #fff9e3), color-stop(61%, #fff6d4), color-stop(86%, #ebd3a8), to(#f6e4b7));
+  background: linear-gradient(180deg, #efd9ad 1%, #fff9e3 35%, #fff6d4 61%, #ebd3a8 86%, #f6e4b7);
+  height: 11vw;
 }
 html body .slotWrap .slotHeader .listBox ul li {
   font-size: 13px;
@@ -2896,7 +2929,7 @@ html body .slotWrap .slotHeader .listBox ul li {
 }
 html body .slotWrap .slotHeader .listBox ul li.active {
   color: #713100;
-  border-color: #b34e02;
+  border-bottom: 4px solid #b34e02;
 }
 html body .slotWrap .slotHeader .listBox ul li i {
   display: block;
@@ -2911,11 +2944,12 @@ html body .slotWrap .slotHeader .listBox ul li i.love_ic {
   margin-bottom: -4px;
 }
 html body .slotWrap .slotHeader .searchBox {
-  width: 100%;
-  height: 28px;
+  width: 93%;
+  height: 7.4vw;
+  margin: auto;
   margin-bottom: 5px;
-  background: #313131;
-  border: 1px solid #a7854d;
+  background: #f2f3f3;
+  border: 2px solid #b16d3d;
   padding: 4px 10px 4px 15px;
   border-radius: 30px;
   display: -webkit-box;
@@ -2945,19 +2979,19 @@ html body .slotWrap .slotHeader .searchBox input {
           box-sizing: border-box;
 }
 html body .slotWrap .slotHeader .searchBox input::-webkit-input-placeholder {
-  color: #f2bd7c;
+  color: #cbaf78;
 }
 html body .slotWrap .slotHeader .searchBox input::-moz-placeholder {
-  color: #f2bd7c;
+  color: #cbaf78;
 }
 html body .slotWrap .slotHeader .searchBox input:-ms-input-placeholder {
-  color: #f2bd7c;
+  color: #cbaf78;
 }
 html body .slotWrap .slotHeader .searchBox input::-ms-input-placeholder {
-  color: #f2bd7c;
+  color: #cbaf78;
 }
 html body .slotWrap .slotHeader .searchBox input::placeholder {
-  color: #f2bd7c;
+  color: #cbaf78;
 }
 html body .slotWrap .gameList {
   width: calc(100% - 30px);
@@ -2974,8 +3008,8 @@ html body .slotWrap .gameList .gameBox {
   width: calc((96vw - 30px)/2);
   height: 137px;
   margin: 0 1vw 8px;
-  background: #344e1c;
-  border: 1px solid #b3b3b3;
+  background: #fff1cf;
+  border: 1px solid #fff1cf;
   border-radius: 5px;
   overflow: hidden;
   position: relative;
@@ -2985,13 +3019,13 @@ html body .slotWrap .gameList .gameBox {
 }
 html body .slotWrap .gameList .gameBox p {
   width: 100%;
-  height: 30px;
+  height: 8vw;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0 15px;
   font-size: 14px;
   font-weight: bold;
-  color: #f3d3a4;
+  color: #713100;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4351,7 +4385,7 @@ html body .memberInfo .info_1 ul li .qrCode, html body .memberInfo .info_2 ul li
 }
 html body .memberInfo .info_1 ul li .security, html body .memberInfo .info_2 ul li .security {
   width: 100%;
-  height: 40px;
+  height: 11vw;
   background: #ffffff;
   border: 1px solid #753200;
   color: #bf9755;
@@ -4370,6 +4404,7 @@ html body .memberInfo .info_1 ul li .security, html body .memberInfo .info_2 ul 
   padding: 0 20px;
   border-radius: 5px;
   font-weight: bold;
+  display: -webkit-inline-box;
 }
 html body .memberInfo .info_1 ul li .security .low, html body .memberInfo .info_2 ul li .security .low {
   color: #ff0000;
@@ -4398,7 +4433,7 @@ html body .memberPlatform .platformBox {
           box-sizing: border-box;
   border: solid 1px #ffffff;
   border-radius: 5px;
-  background: #e5d9b7;
+  background: #e0c78cbf;
   margin-bottom: 10px;
 }
 html body .memberPlatform .platformBox .title {
@@ -5130,6 +5165,7 @@ html body .applyRecord .searchContain form ul li .inputBox {
   font-size: 15px;
   font-weight: bold;
   color: #281600;
+  background: #f8f8f8;
 }
 html body .applyRecord .searchContain form ul li .inputBox input {
   border: none;
@@ -5227,11 +5263,11 @@ html body .applyRecord .reviewBody .recordBox {
   width: 100%;
   height: auto;
   margin-bottom: 10px;
-  background: #e5d9b7;
+  background: #e0c78cbf;
   border-radius: 5px;
   -webkit-box-shadow: 0 0 5px 0 #c8c8c880;
           box-shadow: 0 0 5px 0 #c8c8c880;
-  border: solid 1px #713100;
+  border: solid 1px #ffffff;
 }
 html body .applyRecord .reviewBody .recordBox.display {
   display: block;
@@ -5266,7 +5302,7 @@ html body .applyRecord .reviewBody .recordBox ul .title p span {
   color: #713100;
 }
 html body .applyRecord .reviewBody .recordBox ul .title p span.status {
-  color: #0fc854;
+  color: #f30f0f;
 }
 html body .applyRecord .reviewBody .recordBox ul ul {
   -webkit-box-sizing: border-box;
@@ -6903,7 +6939,7 @@ html body .bettingWrap .list .recordBox {
   height: auto;
   border-radius: 5px;
   border: solid 1px #713100;
-  background: #f8dda0;
+  background: #e0c78cbf;
   margin-bottom: 10px;
 }
 html body .bettingWrap .list .recordBox.display {
@@ -6970,7 +7006,7 @@ html body .bettingWrap .list .recordBox ul li {
 }
 html body .bettingWrap .list .recordBox ul li p {
   font-size: 13px;
-  color: #0fc854;
+  color: #f30f0f;
 }
 html body .bettingWrap .list .recordBox ul li p.num {
   color: #281600;
@@ -6982,7 +7018,7 @@ html body .bettingWrap .list .recordBox ul li p.num.lose {
   color: #f30f0f;
 }
 html body .bettingWrap .list .recordBox ul li span {
-  color: #b16d3d;
+  color: #f30f0f;
 }
 html body .bettingWrap.deal {
   padding: 0;

@@ -4,6 +4,7 @@ $mainBG_2: #f8f8f8;
 $mainBG_3: #f8dda0;
 //透背景
 $maingoldBG: #f6ebad99;
+$scendmain:#e0c78cbf;
 //特殊背景
 $mainBG_4: #272727;
 
@@ -379,10 +380,10 @@ $help_Word: #281600;
 }
 
 //slotPage
-$slotGame_Word: #f3d3a4;
+$slotGame_Word: #cbaf78;
 @mixin slotSearch {
-    background: #313131;
-    border: 1px solid #a7854d;
+    background: #f2f3f3;
+    border: 2px solid #b16d3d;
     padding: 4px 10px 4px 15px;
     border-radius: 30px;
     display: flex;
@@ -399,12 +400,12 @@ $slotGame_Word: #f3d3a4;
     box-sizing: border-box;
 
     &::placeholder {
-        color: #f2bd7c;
+        color: #cbaf78;
     }
 }
 @mixin slotGameBox {
-    background: #344e1c;
-    border: 1px solid #b3b3b3;
+    background: #fff1cf;
+    border: 1px solid #fff1cf;
     border-radius: 5px;
     overflow: hidden;
     position: relative;

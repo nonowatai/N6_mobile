@@ -142,7 +142,7 @@
             height: auto;
             border-radius: 5px;
             border: solid 1px $mainBorder_2;
-            background: $mainBG_3;
+            background: $scendmain;
             margin-bottom: 10px;
 
             &.display {
@@ -193,7 +193,7 @@
 
                     p {
                         font-size: 13px;
-                        color: $title_Time;
+                        color: $money_Sp;
 
                         &.num {
                             color: $mainWord_1;
@@ -209,7 +209,7 @@
                     }
 
                     span {
-                        color: $remind;
+                        color:$money_Sp;
                     }
                 }
             }

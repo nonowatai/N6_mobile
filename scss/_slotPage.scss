@@ -10,10 +10,9 @@
         width: 100%;
         height: 80px;
         box-sizing: border-box;
-        padding: 0 4%;
         display: flex;
-        justify-content: center;
         flex-direction: column;
+        margin-bottom: 3vw;
 
         //選單
         .listBox {
@@ -24,8 +23,10 @@
                 display: flex;
                 justify-content: space-between;
                 margin-bottom: 8px;
-                padding: 0 2%;
+                padding: 0 4%;
                 box-sizing: border-box;
+                background: $choose_Active;
+                height: 11vw;
 
                 li {
                     font-size: 13px;
@@ -38,7 +39,7 @@
                     
                     &.active {
                         color: $choose_ActiveWord;
-                        border-color: $choose_Border;
+                        border-bottom:4px solid  $choose_Border;
                     }
 
                     i {
@@ -61,8 +62,9 @@
 
         //搜尋列
         .searchBox {
-            width: 100%;
-            height: 28px;
+            width: 93%;
+            height: 7.4vw;
+            margin: auto;
             margin-bottom: 5px;
             @include slotSearch;
 
@@ -97,12 +99,12 @@
 
             p {
                 width: 100%;
-                height: 30px;
+                height: 8vw;
                 box-sizing: border-box;
                 padding: 0 15px;
                 font-size: 14px;
                 font-weight: bold;
-                color: $slotGame_Word;
+                color: $title_2;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;

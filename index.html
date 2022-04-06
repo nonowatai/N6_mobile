@@ -98,6 +98,7 @@
             <ul class="gameList">
                 <ol class="gameListBG">
                     <li class="sportBtn">
+                    <li class="slotBtn active">
                         <div>
                             <i class="sport_ic"></i>
                             <p>SLOTS</p>
@@ -115,7 +116,7 @@
                             <p>GAME BÀI</p>
                         </div>
                     </li>
-                    <li class="slotBtn active">
+                    <li class="sportBtn">
                         <div>
                             <i class="slot_ic"></i>
                             <p>THỂ THAO</p>
@@ -136,81 +137,89 @@
                 </ol>
             </ul>
             <!--遊戲選擇-->
-            <ul class="gameBox slotBox display">
-                <li onclick="unlogin()">
-                    <img src="./images/廠商圖/slot/bng.png">
-                    <p>BNG電子娛樂</p>
+             <ul class="gameBox slotBox display">
+                <li onclick="callSlot()">
+                    <img src="../images/廠商圖/slot/bng.png">
+                    <p>BNG</p>
                 </li>
-                <li onclick="unlogin()">
-                    <img src="./images/廠商圖/slot/tpg.png">
-                    <p>TPG電子娛樂</p>
+                <li onclick="callSlot()">
+                    <img src="../images/廠商圖/slot/tpg.png">
+                    <p>TPG</p>
                 </li>
-                <li onclick="unlogin()">
-                    <img src="./images/廠商圖/slot/px.png">
-                    <p>鳳凰棋牌</p>
+                <li onclick="callSlot()">
+                    <img src="../images/廠商圖/slot/px.png">
+                    <p>PX</p>
                 </li>
-                <li onclick="unlogin()">
-                    <img src="./images/廠商圖/slot/simplePlay.png">
+                <li onclick="callSlot()">
+                    <img src="../images/廠商圖/slot/simplePlay.png">
                     <p>SimplePlay</p>
                 </li>
-                <li onclick="unlogin()">
-                    <img src="./images/廠商圖/slot/rsg.png">
-                    <p>RSG電子娛樂</p>
+                <li onclick="callSlot()">
+                    <img src="../images/廠商圖/slot/rsg.png">
+                    <p>RSG</p>
                 </li>
-                <li onclick="unlogin()">
-                    <img src="./images/廠商圖/slot/ifun.png">
-                    <p>IFUN電子娛樂</p>
+                <li onclick="callSlot()">
+                    <img src="../images/廠商圖/slot/ifun.png">
+                    <p>IFUN</p>
                 </li>
-                <li onclick="unlogin()">
-                    <img src="./images/廠商圖/slot/bwin.png">
-                    <p>必贏電子娛樂</p>
+                <li onclick="callSlot()">
+                    <img src="../images/廠商圖/slot/bwin.png">
+                    <p>BWIN</p>
                 </li>
-                <li onclick="unlogin()">
-                    <img src="./images/廠商圖/slot/png.png">
-                    <p>PNG電子娛樂</p>
-                </li>
+                <!-- <li onclick="callSlot()">
+                    <img src="../images/廠商圖/slot/png.png">
+                    <p>PNG</p>
+                </li> -->
             </ul>
             <ul class="gameBox liveBox">
-                <li onclick="unlogin()">
-                    <img src="./images/廠商圖/live/sa.png">
+                <li onclick="callLive()">
+                    <img src="../images/廠商圖/live/sa.png">
                     <p>SA CASINO</p>
                 </li>
-                <li onclick="unlogin()">
-                    <img src="./images/廠商圖/live/allbet.png">
+                <li onclick="callLive()">
+                    <img src="../images/廠商圖/live/allbet.png">
                     <p>ALL BAT</p>
                 </li>
-                <li onclick="unlogin()">
-                    <img src="./images/廠商圖/live/dg.png">
+                <li onclick="callLive()">
+                    <img src="../images/廠商圖/live/dg.png">
                     <p>DG真人娛樂</p>
                 </li>
-                <li onclick="unlogin()">
-                    <img src="./images/廠商圖/live/wm.png">
-                    <p>WM CASINO</p>
+                <li onclick="callLive()">
+                    <img src="../images/廠商圖/live/wm.png">
+                    <p>WM</p>
                 </li>
-                <li onclick="unlogin()">
-                    <img src="./images/廠商圖/live/og.png">
+                <li onclick="callLive()">
+                    <img src="../images/廠商圖/live/og.png">
+                    <p>OG真人娛樂</p>
+                </li>
+                <li onclick="callLive()">
+                    <img src="../images/廠商圖/live/og.png">
+                    <p>OG真人娛樂</p>
+                </li>
+                <li onclick="callLive()">
+                    <img src="../images/廠商圖/live/og.png">
                     <p>OG真人娛樂</p>
                 </li>
             </ul>
             <ul class="gameBox sportBox">
-                <li onclick="unlogin()">
-                    <img src="./images/廠商圖/sport/36588.png">
+                <li class="sportsize" onclick="callSport()">
+                    <img src="../images/廠商圖/sport/36588.png">
                     <p>36588體育</p>
                 </li>
             </ul>
             <ul class="gameBox lotteryBox">
-                <li onclick="unlogin()">
-                    <img src="./images/廠商圖/lottery/rwd.png">
-                    <p>白鹿電子娛樂</p>
+                <li class="lotterysize" onclick="callLottery()">
+                    <img src="../images/廠商圖/lottery/rwd.png">
+                    <p>RWD</p>
                 </li>
-                <li onclick="unlogin()">
-                    <img src="./images/廠商圖/lottery/SG.png">
+                <!-- <li onclick="callLottery()">
+                    <img src="../images/廠商圖/lottery/SG.png">
                     <p>SG88六合、大樂、539</p>
                 </li>
-                <li onclick="unlogin()">
-                    <img src="./images/廠商圖/lottery/GS.png">
+                <li onclick="callLottery()">
+                    <img src="../images/廠商圖/lottery/GS.png">
                     <p>京彩彩票</p>
-                </li>
+                </li> -->
             </ul>
         </div>
     </main>
@@ -444,7 +453,7 @@
                     <div class="moneyText">$999</div>
                 </div>
                 <div class="row">
-                    <p class="smallTitle">轉帳金額</p>
+                    <p class="smallTitle">Số điểm muốn chuyển</p>
                     <input type="text">
                 </div>
                 <div class="row btnBox">
@@ -479,7 +488,7 @@
                     <div class="moneyText">$999</div>
                 </div>
                 <div class="row">
-                    <p class="smallTitle">轉帳金額</p>
+                    <p class="smallTitle">Số điểm muốn chuyển</p>
                     <input type="text">
                 </div>
                 <div class="row btnBox">
@@ -514,7 +523,7 @@
                     <div class="moneyText">$999</div>
                 </div>
                 <div class="row">
-                    <p class="smallTitle">轉帳金額</p>
+                    <p class="smallTitle">Số điểm muốn chuyển</p>
                     <input type="text">
                 </div>
                 <div class="row btnBox">
@@ -540,16 +549,16 @@
         <!--老虎機彈窗-->
         <div class="jumpWindow gameWindow slot">
             <div class="title">
-                <p>老虎機</p>
+                <p>slot</p>
                 <i class="close"></i>
             </div>
             <form>
                 <div class="row">
-                    <p class="smallTitle">中心VÍ TIỀN</p>
+                    <p class="smallTitle">VÍ chinh</p>
                     <div class="moneyText">$999</div>
                 </div>
                 <div class="row">
-                    <p class="smallTitle">轉帳金額</p>
+                    <p class="smallTitle">Số điểm muốn chuyển</p>
                     <input type="text">
                 </div>
                 <div class="row btnBox">
@@ -565,12 +574,12 @@
                     <button>Xác nhận</button>
                 </div>
                 <div class="row">
-                    <p class="smallTitle">鳳凰棋牌</p>
+                    <p class="smallTitle">png</p>
                     <div class="moneyText">$0</div>
                 </div>
             </form>
             <hr>
-            <button class="enterBtn">進入遊戲</button>
+            <button class="enterBtn">Vào Game</button>
         </div>
     </div>
     <!--背景-->

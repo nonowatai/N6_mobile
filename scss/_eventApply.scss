@@ -219,6 +219,7 @@
                         font-size: 15px;
                         font-weight: bold;
                         color: $mainWord_1;
+                        background: $mainBG_2;
 
                         input {
                             border: none;
@@ -292,10 +293,10 @@
             width: 100%;
             height: auto;
             margin-bottom: 10px;
-            background: $mainBG_1;
+            background: $scendmain;
             border-radius: 5px;
             box-shadow: 0 0 5px 0 $boxshadow_2;
-            border: solid 1px $mainBorder_2;
+            border: solid 1px $mainBorder_1;
 
             &.display {
                 display: block;
@@ -324,7 +325,7 @@
                             color: $title_2;
 
                             &.status {
-                                color: $title_Time;
+                                color: $remind_Sp;
                             }
                         }
                     }
