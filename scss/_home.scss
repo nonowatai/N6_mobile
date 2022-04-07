@@ -58,8 +58,8 @@
     flex-shrink: 0;
 
     .member_icon {
-        width: 30px;
-        height: 30px;
+        width: 9vw;
+        height: 9vw;
 
         &.display {
             display: none;
@@ -79,9 +79,9 @@
         display: none;
         align-items: center;
         justify-content: center;
-        width: 85px;
-        height: 38px;
-        padding: 0 0 1px 3px;
+        width: 20vw;
+        height: 22vw;
+        padding: 0 0 1px 1vw;
         margin-right: 3vw;
 
         &.display {

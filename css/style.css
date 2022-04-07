@@ -893,8 +893,8 @@ html body .memberArea {
       flex-shrink: 0;
 }
 html body .memberArea .member_icon {
-  width: 30px;
-  height: 30px;
+  width: 9vw;
+  height: 9vw;
 }
 html body .memberArea .member_icon.display {
   display: none;
@@ -915,9 +915,9 @@ html body .memberArea .loginBtn {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 85px;
-  height: 38px;
-  padding: 0 0 1px 3px;
+  width: 20vw;
+  height: 22vw;
+  padding: 0 0 1px 1vw;
   margin-right: 3vw;
 }
 html body .memberArea .loginBtn.display {
@@ -1575,10 +1575,10 @@ html body .filter .loginWindow form label {
 html body .filter .loginWindow form label::before {
   content: "";
   position: absolute;
-  top: 8px;
-  left: 10px;
-  width: 20px;
-  height: 24px;
+  top: 2vw;
+  left: 1.5vw;
+  width: 5.2vw;
+  height: 7vw;
 }
 html body .filter .loginWindow form label:nth-of-type(1) {
   margin: 9vw 0 8vw;
@@ -1703,7 +1703,7 @@ html body .filter .forgetWindow form {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 10px 15px;
+  padding: 0 2vw;
 }
 html body .filter .forgetWindow form input {
   width: 77.6vw;
@@ -1899,7 +1899,7 @@ html body .filter .registerWindow form label .eye {
   height: 4.26vw;
 }
 html body .filter .registerWindow form label .cellphoneCheck {
-  width: 23.2vw;
+  width: 30vw;
   height: 7.4vw;
   position: absolute;
   top: 50%;
@@ -1915,7 +1915,7 @@ html body .filter .registerWindow form .remind {
   width: 77.33vw;
   margin: 5px 0;
   font-size: 12px;
-  color: #f30f0f;
+  color: #713100;
   font-weight: bold;
 }
 html body .filter .registerWindow form .checkBtn {
@@ -2940,7 +2940,7 @@ html body .slotWrap .slotHeader .listBox ul li {
   font-size: 13px;
   font-weight: bold;
   padding: 5px 1.33vw;
-  color: #713100;
+  color: #a87828;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3109,7 +3109,7 @@ html body .eventType ul li .all_ic {
 html body .eventType ul li span {
   font-size: 12px;
   font-weight: bold;
-  color: #713100;
+  color: #a87828;
 }
 html body .eventList {
   width: 100%;
@@ -4120,7 +4120,7 @@ html body .memberList ul li {
   border-bottom: solid 4px transparent;
   font-size: 3.4vw;
   font-weight: bold;
-  color: #713100;
+  color: #a87828;
 }
 html body .memberList ul li:active, html body .memberList ul li.active {
   color: #713100;
@@ -4914,7 +4914,7 @@ html body .eventApplyType {
   height: auto;
   overflow-x: auto;
   position: fixed;
-  top: 45px;
+  top: 11vw;
   left: 0px;
   z-index: 10;
   background: #f8dda0;
@@ -4923,6 +4923,7 @@ html body .eventApplyType ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  overflow-x: scroll;
 }
 html body .eventApplyType ul li {
   width: 34%;
@@ -4944,9 +4945,10 @@ html body .eventApplyType ul li {
           box-sizing: border-box;
   font-size: 3.4vw;
   font-weight: bold;
-  color: #713100;
+  color: #a87828;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #efd9ad), color-stop(35%, #fff9e3), color-stop(61%, #fff6d4), color-stop(86%, #ebd3a8), to(#f6e4b7));
   background: linear-gradient(180deg, #efd9ad 1%, #fff9e3 35%, #fff6d4 61%, #ebd3a8 86%, #f6e4b7);
+  white-space: nowrap;
 }
 html body .eventApplyType ul li:active, html body .eventApplyType ul li.active {
   border-bottom: 4px solid #b34e02;
@@ -4979,7 +4981,7 @@ html body .applyList .listBox .list {
 }
 html body .applyList .listBox .list .title {
   width: 100%;
-  height: 40px;
+  height: 10vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4991,8 +4993,9 @@ html body .applyList .listBox .list .title {
           justify-content: center;
   border-bottom: solid 1px #ffffff;
   color: #713100;
-  font-size: 16px;
+  font-size: 4.5vw;
   font-weight: bold;
+  white-space: nowrap;
 }
 html body .applyList .listBox .list .tips {
   display: none;
@@ -5103,8 +5106,10 @@ html body .applyList .listBox .list .btnBox button.applyBtn {
   border-radius: 3px;
   padding: 0 5px;
   letter-spacing: 1px;
-  font-size: 13px;
+  font-size: 4vw;
+  line-height: 4vw;
   width: 48%;
+  white-space: nowrap;
 }
 html body .applyList .listBox .list .btnBox button.checkBtn {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #1eb0a4), to(#26dbcc));
@@ -5114,7 +5119,7 @@ html body .applyList .listBox .list .btnBox button.checkBtn {
   font-weight: bold;
   color: #fffefd;
   border-radius: 3px;
-  font-size: 16px;
+  font-size: 4vw;
   width: 48%;
 }
 html body .applyRecord {
@@ -6071,7 +6076,7 @@ html body .topList ul li {
           justify-content: center;
   font-size: 14px;
   font-weight: bold;
-  color: #713100;
+  color: #a87828;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #efd9ad), color-stop(35%, #fff9e3), color-stop(61%, #fff6d4), color-stop(86%, #ebd3a8), to(#f6e4b7));
   background: linear-gradient(180deg, #efd9ad 1%, #fff9e3 35%, #fff6d4 61%, #ebd3a8 86%, #f6e4b7);
 }
@@ -6669,11 +6674,11 @@ html body .cardContent ul li input::placeholder {
   color: #d8b57c;
 }
 html body .cardContent ul li .remind {
-  margin-top: 5px;
-  padding-left: 3px;
+  margin-top: 1.4vw;
+  padding-left: 1vw;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-size: 12px;
+  font-size: 4vw;
   font-weight: bold;
   color: #f30f0f;
 }
@@ -6998,9 +7003,9 @@ html body .bettingWrap .list .recordBox .title .date {
   color: #713100;
 }
 html body .bettingWrap .list .recordBox .title button {
-  width: 42%;
+  width: 56vw;
   height: auto;
-  padding: 0.5vw 2vw;
+  padding: 0.5vw 1.5vw;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #1eb0a4), to(#26dbcc));
   background: linear-gradient(0deg, #1eb0a4 0, #26dbcc);
   border: 1px solid #39ebdd;
@@ -7080,7 +7085,7 @@ html body .recordTop ul li {
           justify-content: center;
   font-size: 14px;
   font-weight: bold;
-  color: #713100;
+  color: #a87828;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #efd9ad), color-stop(35%, #fff9e3), color-stop(61%, #fff6d4), color-stop(86%, #ebd3a8), to(#f6e4b7));
   background: linear-gradient(180deg, #efd9ad 1%, #fff9e3 35%, #fff6d4 61%, #ebd3a8 86%, #f6e4b7);
 }
