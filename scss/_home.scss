@@ -296,7 +296,7 @@
     display: flex;
     // justify-content: space-between;
     box-sizing: border-box;
-    padding: 0 15px 8px;
+    padding: 0 2vw 3vw;
     margin-top: 8px;
 
     //遊戲種類選單
@@ -350,14 +350,14 @@
                 }
     
                 div {
-                    width: 83%;
+                    width: 80%;
                     height: 90%;
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     flex-direction: column;
                     border-radius: 7px;
-                    padding: 1vw 0 2vw;
+                    padding: 1.5vw 0 2vw;
     
                     p {
                         margin-top: 2vw;
