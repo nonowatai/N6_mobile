@@ -3029,7 +3029,7 @@ html body .slotWrap .gameList {
 }
 html body .slotWrap .gameList .gameBox {
   width: calc((96vw - 30px)/2);
-  height: 37vw;
+  height: 54vw;
   margin: 0 1vw 8px;
   background: #fff1cf;
   border: 1px solid #fff1cf;
@@ -3046,7 +3046,7 @@ html body .slotWrap .gameList .gameBox p {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0 15px;
-  font-size: 14px;
+  font-size: 3.2vw;
   font-weight: bold;
   color: #713100;
   display: -webkit-box;
@@ -3062,6 +3062,50 @@ html body .slotWrap .gameList .gameBox p {
 html body .slotWrap .gameList .gameBox p .love {
   width: 17px;
   height: 17px;
+}
+html body .slotWrap .gameList .gameBox .btnBox {
+  width: 42vw;
+  height: 17vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  display: block;
+  padding: 0 1vw;
+}
+html body .slotWrap .gameList .gameBox .btnBox button {
+  width: 97%;
+  height: 7vw;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(23%, #fe3f70), to(#cf0f57));
+  background: linear-gradient(180deg, #fe3f70 23%, #cf0f57);
+  border: 1px solid #ff5480;
+  border-radius: 3px;
+  font-size: 3vw;
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 1vw;
+}
+html body .slotWrap .gameList .gameBox .btnBox button:active, html body .slotWrap .gameList .gameBox .btnBox button.active {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(23%, #fe3f70), to(#cf0f57));
+  background: linear-gradient(0deg, #fe3f70 23%, #cf0f57);
+}
+html body .slotWrap .gameList .gameBox .btnBox button.try {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #1eb0a4), to(#26dbcc));
+  background: linear-gradient(0deg, #1eb0a4 0, #26dbcc);
+  border: solid 1px #39ebdd;
+  border-radius: 3px;
+  font-size: 3vw;
+  color: #ffffff;
+  font-weight: bold;
+}
+html body .slotWrap .gameList .gameBox .btnBox button.try:active, html body .slotWrap .gameList .gameBox .btnBox button.try.active {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #1eb0a4), to(#26dbcc));
+  background: linear-gradient(180deg, #1eb0a4 0, #26dbcc);
 }
 html body .eventType {
   width: 100%;
@@ -3161,9 +3205,9 @@ html body .eventList ul li .eventBox p {
           justify-content: flex-end;
 }
 html body .eventList ul li .eventBox p button {
-  width: 13vw;
-  min-height: 4.5vw;
-  line-height: 4.5vw;
+  width: 17vw;
+  min-height: 6.5vw;
+  line-height: 6.5vw;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(23%, #fe3f70), to(#cf0f57));
   background: linear-gradient(180deg, #fe3f70 23%, #cf0f57);
   font-size: 4vw;
@@ -3503,7 +3547,7 @@ html body .walletWrap .walletList .forPlatform ul {
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  max-height: 67.16vw;
+  max-height: 55.16vw;
   padding: 0 3.6vw;
   overflow: hidden;
 }
@@ -3709,7 +3753,6 @@ html body .memberWrap {
   width: 100%;
   height: auto;
   min-height: calc(100% - 92px);
-  background: #272727;
   padding-bottom: 10px;
 }
 html body .memberWrap .user {

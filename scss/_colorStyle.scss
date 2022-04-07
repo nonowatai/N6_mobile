@@ -414,27 +414,27 @@ $slotGame_Word: #cbaf78;
     box-sizing: border-box;
 }
 @mixin slotGameBtn_1 {
-    background: linear-gradient(to top, #8c1212 0%, #ff4a4a 100%);
-    border: solid 1px #dc0000;
+    background: linear-gradient(180deg,#fe3f70 23%,#cf0f57);
+    border: 1px solid #ff5480;
     border-radius: 3px;
     font-size: 3vw;
     color: #ffffff;
     font-weight: bold;
 
     &:active,&.active {
-        background: linear-gradient(to bottom, #8c1212 0%, #ff4a4a 100%);
+        background: linear-gradient(0deg,#fe3f70 23%,#cf0f57);
     }
 }
 @mixin slotGameBtn_2 {
-    background: linear-gradient(to top, #384c79 0%, #2b87e6 100%);
-    border: solid 1px #0f4eb7;
+    background: linear-gradient(0deg,#1eb0a4 0,#26dbcc);
+    border: solid 1px #39ebdd;
     border-radius: 3px;
     font-size: 3vw;
     color: #ffffff;
     font-weight: bold;
 
     &:active,&.active {
-        background: linear-gradient(to bottom, #384c79 0%, #2b87e6 100%);
+        background: linear-gradient(180deg,#1eb0a4 0,#26dbcc);
     }
 }
 
