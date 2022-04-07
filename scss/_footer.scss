@@ -16,41 +16,53 @@ footer {
             width: 20%;
             height: 38px;
             @include footerWord;
+            border-right: 1px solid $mainBorder_3;
+            white-space: nowrap;
+
+            &:nth-last-of-type(1) {
+                border: none;
+            }
 
             &.active {
 
                 i {
                     background-position-y: 100%;
+                    background-position-x: 20%;
+
+                    &:nth-of-type(4n) {
+                        background-position-y: 92%;
+                    }
                 }
             }
 
             i {
                 display: block;
-                width: 25px;
-                height: 24px;
+                width: 6vw;
+                height: 6.2vw;
 
                 &.menu_ic {
-                    background-position-x: 1px;
+                    background-position-x: 0.6vw;
                 }
 
                 &.event_ic {
-                    background-position-x: 25%;
+                    background-position-x: -5.7vw;
                 }
 
                 &.wallet_ic {
-                    background-position-x: 50%;
+                    background-position-x: -11.6vw;
                 }
 
                 &.service_ic {
-                    background-position-x: 75%;
-                    width: 32px;
-                    height: 32px;
+                    background-position-x: -19vw;
+                    width: 12vw;
+                    height: 6.7vw;
+                    background-size: 315%;
                 }
 
                 &.center_ic {
                     background-position-x: 100%;
-                    width: 30px;
-                    height: 30px;
+                    width: 6vw;
+                    height: 6vw;
                 }
             }
 

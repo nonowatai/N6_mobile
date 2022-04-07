@@ -1,7 +1,7 @@
 //跑馬燈
 .marqueeBox {
     width: 100%;
-    height: 30px;
+    height: 8.5vw;
     display: flex;
     align-items: center;
     box-sizing: border-box;
@@ -13,7 +13,7 @@
     .marquee_ic {
         position: relative;
         left: 5vw;
-        width: 5.6vw;
+        width: 5vw;
         height: 7vw;
         z-index: 2;
     }
@@ -26,7 +26,7 @@
 
         pre {
             display: inline-block;
-            font-size: 13px;
+            font-size: 2.5vw;
             color: $marqueeColor;
             animation: marquee 10s linear 0s infinite;
             padding-left: 100%;
@@ -47,7 +47,7 @@
 //登入區
 .memberArea {
     width: 95%;
-    height: 8.6vh;
+    height: 20vw;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -183,6 +183,7 @@
                     font-size: 2vw;
                     line-height: 20px;
                     font-weight: bold;
+                    white-space: nowrap;
                     // @include operateLV;
                 }
             }
@@ -230,9 +231,11 @@
 
             button {
                 width: 100%;
-                height: 60px;
+                height: 12vw;
                 background: none;
-                font-size: 3vw;
+                font-size: 2vw;
+                line-height: 3vw;
+                margin-top: -2vw;
                 // transform: rotate(45deg);
                 // @include operateBtn;
 
@@ -416,19 +419,20 @@
             display: flex;
             flex-wrap: wrap;
             position: relative;
-            margin: 0 1.2vw 0vw 1.7vw;
+            margin: 0 1.2vw 5vw 1.7vw;
 
             &:nth-of-type(2n) {
                 margin-right: 0;
             }
 
             p {
-                position: absolute;
-                bottom: -5vw;
-                left: 25px;
+                // position: absolute;
+                left: 12vw;
                 @include gameBoxWord;
                 font-size: 4vw;
-                width: 70%;
+                width: 100%;
+                bottom: 0vw;
+                margin-bottom: -5vw;
             }
         }
 

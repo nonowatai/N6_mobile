@@ -14,6 +14,7 @@ $mainWord_1: #281600;
 //主要邊框色
 $mainBorder_1: #ffffff;
 $mainBorder_2: #713100;
+$mainBorder_3: #fff7d8;
 
 //金額色
 $money: #713100;
@@ -166,11 +167,11 @@ $gameListBtn_ActiveWord: #ead090;
     border-radius: 5px;
 }
 @mixin gameBoxWord {
-    color: #ebd495;
+    color: #fbe2b7;
     font-size: 5vw;
     font-weight: bold;
     text-align: center;
-    text-shadow: 2px 3px 3px #332116, 2px -2px 3px #332116;
+    text-shadow: 0 1px 0 #00000066;
 }
 
 //member

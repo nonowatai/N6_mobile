@@ -52,8 +52,20 @@
             padding: 0 3% !important;
 
             button {
-                width: 36px !important;
+                width: 55px !important;
                 height: 36px !important;
+            }
+        }
+    }
+
+    footer {
+        ul {
+            li {
+                p {
+                    transform: scale(.8);
+                    white-space: nowrap;
+                }
+               
             }
         }
     }
