@@ -1308,7 +1308,7 @@ html body footer ul {
 }
 html body footer ul li {
   width: 20%;
-  height: 38px;
+  height: 11vw;
   color: #fff7d8;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1325,22 +1325,29 @@ html body footer ul li {
           justify-content: center;
   font-weight: bold;
   white-space: nowrap;
+  border-right: 1px solid #fff7d8;
 }
 html body footer ul li.active {
   color: #b16d3d;
-  background: #fff7d8;
-  height: 100%;
 }
 html body footer ul li.active::before {
+  content: "";
+  position: absolute;
+  width: 21vw;
   height: 100%;
+  z-index: 101;
+  background: #fff7d8;
 }
 html body footer ul li::before {
   content: "";
   position: absolute;
-  width: 1px;
+  width: 20.2vw;
   height: 80%;
-  background: #fff7d8;
-  margin-left: 20vw;
+  z-index: -1;
+  background: none;
+}
+html body footer ul li:nth-last-of-type(1) {
+  border: none;
 }
 html body footer ul li.active i {
   background-position-y: 100%;
@@ -1353,6 +1360,7 @@ html body footer ul li i {
   display: block;
   width: 6vw;
   height: 6.2vw;
+  z-index: 102;
 }
 html body footer ul li i.menu_ic {
   background-position-x: 0.6vw;
@@ -1377,6 +1385,7 @@ html body footer ul li i.center_ic {
 html body footer ul li p {
   font-size: 12px;
   padding-top: 2px;
+  z-index: 102;
 }
 html body .filter {
   width: 100%;
@@ -3218,21 +3227,21 @@ html body .eventList ul li .eventBox p button {
   width: 17vw;
   min-height: 6.5vw;
   line-height: 6.5vw;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(23%, #fe3f70), to(#cf0f57));
-  background: linear-gradient(180deg, #fe3f70 23%, #cf0f57);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #1eb0a4), to(#26dbcc));
+  background: linear-gradient(0deg, #1eb0a4 0, #26dbcc);
   font-size: 4vw;
   font-weight: bold;
-  color: #fff;
-  border-radius: 3px;
+  color: #fffefd;
+  border-radius: 1.3vw;
   letter-spacing: 1px;
-  border: 1px solid #ff5480;
+  border: 1px solid #39ebdd;
   -webkit-box-shadow: 0 5px 3px -3px rgba(0, 0, 0, 0.4);
           box-shadow: 0 5px 3px -3px rgba(0, 0, 0, 0.4);
   font-size: 2.6vw;
 }
 html body .eventList ul li .eventBox p button:active, html body .eventList ul li .eventBox p button.active {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #df115e), to(#820031));
-  background: linear-gradient(0deg, #df115e 0, #820031);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #159288), to(#1eb0a4));
+  background: linear-gradient(180deg, #159288 0, #1eb0a4);
 }
 html body .eventDetail {
   width: 100%;

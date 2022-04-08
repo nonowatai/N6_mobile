@@ -463,11 +463,14 @@ $slotGame_Word: #cbaf78;
 
     &.active {
         color: #b16d3d;
-        background: #fff7d8;
-        height: 100%;
 
         &::before {
+            content: "";
+            position: absolute;
+            width: 21vw;
             height: 100%;
+            z-index: 101;
+            background: #fff7d8;
         }
     }
 }
