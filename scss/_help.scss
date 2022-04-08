@@ -119,7 +119,7 @@
         li {
             width: 100%;
             height: auto;
-            margin: 14px 0;
+            // margin: 14px 0;
 
             &.active {
 
@@ -143,7 +143,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                margin: 0 auto;
+                margin: 2vw auto 0;
                 border: solid 1px $mainBorder_2;
 
                 .icon {
@@ -172,32 +172,11 @@
                 }
             }
 
-            .textBox {
-                display: none;
-                width: 96.27vw;
-                height: auto;
-                box-sizing: border-box;
-                padding: 10px;
-                margin: 0 auto;
-                border-top: none;
-                border-radius: 0 0 5px 5px;
+            .inportent_box {
 
-                &.app {
-                    background: none;
-                    border: none;
-                }
-
-                h1 {
-                    text-align: center;
-                    font-weight: bold;
-                    margin-bottom: 2vw;
-                }
-
-                h2 {
-                    font-weight: bold;
-                    margin-bottom: 2vw;
-                    color: $title_2;
-                }
+                background: $liner-bg;
+                border-bottom: 1px solid $mainBorder_1;
+                padding: 5vw 5vw;
 
                 p {
                     line-height: 22px;
@@ -214,6 +193,8 @@
 
                         &.first {
                             margin-top: 0;
+                            text-align: left;
+                            color: $title_3;
                         }
                     }
 
@@ -233,6 +214,80 @@
                         color: $remind_Sp;
                         text-decoration: none;
                     }
+                }
+            }
+
+            .textBox {
+                display: none;
+                width: 92.27vw;
+                height: auto;
+                box-sizing: border-box;
+                padding: 10px;
+                margin: 0 auto;
+                border-top: none;
+                border-radius: 0 0 5px 5px;
+                // background:$maingoldBG;
+                // border: 1px solid $mainBorder_1;
+                // border-top: none;
+
+                &.textBoder {
+                    border: 1px solid $mainBorder_2;
+                    background: $scendmain;
+                    border-top: none;
+                }
+
+                &.app {
+                    background: none;
+                    border: none;
+                }
+
+                p {
+                    line-height: 22px;
+                    font-size: 14px;
+                    font-weight: bold;
+                    color: $help_Word;
+                    margin-bottom: 8px;
+
+                    &.smallTitle {
+                        font-size: 5vw;
+                        margin: 20px 0 10px;
+                        color: $help_Title;
+                        text-align: center;
+
+                        &.first {
+                            margin-top: 0;
+                            text-align: left;
+                        }
+                    }
+
+                    &.platform {
+                        font-size: 18px;
+                        color: $help_Title;
+                        margin: 15px 0;
+                        text-align: center;
+
+                        .downloadBtn {
+                            width: 144px;
+                            margin-left: 10px;
+                        }
+                    }
+
+                    a {
+                        color: $remind_Sp;
+                        text-decoration: none;
+                    }
+                }
+
+                h1 {
+                    // text-align: center;
+                    font-weight: bold;
+                    margin-bottom: 2vw;
+                }
+
+                h2 {
+                    font-weight: bold;
+                    margin-bottom: 2vw;
+                    color: $title_2;
                 }
 
                 .img {
@@ -261,7 +316,7 @@
 
                     div {
                         width: 100%;
-                        height: 118px;
+                        height: 42vw;
                         position: relative;
                         margin-bottom: 15px;
                         @include help_lineBtn1;

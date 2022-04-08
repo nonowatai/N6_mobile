@@ -16,12 +16,20 @@ footer {
             width: 20%;
             height: 38px;
             @include footerWord;
-            border-right: 1px solid $mainBorder_3;
             white-space: nowrap;
 
-            &:nth-last-of-type(1) {
-                border: none;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 1px;
+                height: 80%;
+                background: #fff7d8;
+                margin-left: 20vw;
             }
+
+            // &:nth-last-of-type(1) {
+            //     border: none;
+            // }
 
             &.active {
 

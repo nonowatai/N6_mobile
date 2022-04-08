@@ -141,8 +141,8 @@
             width: 100%;
             height: auto;
             border-radius: 5px;
-            border: solid 1px $mainBorder_2;
-            background: $scendmain;
+            border: solid 1px $mainBorder_1;
+            background: $mainBG_3;
             margin-bottom: 10px;
 
             &.display {
@@ -153,7 +153,7 @@
                 width: 100%;
                 height: 38px;
                 border-bottom: solid 1px $mainBorder_1;
-                color: $mainWord_1;
+                color: $title_2;
                 font-size: 14px;
                 font-weight: bold;
                 display: flex;
@@ -168,7 +168,7 @@
                 }
 
                 button {
-                    width: 56vw;
+                    width: 41vw;
                     height: auto;
                     padding: 0.5vw 1.5vw;
                     @include noBgBtn_Normal;

@@ -420,7 +420,7 @@ header .editBtn {
 }
 
 header .logo {
-  width: 92px;
+  width: 23vw;
   margin: auto;
 }
 
@@ -816,7 +816,7 @@ html body .ad .single-item .slick-next::before {
 }
 html body .marqueeBox {
   width: 100%;
-  height: 8.5vw;
+  height: 7vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -827,7 +827,7 @@ html body .marqueeBox {
           box-sizing: border-box;
   background: #fbe2b7;
   border-bottom: 2px solid #aa683b;
-  margin: 0 0 8px 0;
+  margin: 0 0 1.2vw 0;
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
@@ -874,7 +874,7 @@ html body .marqueeBox .marquee pre {
 }
 html body .memberArea {
   width: 95%;
-  height: 20vw;
+  height: 15.5vw;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -916,7 +916,7 @@ html body .memberArea .loginBtn {
       -ms-flex-pack: center;
           justify-content: center;
   width: 20vw;
-  height: 22vw;
+  height: 18vw;
   padding: 0 0 1px 1vw;
   margin-right: 3vw;
 }
@@ -1003,11 +1003,11 @@ html body .memberArea .alLogin ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 20px;
+  height: 4vw;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 5px;
+  margin-bottom: 0.3vw;
 }
 html body .memberArea .alLogin ul li:last-child {
   margin: 0;
@@ -1023,7 +1023,7 @@ html body .memberArea .alLogin ul li.amount {
   width: auto;
   max-width: 33.76vw;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 1vw;
   color: #713100;
   white-space: nowrap;
   overflow: hidden;
@@ -1324,7 +1324,6 @@ html body footer ul li {
       -ms-flex-pack: center;
           justify-content: center;
   font-weight: bold;
-  border-right: 1px solid #fff7d8;
   white-space: nowrap;
 }
 html body footer ul li.active {
@@ -1332,8 +1331,16 @@ html body footer ul li.active {
   background: #fff7d8;
   height: 100%;
 }
-html body footer ul li:nth-last-of-type(1) {
-  border: none;
+html body footer ul li.active::before {
+  height: 100%;
+}
+html body footer ul li::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 80%;
+  background: #fff7d8;
+  margin-left: 20vw;
 }
 html body footer ul li.active i {
   background-position-y: 100%;
@@ -1584,7 +1591,7 @@ html body .filter .loginWindow form label:nth-of-type(1) {
   margin: 9vw 0 8vw;
 }
 html body .filter .loginWindow form label:nth-of-type(2):nth-of-type(2)::before {
-  background-position-x: -20px;
+  background-position-x: -5vw;
 }
 html body .filter .loginWindow form label input {
   width: 77.6vw;
@@ -2029,11 +2036,11 @@ html body .filter .news.display {
 }
 html body .filter .news .typeList {
   width: 100%;
-  height: auto;
+  height: 15vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-bottom: dotted 1px #713100;
+  border-bottom: solid 1px #d9be98;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0 5%;
@@ -2087,7 +2094,6 @@ html body .filter .news .content {
   display: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 0 5%;
 }
 html body .filter .news .content.display {
   display: block;
@@ -2100,8 +2106,7 @@ html body .filter .news .content li {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin-top: 10px;
-  border-radius: 5px;
-  border: dotted 1px #713100;
+  border-bottom: solid 1px #d9be98;
 }
 html body .filter .news .content li .date {
   font-size: 12px;
@@ -2172,6 +2177,11 @@ html body .filter .gameWindow form .row.btnBox button {
   font-weight: bold;
   font-size: 3.9vw;
 }
+html body .filter .gameWindow form .row.btnBox button:active {
+  background: #82400c;
+  color: #fff7df;
+  border: none;
+}
 html body .filter .gameWindow form .row.btnBox button.read {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(46%, #fffbef), to(#e7d2ac));
   background: linear-gradient(180deg, #fffbef 46%, #e7d2ac);
@@ -2217,7 +2227,7 @@ html body .filter .gameWindow form .row .moneyText {
   font-size: 18px;
   letter-spacing: 1px;
   font-weight: bold;
-  color: #713100;
+  color: #f30f0f;
 }
 html body .filter .gameWindow form .row input {
   width: 81vw;
@@ -2972,7 +2982,7 @@ html body .slotWrap .slotHeader .searchBox {
   margin: auto;
   margin-bottom: 5px;
   background: #f2f3f3;
-  border: 2px solid #b16d3d;
+  border: 1px solid #b16d3d;
   padding: 4px 10px 4px 15px;
   border-radius: 30px;
   display: -webkit-box;
@@ -3079,7 +3089,7 @@ html body .slotWrap .gameList .gameBox .btnBox {
   padding: 0 1vw;
 }
 html body .slotWrap .gameList .gameBox .btnBox button {
-  width: 97%;
+  width: 100%;
   height: 7vw;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(23%, #fe3f70), to(#cf0f57));
   background: linear-gradient(180deg, #fe3f70 23%, #cf0f57);
@@ -3252,7 +3262,7 @@ html body .eventDetail .detailContent {
           box-sizing: border-box;
   padding: 10px 0px 15px;
   margin-top: 10px;
-  background: #e5d9b7;
+  background: #f6ebad99;
   border-bottom: 1px solid #ffffff;
 }
 html body .eventDetail .detailContent ul {
@@ -3964,6 +3974,12 @@ html body .memberWrap .user .btnBox button .text {
   letter-spacing: 2px;
   color: #713100;
 }
+html body .memberWrap .user .btnBox button .text:active {
+  color: #ffffff;
+}
+html body .memberWrap .user .btnBox button .text:active p {
+  color: #ffffff;
+}
 html body .memberWrap .user .btnBox button .text p {
   font-size: 12px;
   letter-spacing: 1px;
@@ -4178,6 +4194,7 @@ html body .memberInfo {
   padding: 10px 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  overflow-x: hidden;
 }
 html body .memberInfo form {
   width: 100%;
@@ -4224,13 +4241,13 @@ html body .memberInfo form ul li em {
 html body .memberInfo form ul li em::before {
   content: "※ ";
   color: #f30f0f;
-  padding: 0 5px 0 0;
-  font-size: 14px;
+  padding: 0 0.3vw 0 0;
+  font-size: 4vw;
 }
 html body .memberInfo form ul li span {
-  width: 31vw;
+  width: 29vw;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 4vw;
   color: #713100;
 }
 html body .memberInfo form ul li input {
@@ -4287,7 +4304,7 @@ html body .memberInfo form ul li button:active, html body .memberInfo form ul li
   background: linear-gradient(180deg, #159288 0, #1eb0a4);
 }
 html body .memberInfo form ul li .li_box {
-  width: 100%;
+  width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4301,8 +4318,8 @@ html body .memberInfo form ul li .li_box {
           align-items: center;
 }
 html body .memberInfo form ul li .li_box .smallbutton {
-  width: 92px;
-  height: 29px;
+  width: 24vw;
+  height: 9vw;
   font-size: 13px;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #1eb0a4), to(#26dbcc));
   background: linear-gradient(0deg, #1eb0a4 0, #26dbcc);
@@ -4317,6 +4334,9 @@ html body .memberInfo form ul li .li_box p {
   padding: 0 5px;
   color: #281600;
 }
+html body .memberInfo form ul li .li_box .big_name {
+  margin-left: -15vw;
+}
 html body .memberInfo form ul li .qr-img {
   width: 23vw;
   height: 23vw;
@@ -4325,8 +4345,8 @@ html body .memberInfo form ul li .qr-img {
 html body .memberInfo form ul .saveBtn {
   display: block;
   width: 92vw;
-  height: 42px;
-  margin: 12px auto 7px;
+  height: 12vw;
+  margin: 3vw auto 2vw;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #1eb0a4), to(#26dbcc));
   background: linear-gradient(0deg, #1eb0a4 0, #26dbcc);
   font-size: 4vw;
@@ -4348,7 +4368,7 @@ html body .memberInfo .info_1, html body .memberInfo .info_2 {
   margin: 10px 0;
 }
 html body .memberInfo .info_1.info_2, html body .memberInfo .info_2.info_2 {
-  margin: 62px 0;
+  margin: 3vw 0 10vw;
   border-top: 1px solid #713100;
 }
 html body .memberInfo .info_1.info_2 span, html body .memberInfo .info_2.info_2 span {
@@ -4529,7 +4549,7 @@ html body .memberPlatform .platformBox .content {
 }
 html body .memberPlatform .platformBox .content li {
   width: 100%;
-  height: 14.5vw;
+  height: 11vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4542,14 +4562,14 @@ html body .memberPlatform .platformBox .content li {
 }
 html body .memberPlatform .platformBox .content li p {
   color: #713100;
-  font-size: 3vw;
+  font-size: 3.8vw;
   font-weight: bold;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 html body .memberPlatform .platformBox .content li p span {
-  font-size: 13px;
+  font-size: 3vw;
   color: #281600;
   white-space: nowrap;
 }
@@ -4706,7 +4726,6 @@ html body .helpInner ul.display {
 html body .helpInner ul li {
   width: 100%;
   height: auto;
-  margin: 14px 0;
 }
 html body .helpInner ul li.active .title .arrow_ic {
   -webkit-transform: rotate(270deg);
@@ -4728,7 +4747,7 @@ html body .helpInner ul li .title {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0 auto;
+  margin: 2vw auto 0;
   border: solid 1px #713100;
 }
 html body .helpInner ul li .title .icon {
@@ -4755,9 +4774,47 @@ html body .helpInner ul li .title p {
   font-weight: bold;
   color: #713100;
 }
+html body .helpInner ul li .inportent_box {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #af5d1c), to(rgba(246, 235, 173, 0.6)));
+  background: linear-gradient(180deg, #af5d1c 0, rgba(246, 235, 173, 0.6));
+  border-bottom: 1px solid #ffffff;
+  padding: 5vw 5vw;
+}
+html body .helpInner ul li .inportent_box p {
+  line-height: 22px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #281600;
+  margin-bottom: 8px;
+}
+html body .helpInner ul li .inportent_box p.smallTitle {
+  font-size: 5vw;
+  margin: 20px 0 10px;
+  color: #753200;
+  text-align: center;
+}
+html body .helpInner ul li .inportent_box p.smallTitle.first {
+  margin-top: 0;
+  text-align: left;
+  color: #ffffff;
+}
+html body .helpInner ul li .inportent_box p.platform {
+  font-size: 18px;
+  color: #753200;
+  margin: 15px 0;
+  text-align: center;
+}
+html body .helpInner ul li .inportent_box p.platform .downloadBtn {
+  width: 144px;
+  margin-left: 10px;
+}
+html body .helpInner ul li .inportent_box p a {
+  color: #f30f0f;
+  text-decoration: none;
+}
 html body .helpInner ul li .textBox {
   display: none;
-  width: 96.27vw;
+  width: 92.27vw;
   height: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -4766,19 +4823,14 @@ html body .helpInner ul li .textBox {
   border-top: none;
   border-radius: 0 0 5px 5px;
 }
+html body .helpInner ul li .textBox.textBoder {
+  border: 1px solid #713100;
+  background: #e0c78cbf;
+  border-top: none;
+}
 html body .helpInner ul li .textBox.app {
   background: none;
   border: none;
-}
-html body .helpInner ul li .textBox h1 {
-  text-align: center;
-  font-weight: bold;
-  margin-bottom: 2vw;
-}
-html body .helpInner ul li .textBox h2 {
-  font-weight: bold;
-  margin-bottom: 2vw;
-  color: #713100;
 }
 html body .helpInner ul li .textBox p {
   line-height: 22px;
@@ -4790,15 +4842,16 @@ html body .helpInner ul li .textBox p {
 html body .helpInner ul li .textBox p.smallTitle {
   font-size: 5vw;
   margin: 20px 0 10px;
-  color: #713100;
+  color: #753200;
   text-align: center;
 }
 html body .helpInner ul li .textBox p.smallTitle.first {
   margin-top: 0;
+  text-align: left;
 }
 html body .helpInner ul li .textBox p.platform {
   font-size: 18px;
-  color: #713100;
+  color: #753200;
   margin: 15px 0;
   text-align: center;
 }
@@ -4809,6 +4862,15 @@ html body .helpInner ul li .textBox p.platform .downloadBtn {
 html body .helpInner ul li .textBox p a {
   color: #f30f0f;
   text-decoration: none;
+}
+html body .helpInner ul li .textBox h1 {
+  font-weight: bold;
+  margin-bottom: 2vw;
+}
+html body .helpInner ul li .textBox h2 {
+  font-weight: bold;
+  margin-bottom: 2vw;
+  color: #713100;
 }
 html body .helpInner ul li .textBox .img {
   width: 100%;
@@ -4832,7 +4894,7 @@ html body .helpInner ul li .textBox .btnBox1 {
 }
 html body .helpInner ul li .textBox .btnBox1 div {
   width: 100%;
-  height: 118px;
+  height: 42vw;
   position: relative;
   margin-bottom: 15px;
   background: #fff1cf;
@@ -6308,6 +6370,11 @@ html body .mailBody.normal .mailBox ul li {
   border-radius: 5px;
   position: relative;
 }
+html body .mailBody.normal .mailBox ul li:active {
+  background: #82400c;
+  color: #fff7df;
+  border: none;
+}
 html body .mailBody.normal .mailBox ul li.read {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(46%, #fffbef), to(#e7d2ac));
   background: linear-gradient(180deg, #fffbef 46%, #e7d2ac);
@@ -6494,6 +6561,11 @@ html body .mailBody.post .mailBox ul li {
   border-radius: 5px;
   position: relative;
 }
+html body .mailBody.post .mailBox ul li:active {
+  background: #82400c;
+  color: #fff7df;
+  border: none;
+}
 html body .mailBody.post .mailBox ul li.read {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(46%, #fffbef), to(#e7d2ac));
   background: linear-gradient(180deg, #fffbef 46%, #e7d2ac);
@@ -6555,7 +6627,7 @@ html body .mailContent .msg {
 }
 html body .cardList {
   width: 100%;
-  height: 220px;
+  height: 55vw;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0px 0 10px 0;
@@ -7014,8 +7086,8 @@ html body .bettingWrap .list .recordBox {
   width: 100%;
   height: auto;
   border-radius: 5px;
-  border: solid 1px #713100;
-  background: #e0c78cbf;
+  border: solid 1px #ffffff;
+  background: #f8dda0;
   margin-bottom: 10px;
 }
 html body .bettingWrap .list .recordBox.display {
@@ -7025,7 +7097,7 @@ html body .bettingWrap .list .recordBox .title {
   width: 100%;
   height: 38px;
   border-bottom: solid 1px #ffffff;
-  color: #281600;
+  color: #713100;
   font-size: 14px;
   font-weight: bold;
   display: -webkit-box;
@@ -7046,7 +7118,7 @@ html body .bettingWrap .list .recordBox .title .date {
   color: #713100;
 }
 html body .bettingWrap .list .recordBox .title button {
-  width: 56vw;
+  width: 41vw;
   height: auto;
   padding: 0.5vw 1.5vw;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #1eb0a4), to(#26dbcc));
@@ -7332,7 +7404,7 @@ html body .depositWrap .depList .listWrap ul li {
   margin-bottom: 7px;
   margin-right: 5px;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(46%, #fffbef), to(#e7d2ac));
-  background: linear-gradient(180deg, #fffbef 46%, #e7d2ac);
+  background: linear-gradient(180deg, #fffbef 46%, #e7d2ac 100%);
   border: 1px solid #fff7df;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7352,6 +7424,8 @@ html body .depositWrap .depList .listWrap ul li {
   padding: 0 10px;
 }
 html body .depositWrap .depList .listWrap ul li.active {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(42%, #fffbef), to(#d4b67f));
+  background: linear-gradient(0deg, #fffbef 42%, #d4b67f 100%);
   border: 1px solid #fff7df;
   color: #281600;
 }
@@ -7362,7 +7436,7 @@ html body .depositWrap .depList .listWrap ul li.active::before {
   bottom: 0;
   -webkit-transform: translate(50%, 50%) rotate(45deg);
           transform: translate(50%, 50%) rotate(45deg);
-  background: #fff7df;
+  background: #f8dda0;
   width: 8vw;
   height: 8vw;
 }
@@ -7664,6 +7738,11 @@ html body .transWrap .wallet-bg .wallet {
   border: solid 1px #ffffff;
   border: none;
 }
+html body .transWrap .wallet-bg .wallet:active {
+  background: #82400c;
+  color: #fff7df;
+  border: none;
+}
 html body .transWrap .wallet-bg .wallet.read {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(46%, #fffbef), to(#e7d2ac));
   background: linear-gradient(180deg, #fffbef 46%, #e7d2ac);
@@ -7864,7 +7943,7 @@ html body .transWrap .forPlatform ul {
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  max-height: 67.16vw;
+  max-height: 58vw;
   padding: 0 3.6vw;
   overflow: hidden;
 }
@@ -7888,6 +7967,11 @@ html body .transWrap .forPlatform ul li {
           box-shadow: 0 5px 3px -3px #00000066;
   border-radius: 5px;
   position: relative;
+}
+html body .transWrap .forPlatform ul li:active {
+  background: #82400c;
+  color: #fff7df;
+  border: none;
 }
 html body .transWrap .forPlatform ul li.read {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(46%, #fffbef), to(#e7d2ac));
@@ -8055,6 +8139,11 @@ html body .withWrap .walletBox .gradient .content {
   padding: 12px 0 10px 15px;
   border: solid 1px #713100;
 }
+html body .withWrap .walletBox .gradient .content:active {
+  background: #82400c;
+  color: #fff7df;
+  border: none;
+}
 html body .withWrap .walletBox .gradient .content.read {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(46%, #fffbef), to(#e7d2ac));
   background: linear-gradient(180deg, #fffbef 46%, #e7d2ac);
@@ -8200,6 +8289,11 @@ html body .withWrap .walletBox .walletDetail .detailBox ul li {
           box-shadow: 0 5px 3px -3px #00000066;
   border-radius: 5px;
   position: relative;
+}
+html body .withWrap .walletBox .walletDetail .detailBox ul li:active {
+  background: #82400c;
+  color: #fff7df;
+  border: none;
 }
 html body .withWrap .walletBox .walletDetail .detailBox ul li.read {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(46%, #fffbef), to(#e7d2ac));

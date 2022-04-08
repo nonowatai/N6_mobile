@@ -15,6 +15,8 @@ $mainWord_1: #281600;
 $mainBorder_1: #ffffff;
 $mainBorder_2: #713100;
 $mainBorder_3: #fff7d8;
+//news的border
+$newsborder:#d9be98;
 
 //金額色
 $money: #713100;
@@ -288,6 +290,12 @@ $mailCnt_TopBG: linear-gradient(90deg,#af5d1c 0,#6b2f00);
     border-radius: 5px;
     position: relative;
 
+    &:active {
+        background: #82400c;
+        color: #fff7df;
+        border: none;
+    }
+
     &.read {
         background: linear-gradient(180deg, #fffbef 46%, #e7d2ac);
 
@@ -337,7 +345,7 @@ $mailCnt_TopBG: linear-gradient(90deg,#af5d1c 0,#6b2f00);
 }
 
 //help
-$help_Title: #713100;
+$help_Title: #753200;
 $help_Word: #281600;
 //客服按鈕
 @mixin help_lineBtn {
@@ -384,7 +392,7 @@ $help_Word: #281600;
 $slotGame_Word: #cbaf78;
 @mixin slotSearch {
     background: #f2f3f3;
-    border: 2px solid #b16d3d;
+    border: 1px solid #b16d3d;
     padding: 4px 10px 4px 15px;
     border-radius: 30px;
     display: flex;
@@ -457,12 +465,16 @@ $slotGame_Word: #cbaf78;
         color: #b16d3d;
         background: #fff7d8;
         height: 100%;
+
+        &::before {
+            height: 100%;
+        }
     }
 }
 
 //deposit
 @mixin depositBtn {
-    background: linear-gradient(180deg,#fffbef 46%,#e7d2ac);
+    background: linear-gradient(180deg,#fffbef 46%,#e7d2ac 100%);
     border: 1px solid #fff7df;
     display: flex;
     align-items: center;
@@ -477,6 +489,7 @@ $slotGame_Word: #cbaf78;
     padding: 0 10px;
 
     &.active {
+        background: linear-gradient(0deg,#fffbef 42%,#d4b67f 100%);
         border:1px solid #fff7df;
         color: #281600;
 
@@ -486,7 +499,7 @@ $slotGame_Word: #cbaf78;
             right: 0;
             bottom: 0;
             transform: translate(50%,50%) rotate(45deg);
-            background:  #fff7df;
+            background: #f8dda0;
             width: 8vw;
             height: 8vw;
         }
